@@ -97,4 +97,3 @@ Evidence orthogonality is preserved. Old source-only Event representations remai
 5. JS and Puerts bindings: marshalling, bootstrap, ownership, and thread questions.
 6. Native feasibility: retain the read-only `UNKNOWN` boundary; do not propose native execution or reconstruction beyond authorized static evidence.
 
-The source is the main result. This note is a navigation and limits record, not a code factory or a claim of broad document expansion. No Gameplay work, native reverse-engineering action, runtime experiment, or publication approval is proposed here.

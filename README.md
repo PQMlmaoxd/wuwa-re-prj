@@ -1,124 +1,95 @@
 # Wuthering Waves Gameplay RE
 
-Independent, non-commercial reverse-engineering research into selected Wuthering
-Waves gameplay and engine-boundary systems. This repository contains recovered
-and reconstructed expressions, source-like views, authored models, and evidence
-records. It is not original developer source, complete game source, a game SDK,
-a buildable or playable replacement, or proof of runtime or server equivalence.
+Research into selected gameplay implementations in **Wuthering Waves**, with reconstructed source views, method-level evidence, and small experiments for examining execution behavior.
 
-## Repository scope
+The repository focuses on skills, attributes, damage, timers, events, and boundaries between managed code, scripts, and native systems. It is a source-oriented reference for further investigation, not a game client or an attempt to reconstruct the entire game.
 
-The curated source scope is 131 files: 105 C#, 14 TypeScript, 5 JavaScript, 4 C++,
-and 3 headers. The [source index](docs/SOURCE_INDEX.md) maps selected methods to
-their evidence qualifications and files.
+> [!NOTE]
+> Recovered expressions and authored models are different kinds of evidence. The material here is not original developer source, a complete decompilation, or proof of live-game behavior.
 
-Separate from that 131-file scope are 18 qualified historical files under
-[qualified-historical](qualified-historical/) and five additional `SOURCE_ONLY`
-method excerpts in the [damage snapshot view](qualified-research/damage-snapshots/BaseDamageComponent.SourceOnly.cs).
-Three independently authored [damage](examples/mechanics/damage-reference/README.md),
-[skill-decision](examples/mechanics/skill-decision-reference/README.md), and
-[event](examples/mechanics/event101-reference/README.md) references, and the
-[timer lifecycle model](examples/mechanics/timer-lifecycle/model.py) are also included. These are
-separate evidence categories, not additions to the 131-file count.
+**Start here:** [Research findings](#research-highlights) | [Source index](docs/SOURCE_INDEX.md) | [Quick start](#quick-start) | [Evidence limits](#evidence-and-verification)
 
-Historical AddBuffInner, GetStackableBuff, and SetDuration candidates remain
-BLOCKED / NOT_APPLIED. A `DIRECT_CIL_FULL` label is an inherited evidence class,
-not fresh authentication of an original game binary. `SOURCE_ONLY` is not a CIL
-equivalence claim. See the [gameplay showcase](examples/mechanics/gameplay-showcase/README.md)
-for included source and fixture qualifications.
+## Research highlights
 
-## Selected findings
+**Damage snapshots.** In the included `BaseDamageComponent` views, attacker and target attribute snapshots are captured before conditional attacker replacement. Counter processing occurs before critical modifiers. The examined response path also shows gated event and effect callbacks. The actual HP-writing consumer, server validation, and replication remain unknown. Read the [damage flow investigation](docs/DAMAGE_SNAPSHOT_FLOW.md) alongside its [source excerpts](qualified-research/damage-snapshots/BaseDamageComponent.SourceOnly.cs).
 
-- Both attribute snapshots precede attacker replacement, which requires a
-  non-null control handle and `ConcomitantPhantomRole`. Counter processing
-  precedes critical modifiers; selected successful responses reach gated events
-  and effects. The HP-writing consumer, server validation, and replication remain
-  unknown. The [damage walkthrough](docs/DAMAGE_SNAPSHOT_FLOW.md) distinguishes
-  these source observations from checks of 24 CIL call sites in ten methods,
-  which do not establish complete source/CIL equivalence.
-- The selected `SetBaseValue` path writes the base value before calling
-  `UpdateCurrentValue`; event dispatch follows only when the current value
-  changes. The actual buff authority and a dispatch-to-snapshot route are not
-  established. See [BaseAttributeStorage](src/managed/cs-e3fc67839851/attributes/BaseAttributeStorage.cs).
-- The selected skill gate checks cooldown before later strength, control, and
-  interruption conditions. The authored model does not establish game behavior.
-  See [BaseSkillComponent](src/managed/cs-e3fc67839851/skills/BaseSkillComponent.cs).
-- The JavaScript event bridge calls `cpp.FEventSystem` and routes callbacks to
-  global or entity-targeted listeners. Native marshalling, direct C# interop, and
-  migration chronology remain unknown. See [EventCSharpBridge](src/scripts/reconstructed/event/EventCSharpBridge.js).
-- The authored timer model covers six lifecycle scenarios, including a
-  self-removal case that remains queued until its due-time pop. Run it from the
-  repository root with:
+**Skills and attributes.** The [skill component](src/managed/cs-e3fc67839851/skills/BaseSkillComponent.cs) exposes the order of cooldown, strength, control, and interruption checks. The [attribute storage view](src/managed/cs-e3fc67839851/attributes/BaseAttributeStorage.cs) shows how a base-value write leads to current-value updates and conditional event dispatch. These are separate observations, not a reconstructed end-to-end combat pipeline.
 
-  ```text
-  python -B examples/mechanics/timer-lifecycle/model.py
-  ```
+**Timers.** A [Python lifecycle model](examples/mechanics/timer-lifecycle/model.py) exercises six scenarios derived from timer source operations. One scenario explores callback-driven self-removal of a repeating timer. This is a source-bound experiment, not a reproduced game bug.
 
-  It checks selected source bindings and model scenarios; it is not a game oracle
-  or runtime test.
+**Script interfaces.** [EventCSharpBridge.js](src/scripts/reconstructed/event/EventCSharpBridge.js) calls `cpp.FEventSystem` and routes callbacks to global or entity-targeted listeners. The native implementation, direct C# interoperation, and migration history have not been recovered.
 
-## Research tooling
+## Repository guide
 
-Recorded bounded use includes ILSpy-MCP (`ilspy-mcp`) for managed metadata and
-CIL inspection, and the official Hex-Rays IDA MCP (`official-ida-mcp`) together
-with headless idalib for selected native static analysis. These records do not
-represent fresh whole-game authentication. The underlying tool-use receipts are
-not bundled.
+| Location | What you will find |
+| --- | --- |
+| [`src/`](src/) | 131 curated C#, TypeScript, JavaScript, C++, and header files, organized by gameplay area. |
+| [`docs/SOURCE_INDEX.md`](docs/SOURCE_INDEX.md) and [`metadata/`](metadata/) | Method identities, source qualifications, and evidence navigation. |
+| [`qualified-historical/`](qualified-historical/) | 18 historically qualified source and fixture representations. |
+| [`qualified-research/damage-snapshots/`](qualified-research/damage-snapshots/) | Five additional `SOURCE_ONLY` excerpts and their evidence record. |
+| [`examples/mechanics/`](examples/mechanics/) | Authored damage, skill, event, and timer reference models. |
+| [`tools/re/`](tools/re/) | Rust utilities for metadata inspection, source lookup, and preservation checks. |
+| [`docs/`](docs/README.md) and [`tests/`](tests/README.md) | Research notes, worked examples, historical results, and test boundaries. |
 
-The Rust maintainer tools and their prepared offline build command are documented
-in [tools/re](tools/re/README.md). Rust 1.88 or newer and a previously prepared
-dependency cache are required; dependencies are not vendored. Private captures,
-graphs, indexes, reference packs, and harness receipts are not bundled. Missing
-input diagnostics are not successful verification. See
-[reproducibility boundaries](docs/REPRODUCIBILITY.md).
+The historical `AddBuffInner`, `GetStackableBuff`, and `SetDuration` candidates are still **BLOCKED / NOT_APPLIED**. They are not part of the accepted reconstructed implementations.
+
+## Quick start
+
+The timer model can be run with Python from the repository root:
+
+```sh
+python -B examples/mechanics/timer-lifecycle/model.py
+```
+
+It checks six authored scenarios and their source bindings. No game installation or private capture is needed.
+
+For a structural view of the curated metadata, the Rust CLI offers a read-only status command:
+
+```sh
+cargo run --locked --offline --manifest-path tools/re/Cargo.toml --bin re -- status --curated-root . --json
+```
+
+This requires **Rust 1.88+** and a prepared local Cargo cache containing the locked dependencies. Crates are not vendored, and a clean checkout without that cache cannot run the offline command. The result is structural, not a semantic or original-binary verification.
+
+See the [tooling guide](tools/re/README.md) for other commands and the [reproducibility matrix](docs/REPRODUCIBILITY.md) for private-input requirements.
+
+## Evidence and verification
+
+A reconstructed method is identified by its available assembly identity, MVID, TypeDef, and MethodDef, rather than by class name alone. The [source index](docs/SOURCE_INDEX.md) provides the relevant records and qualification labels.
+
+| Material | Supported reading |
+| --- | --- |
+| Reconstructed source views | Expressions and ordering visible in the included representations, not original developer-source authentication. |
+| Damage CIL investigation | 24 inspected call sites in ten original methods; no complete source-to-CIL equivalence claim. |
+| Rust structural tooling | Metadata and preservation checks within their documented input and validation scope. |
+| Mechanics models | Reproducible behavior under stated assumptions, not game-runtime or server equivalence. |
+
+Original game binaries, the full private research corpus, derived indexes, and several harness receipts are not distributed. A number of native interfaces and runtime relationships remain open questions; the [documentation guide](docs/README.md) and [gameplay showcase](examples/mechanics/gameplay-showcase/README.md) explain the boundaries. There is no measured performance improvement claim.
+
+## Research tools
+
+[Mono.Cecil](https://github.com/jbevain/cecil) was used to inspect managed metadata and CIL. Recorded MCP usage includes **ILSpy-MCP** (`ilspy-mcp`) for bounded managed inspection and the official Hex-Rays IDA MCP integration (`official-ida-mcp`), used alongside headless idalib for selected native surfaces. The underlying tool-use receipts are not included here.
 
 **Was REA used for this project?** No.
 
-## Evidence and limitations
-
-Selected views, authored models, declarations, and historical fixtures are
-different representations. Generated callbacks and accessors are not
-automatically independent gameplay methods. Game-version continuity is unknown
-where source records say so. Historical build and test results describe their
-named runs, not a fresh clean-checkout result. Native semantics and TypeScript
-buildability are not established; known malformed declarations remain preserved.
-
-The [publication provenance](docs/PUBLICATION_PROVENANCE.json) records an earlier
-240-path selection snapshot. It does not certify this checkout, authenticate
-original game binaries, or resolve ownership or redistribution rights.
-
 ## Contributing
 
-Start with an existing source view, its metadata, and the
-[contribution rules](CONTRIBUTING.md). Report the full assembly/MVID/TypeDef/
-MethodDef identity when available, distinguish observation from inference, and
-state which checks you actually ran. Do not fill missing bodies with plausible
-stubs, silently normalize preserved source, or turn historical candidates into
-accepted source. Keep editorial successors separate from preserved records.
-Do not submit game binaries, extracted assets, credentials, or private inputs.
+Changes should be traceable to an identified source or evidence record, with observed behavior separated from interpretation. Read [CONTRIBUTING.md](CONTRIBUTING.md) for source identity, preservation, and review requirements. Do not submit game binaries, extracted assets, credentials, or private research inputs.
 
-## Acknowledgements and References
+## Acknowledgements and references
 
-The [Mono.Cecil](https://github.com/jbevain/cecil) library was used directly for
-managed assembly metadata and IL inspection.
-The documentation and methods of [OpenGOAL](https://github.com/open-goal/jak-project)
-and [zeldaret/oot](https://github.com/zeldaret/oot) were consulted as references.
-These projects are not code dependencies, do not endorse this work, and provide
-no authority for its claims or rights to third-party game-derived material.
+**Tools and methodology.** [Mono.Cecil](https://github.com/jbevain/cecil) supports the project's managed inspection workflow. [OpenGOAL](https://github.com/open-goal/jak-project) and [zeldaret/oot](https://github.com/zeldaret/oot) were consulted for source-reconstruction documentation and the separation of source, tooling, and verification.
 
-## Copyright & Legal Notice
+**Wuthering Waves research.** [alt3ri/WuWa_SDK](https://github.com/alt3ri/WuWa_SDK) and [chadlrnsn/wuwa-sdk](https://github.com/chadlrnsn/wuwa-sdk) publish Unreal SDK structures, object dumps, and IDA mappings useful for understanding native-side interfaces. [Arikatsu/WutheringWaves_Data](https://github.com/Arikatsu/WutheringWaves_Data) and [Dimbreath/WutheringData](https://github.com/Dimbreath/WutheringData) provide extracted configuration and text data.
 
-This is an independent, non-commercial reverse-engineering research project. No
-affiliation, endorsement, or authorization from Kuro Games is claimed. Wuthering
-Waves and relevant game software, trademarks, and content belong to their
-respective rights holders.
+**Related community work.** [Hiro420/WuwaTools](https://github.com/Hiro420/WuwaTools) contains protocol and configuration inspection utilities; [yuhkix/wuwa-ids](https://github.com/yuhkix/wuwa-ids) collects gameplay identifiers; and [Wuthering Waves Mod Starter](https://github.com/aarlin/wuthering-waves-mod-starter) documents JavaScript layouts and modding workflows.
 
-The repository contains recovered or reconstructed game-derived expressions and
-independently authored material. The maintainers do not claim ownership of
-third-party game code. This repository grants no license to redistribute
-third-party game-derived content. Public availability does not establish
-open-source status or redistribution permission.
+These references acknowledge relevant tools and public research. They do not imply direct code reuse, collaboration, endorsement, or permission to redistribute third-party content.
 
-A public maintainer contact channel has not yet been configured. Specific
-rights-holder concerns will be reviewed promptly once a channel is published.
-This notice is not a license, waiver, or legal exemption.
+## Copyright & legal notice
+
+This is an independent, non-commercial reverse-engineering research project. It is not affiliated with, endorsed by, or authorized by Kuro Games. Wuthering Waves, its trademarks, and its original game software remain the property of their respective rights holders.
+
+The repository includes game-derived recovered or reconstructed expressions as well as independently authored research material. The maintainers do not claim ownership of third-party game code or grant any license to redistribute it. Public availability does not establish open-source status or redistribution permission. This notice is not a license, waiver, or legal exemption.
+
+A public maintainer contact channel has not yet been configured. Specific rights-holder concerns will be reviewed promptly once a channel is published.
