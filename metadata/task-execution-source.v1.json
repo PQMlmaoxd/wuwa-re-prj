@@ -1,0 +1,1859 @@
+{
+  "schema": "wuwa-reconstruction-task-execution-source-v1",
+  "version": 1,
+  "manifest_sha256": "7da6c8c7b2d95b8a488adaba7ef46d5775d434b75dfdbee55b5e8e9613a2899b",
+  "performance_source_sha256": "bd8b2ef69be52e2c4f18fb9080e049d1b2e9da6bc377777b43e3c984cc6aa040",
+  "scheduling_source_sha256": "2d6ab3fbff603761c82dfcadeb2c32e37e82d1e85523de21e12bf157edab7c54",
+  "records": [
+    {
+      "record": {
+        "id": "PEXEC_SYSTEM",
+        "unit_id": null,
+        "namespace_context": "global (observed)",
+        "original_path": "src/reconstructed/performance/TaskSystem.cs",
+        "original_size": 15075,
+        "original_sha256": "0567e1ec4cff3885fc5add61ff4288fd1f19e69894445630f7dc0f1afce792d9",
+        "hash_basis": "raw_source_file_bytes",
+        "evidence_status": "UNKNOWN",
+        "source_status": "SOURCE_ONLY",
+        "verification_basis": "mixed selected-method evidence; complete CIL and source-only selected views from accepted PERF02 evidence; no fresh binary extraction in this task",
+        "evidence_references": [
+          {
+            "path": "src/reconstructed/performance/TaskSystem.cs",
+            "locator": "lines 1-401; execution slice"
+          },
+          {
+            "path": "evidence/performance/PERF02_EVIDENCE.json",
+            "locator": "method_inventory and projection_method_mapping",
+            "artifact_sha256": "3fe257b8d9c7f6dbeae400cfb4c408cfe08383a6bb98a241d9c62f509d30162c"
+          },
+          {
+            "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+            "locator": "selected sections lines 1-1154",
+            "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+          },
+          {
+            "path": "evidence/performance/PERF02_DIRECT_CIL_MANIFEST.json",
+            "locator": "selected method entries",
+            "artifact_sha256": "d32dec70c88ede0c4f37ae417a2d84d2f6e7e7d8c684703f3c4e90b92e508fea"
+          },
+          {
+            "path": "docs/performance/PERF02_TASKSYSTEM_EXECUTION.md",
+            "locator": "TaskSystem execution and evidence navigation",
+            "artifact_sha256": "13a30daa68160d1dd59f7072daacb4dd7bb096228a3a988c47819f0db2d11b27"
+          },
+          {
+            "path": "docs/performance/PERF_TASK01_CLEAR_PROMISE_LIFECYCLE.md",
+            "locator": "lines 230-329; caller and clear boundary",
+            "artifact_sha256": "0f278175facc1761e4b851cdeebc0612222e61252c798613557a59175a333902"
+          },
+          {
+            "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+            "locator": "selected method rows",
+            "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+          },
+          {
+            "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/types.jsonl",
+            "locator": "root and associated type rows",
+            "artifact_sha256": "275097e0fcbe81c07845f042dc3984b4fd362f025829ab3e833f8ac9eded873e"
+          }
+        ],
+        "proposed_path": "src/managed/cs-e3fc67839851/scheduling/TaskSystem.cs",
+        "proposed_path_reason": "Selected execution-slice methods; exact-byte import only after approval. Not whole-class coverage or compile-ready.",
+        "authority_id": "MANAGED-CS-E3FC67839851",
+        "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "authority_sha256_kind": "managed_assembly",
+        "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "build_reference": null,
+        "typeDef": "0x020034D8",
+        "methods": {
+          "historical": [],
+          "current": [
+            {
+              "methodDef": "0x0601C931",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level UniTask<bool>? get_Promise(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C931"
+              },
+              "rva": "0x88F8BC",
+              "il_range": "[0x0000,0x001F)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 34-35; get_Promise"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 698; 0x0601C931",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C932",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for bool Initialize(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C932"
+              },
+              "rva": "0x88F8E7",
+              "il_range": "[0x0000,0x0009)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 59-64; Initialize"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 699; 0x0601C932",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1-18; Initialize",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C933",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for UniTask<bool> Run(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C933"
+              },
+              "rva": "0x88F8F4",
+              "il_range": "[0x0000,0x0037)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 66-101; Run"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 700; 0x0601C933",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 19-55; Run",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C934",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void AddTask(TaskBase task); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C934"
+              },
+              "rva": "0x88F938",
+              "il_range": "[0x0000,0x00DA)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 103-139; AddTask"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 701; 0x0601C934",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 245-335; AddTask",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C935",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void Clear(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C935"
+              },
+              "rva": "0x88FA20",
+              "il_range": "[0x0000,0x002A)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 141-152; Clear"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 702; 0x0601C935",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 336-365; Clear",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C936",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void ClearInternal(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C936"
+              },
+              "rva": "0x88FA58",
+              "il_range": "[0x0000,0x006F)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 154-172; ClearInternal"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 703; 0x0601C936",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 366-416; ClearInternal",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C937",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level int get_HighestQueuedInterruptPriority(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C937"
+              },
+              "rva": "0x88FAD4",
+              "il_range": "[0x0000,0x0027)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 37-54; get_HighestQueuedInterruptPriority"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 704; 0x0601C937",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C938",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level void IncreaseQueuedCount(ETaskPriority priority); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C938"
+              },
+              "rva": "0x88FB08",
+              "il_range": "[0x0000,0x0025)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 174-179; IncreaseQueuedCount"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 705; 0x0601C938",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C939",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level void DecreaseQueuedCount(ETaskPriority priority); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C939"
+              },
+              "rva": "0x88FB3C",
+              "il_range": "[0x0000,0x002C)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 181-186; DecreaseQueuedCount"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 706; 0x0601C939",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C93A",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void TryInterruptCurrent(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C93A"
+              },
+              "rva": "0x88FB74",
+              "il_range": "[0x0000,0x00B3)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 188-208; TryInterruptCurrent"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 707; 0x0601C93A",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 417-489; TryInterruptCurrent",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C93B",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void SwapBuffers(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C93B"
+              },
+              "rva": "0x88FC34",
+              "il_range": "[0x0000,0x0051)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 210-223; SwapBuffers"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 708; 0x0601C93B",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 490-531; SwapBuffers",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C93C",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level int get_QueuedSize(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C93C"
+              },
+              "rva": "0x88FC91",
+              "il_range": "[0x0000,0x0018)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 56-57; get_QueuedSize"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 709; 0x0601C93C",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C93D",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for UniTask YieldFrame(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C93D"
+              },
+              "rva": "0x88FCAC",
+              "il_range": "[0x0000,0x002F)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 225-243; YieldFrame"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 710; 0x0601C93D",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 532-565; YieldFrame",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C93E",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for UniTask<bool> RunInternal(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D8",
+                "methodDef": "0x0601C93E"
+              },
+              "rva": "0x88FCE8",
+              "il_range": "[0x0000,0x0037)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 245-400; RunInternal"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 711; 0x0601C93E",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 681-718; RunInternal",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604A4F7",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void <YieldFrame>b__0(float _); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02009691",
+                "methodDef": "0x0604A4F7"
+              },
+              "rva": "0x1429A8E",
+              "il_range": "[0x0000,0x000D)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 225-243; <YieldFrame>b__0"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 2311; 0x0604A4F7",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1135-1154; <YieldFrame>b__0",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604A4F8",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void Run.MoveNext(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02009692",
+                "methodDef": "0x0604A4F8"
+              },
+              "rva": "0x1429A9C",
+              "il_range": "[0x0000,0x019E)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 66-101; MoveNext"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 2312; 0x0604A4F8",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 56-244; MoveNext",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604A4FA",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void RunInternal.MoveNext(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02009693",
+                "methodDef": "0x0604A4FA"
+              },
+              "rva": "0x1429C74",
+              "il_range": "[0x0000,0x0417)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 245-400; MoveNext"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 2314; 0x0604A4FA",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 719-1134; MoveNext",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604A4FC",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void YieldFrame.MoveNext(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02009694",
+                "methodDef": "0x0604A4FC"
+              },
+              "rva": "0x142A0DC",
+              "il_range": "[0x0000,0x00E8)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskSystem.cs",
+                  "locator": "lines 225-243; MoveNext"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/methods.jsonl",
+                  "locator": "row 2316; 0x0604A4FC",
+                  "artifact_sha256": "1ce8e64910539417e7af8714bd880a85883e753b07ec119ecfe996bdb8dab7ef"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 566-680; MoveNext",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            }
+          ]
+        },
+        "scope": "Eighteen selected TaskSystem and generated scheduler methods.",
+        "completeness": "Thirteen complete selected CIL bodies and five source-only views; implicit constructor 0x0601C93F and generated constructors/SetStateMachine methods excluded; external TaskBase, Queue, UniTask, Timer, logging, and runtime context unresolved; not whole-class or build-ready.",
+        "representation": "MIXED",
+        "curation_status": "NEEDS_EDITORIAL_REVIEW",
+        "export_status": "PUBLICATION_REVIEW_REQUIRED",
+        "duplicate_group": null,
+        "relationship": "Distinct execution-slice type; selected method keys are disjoint from historical and existing scheduling records.",
+        "supersession": {
+          "same_authority": true,
+          "qualified": false,
+          "scope": [],
+          "supersedes": [],
+          "superseded_by": []
+        },
+        "explanation": "The selected methods preserve enqueue/drain, interrupt, buffer swap, self-feed yield, and Run/RunInternal continuation shape. Generated state-machine bodies are evidence-backed associations, not six independent original declarations.",
+        "dependencies": [
+          "TaskBase, Queue<TaskBase>, and CustomPromise context",
+          "UniTask, UniTaskCompletionSource, and TimerSystem.GameplayTimeInstance",
+          "Singleton<Log> and compiler-generated logging lowering",
+          "excluded 0x0601C93F, 0x0604A4F6, 0x0604A4F9, 0x0604A4FB, 0x0604A4FD",
+          "runtime pump, thread placement, and native budget"
+        ],
+        "editorial_changes": [
+          "None approved.",
+          "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+          "Preserve original string literals exactly."
+        ],
+        "validation": {
+          "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+          "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+          "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+          "equivalence": "NOT_ESTABLISHED",
+          "compilation": "NOT_BUILDABLE_WITH_CURRENT_CONTEXT",
+          "runtime": "PARKED_NOT_RUN",
+          "publication": "REVIEW_REQUIRED",
+          "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+        }
+      },
+      "associated_types": [
+        {
+          "typeDef": "0x02009691",
+          "parent_typeDef": "0x020034D8",
+          "evidence_references": [
+            {
+              "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/types.jsonl",
+              "locator": "row 219; type_token 0x02009691; declaring_type_token 0x020034D8",
+              "artifact_sha256": "275097e0fcbe81c07845f042dc3984b4fd362f025829ab3e833f8ac9eded873e"
+            },
+            {
+              "path": "src/reconstructed/performance/TaskSystem.cs",
+              "locator": "lines 225-243; YieldFrame display-class boundary"
+            }
+          ]
+        },
+        {
+          "typeDef": "0x02009692",
+          "parent_typeDef": "0x020034D8",
+          "evidence_references": [
+            {
+              "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/types.jsonl",
+              "locator": "row 220; type_token 0x02009692; declaring_type_token 0x020034D8",
+              "artifact_sha256": "275097e0fcbe81c07845f042dc3984b4fd362f025829ab3e833f8ac9eded873e"
+            },
+            {
+              "path": "src/reconstructed/performance/TaskSystem.cs",
+              "locator": "lines 66-101; Run state-machine boundary"
+            }
+          ]
+        },
+        {
+          "typeDef": "0x02009693",
+          "parent_typeDef": "0x020034D8",
+          "evidence_references": [
+            {
+              "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/types.jsonl",
+              "locator": "row 221; type_token 0x02009693; declaring_type_token 0x020034D8",
+              "artifact_sha256": "275097e0fcbe81c07845f042dc3984b4fd362f025829ab3e833f8ac9eded873e"
+            },
+            {
+              "path": "src/reconstructed/performance/TaskSystem.cs",
+              "locator": "lines 245-400; RunInternal state-machine boundary"
+            }
+          ]
+        },
+        {
+          "typeDef": "0x02009694",
+          "parent_typeDef": "0x020034D8",
+          "evidence_references": [
+            {
+              "path": "src/reconstructed/managed/full/CSharpScript/shards/b61135f089b80d51f0d49f22c104a39ef53d3482d405b84313535feae831ef24/evidence/raw/types.jsonl",
+              "locator": "row 222; type_token 0x02009694; declaring_type_token 0x020034D8",
+              "artifact_sha256": "275097e0fcbe81c07845f042dc3984b4fd362f025829ab3e833f8ac9eded873e"
+            },
+            {
+              "path": "src/reconstructed/performance/TaskSystem.cs",
+              "locator": "lines 225-243; YieldFrame state-machine boundary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": {
+        "id": "PEXEC_BASE",
+        "unit_id": null,
+        "namespace_context": "global (observed)",
+        "original_path": "src/reconstructed/performance/TaskBase.cs",
+        "original_size": 5418,
+        "original_sha256": "50dd7ff2779ce004601ee862ffbf5b578c0dc46823df61f68f8d00fbf76771c3",
+        "hash_basis": "raw_source_file_bytes",
+        "evidence_status": "UNKNOWN",
+        "source_status": "SOURCE_ONLY",
+        "verification_basis": "mixed selected-method evidence; complete CIL and source-only selected views from accepted PERF02 evidence; no fresh binary extraction in this task",
+        "evidence_references": [
+          {
+            "path": "src/reconstructed/performance/TaskBase.cs",
+            "locator": "lines 1-150; execution slice"
+          },
+          {
+            "path": "evidence/performance/PERF02_EVIDENCE.json",
+            "locator": "method_inventory and projection_method_mapping",
+            "artifact_sha256": "3fe257b8d9c7f6dbeae400cfb4c408cfe08383a6bb98a241d9c62f509d30162c"
+          },
+          {
+            "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+            "locator": "selected sections lines 1155-1541",
+            "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+          },
+          {
+            "path": "evidence/performance/PERF02_DIRECT_CIL_MANIFEST.json",
+            "locator": "selected method entries",
+            "artifact_sha256": "d32dec70c88ede0c4f37ae417a2d84d2f6e7e7d8c684703f3c4e90b92e508fea"
+          },
+          {
+            "path": "docs/performance/PERF02_TASKSYSTEM_EXECUTION.md",
+            "locator": "TaskSystem execution and evidence navigation",
+            "artifact_sha256": "13a30daa68160d1dd59f7072daacb4dd7bb096228a3a988c47819f0db2d11b27"
+          },
+          {
+            "path": "docs/performance/PERF_TASK01_CLEAR_PROMISE_LIFECYCLE.md",
+            "locator": "lines 230-329; caller and clear boundary",
+            "artifact_sha256": "0f278175facc1761e4b851cdeebc0612222e61252c798613557a59175a333902"
+          },
+          {
+            "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+            "locator": "selected method rows",
+            "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+          },
+          {
+            "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/types.jsonl",
+            "locator": "root and associated type rows",
+            "artifact_sha256": "90baf4f114f41872ff1393a173ab06424979d13e6789250aaf5d69c9a38158f5"
+          }
+        ],
+        "proposed_path": "src/managed/cs-e3fc67839851/scheduling/TaskBase.cs",
+        "proposed_path_reason": "Selected execution-slice methods; exact-byte import only after approval. Not whole-class coverage or compile-ready.",
+        "authority_id": "MANAGED-CS-E3FC67839851",
+        "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "authority_sha256_kind": "managed_assembly",
+        "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "build_reference": null,
+        "typeDef": "0x020034D3",
+        "methods": {
+          "historical": [],
+          "current": [
+            {
+              "methodDef": "0x0601C909",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for TaskBase(string name, Func<bool>? initHandle = null, Action<bool>? finishedCallback = null, TaskInterruptOptions? interruptOptions = null); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C909"
+              },
+              "rva": "0x88EA5C",
+              "il_range": "[0x0000,0x0046)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 34-46; .ctor"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 961; 0x0601C909",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1155-1212; .ctor",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C90A",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level string get_Name(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C90A"
+              },
+              "rva": "0x88EAAE",
+              "il_range": "[0x0000,0x0007)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 25-26; get_Name"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 962; 0x0601C90A",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C90B",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level void SetLogPrefix(string? logPrefix = null); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C90B"
+              },
+              "rva": "0x88EAB6",
+              "il_range": "[0x0000,0x0008)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 48-52; SetLogPrefix"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 963; 0x0601C90B",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C90C",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level ETaskPriority get_InterruptPriority(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C90C"
+              },
+              "rva": "0x88EABF",
+              "il_range": "[0x0000,0x000C)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 27-28; get_InterruptPriority"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 964; 0x0601C90C",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C90D",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level bool get_Interruptible(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C90D"
+              },
+              "rva": "0x88EACC",
+              "il_range": "[0x0000,0x000C)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 29-30; get_Interruptible"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 965; 0x0601C90D",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C90E",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void RequestInterrupt(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C90E"
+              },
+              "rva": "0x88EADC",
+              "il_range": "[0x0000,0x0043)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 54-68; RequestInterrupt"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 966; 0x0601C90E",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1463-1502; RequestInterrupt",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C90F",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void OnInterrupt(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C90F"
+              },
+              "rva": "0x88EB2C",
+              "il_range": "[0x0000,0x0042)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 70-80; OnInterrupt"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 967; 0x0601C90F",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1503-1541; OnInterrupt",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C910",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for bool Init(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C910"
+              },
+              "rva": "0x88EB7A",
+              "il_range": "[0x0000,0x001E)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 82-91; Init"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 968; 0x0601C910",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1213-1240; Init",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C911",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level UniTask<bool> get_Promise(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C911"
+              },
+              "rva": "0x88EB99",
+              "il_range": "[0x0000,0x000C)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 31-32; get_Promise"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 969; 0x0601C911",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C912",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for UniTask<bool> Run(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C912"
+              },
+              "rva": "0x88EBA8",
+              "il_range": "[0x0000,0x0037)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 93-135; Run"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 970; 0x0601C912",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1241-1277; Run",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C913",
+              "coverage": "ABSTRACT_SIGNATURE_METADATA_ONLY_PERF02",
+              "evidence_status": "METADATA_ONLY",
+              "source_status": "METADATA_ONLY",
+              "verification_basis": "abstract signature abstract UniTask<bool> OnRun(); metadata only; no body; RVA 0; code size 0; no il_range invented.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C913"
+              },
+              "rva": "0x0",
+              "il_range": null,
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 137-138; OnRun"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/types.jsonl",
+                  "locator": "row 64; type_token 0x020034D3",
+                  "artifact_sha256": "90baf4f114f41872ff1393a173ab06424979d13e6789250aaf5d69c9a38158f5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C914",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level bool OnInit(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C914"
+              },
+              "rva": "0x88EBEB",
+              "il_range": "[0x0000,0x0002)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 140-144; OnInit"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 971; 0x0601C914",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0601C915",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level void OnExit(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x020034D3",
+                "methodDef": "0x0601C915"
+              },
+              "rva": "0x88EBEE",
+              "il_range": "[0x0000,0x0001)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 146-149; OnExit"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 972; 0x0601C915",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604A4ED",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void Run.MoveNext(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x0200968D",
+                "methodDef": "0x0604A4ED"
+              },
+              "rva": "0x1429504",
+              "il_range": "[0x0000,0x0151)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/TaskBase.cs",
+                  "locator": "lines 93-135; MoveNext"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/methods.jsonl",
+                  "locator": "row 2344; 0x0604A4ED",
+                  "artifact_sha256": "21a001ae80b5a8051143760ba7ad017d8e446087477b596827f1a6ddc49b2808"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1278-1462; MoveNext",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            }
+          ]
+        },
+        "scope": "Fourteen selected TaskBase and Run state-machine methods.",
+        "completeness": "Six complete selected CIL bodies, seven source-only views, and one abstract metadata-only signature; SetStateMachine 0x0604A4EE excluded; TaskInterruptOptions, UniTaskCompletionSource, callbacks, logging, and runtime unresolved; not whole-class or build-ready.",
+        "representation": "MIXED",
+        "curation_status": "NEEDS_EDITORIAL_REVIEW",
+        "export_status": "PUBLICATION_REVIEW_REQUIRED",
+        "duplicate_group": null,
+        "relationship": "Distinct execution-slice type; selected method keys are disjoint from historical and existing scheduling records.",
+        "supersession": {
+          "same_authority": true,
+          "qualified": false,
+          "scope": [],
+          "supersedes": [],
+          "superseded_by": []
+        },
+        "explanation": "The selected methods preserve construction, interrupt request, Init/Run order, and inner exception-to-false behavior. OnRun is recorded only as an abstract signature; no body, RVA, or IL range is invented.",
+        "dependencies": [
+          "TaskInterruptOptions, Func<bool>, Action<bool>, and UniTaskCompletionSource<bool>",
+          "Singleton<Log> and inline-array logging lowering",
+          "unselected members, runtime completion, and native budget",
+          "excluded 0x0604A4EE"
+        ],
+        "editorial_changes": [
+          "None approved.",
+          "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+          "Preserve original string literals exactly."
+        ],
+        "validation": {
+          "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+          "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+          "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+          "equivalence": "NOT_ESTABLISHED",
+          "compilation": "NOT_BUILDABLE_WITH_CURRENT_CONTEXT",
+          "runtime": "PARKED_NOT_RUN",
+          "publication": "REVIEW_REQUIRED",
+          "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+        }
+      },
+      "associated_types": [
+        {
+          "typeDef": "0x0200968D",
+          "parent_typeDef": "0x020034D3",
+          "evidence_references": [
+            {
+              "path": "src/reconstructed/managed/full/CSharpScript/shards/3661efec61bceb606b5698a533e0470e34ae41e7da60d5e21f63a6c3e65483ee/evidence/raw/types.jsonl",
+              "locator": "row 241; type_token 0x0200968D; declaring_type_token 0x020034D3",
+              "artifact_sha256": "90baf4f114f41872ff1393a173ab06424979d13e6789250aaf5d69c9a38158f5"
+            },
+            {
+              "path": "src/reconstructed/performance/TaskBase.cs",
+              "locator": "lines 93-135; Run state-machine boundary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "record": {
+        "id": "PEXEC_QUEUE",
+        "unit_id": null,
+        "namespace_context": "global (observed)",
+        "original_path": "src/reconstructed/performance/Queue.cs",
+        "original_size": 10163,
+        "original_sha256": "439ce33738812997ad56772218f108eb82873f34f105f6ed677f4b9cb6b4ad3a",
+        "hash_basis": "raw_source_file_bytes",
+        "evidence_status": "UNKNOWN",
+        "source_status": "SOURCE_ONLY",
+        "verification_basis": "mixed selected-method evidence; complete CIL and source-only selected views from accepted PERF02 evidence; no fresh binary extraction in this task",
+        "evidence_references": [
+          {
+            "path": "src/reconstructed/performance/Queue.cs",
+            "locator": "lines 1-320; execution slice"
+          },
+          {
+            "path": "evidence/performance/PERF02_EVIDENCE.json",
+            "locator": "method_inventory and projection_method_mapping",
+            "artifact_sha256": "3fe257b8d9c7f6dbeae400cfb4c408cfe08383a6bb98a241d9c62f509d30162c"
+          },
+          {
+            "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+            "locator": "selected sections lines 1720-1981",
+            "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+          },
+          {
+            "path": "evidence/performance/PERF02_DIRECT_CIL_MANIFEST.json",
+            "locator": "selected method entries",
+            "artifact_sha256": "d32dec70c88ede0c4f37ae417a2d84d2f6e7e7d8c684703f3c4e90b92e508fea"
+          },
+          {
+            "path": "docs/performance/PERF02_TASKSYSTEM_EXECUTION.md",
+            "locator": "TaskSystem execution and evidence navigation",
+            "artifact_sha256": "13a30daa68160d1dd59f7072daacb4dd7bb096228a3a988c47819f0db2d11b27"
+          },
+          {
+            "path": "docs/performance/PERF_TASK01_CLEAR_PROMISE_LIFECYCLE.md",
+            "locator": "lines 230-329; caller and clear boundary",
+            "artifact_sha256": "0f278175facc1761e4b851cdeebc0612222e61252c798613557a59175a333902"
+          },
+          {
+            "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+            "locator": "selected method rows",
+            "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+          },
+          {
+            "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/types.jsonl",
+            "locator": "root and associated type rows",
+            "artifact_sha256": "c18916e2ad659da316f29d6d05c7ce8856bad9166a13a673c3784ab978ea04ef"
+          }
+        ],
+        "proposed_path": "src/managed/cs-e3fc67839851/scheduling/Queue.cs",
+        "proposed_path_reason": "Selected execution-slice methods; exact-byte import only after approval. Not whole-class coverage or compile-ready.",
+        "authority_id": "MANAGED-CS-E3FC67839851",
+        "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "authority_sha256_kind": "managed_assembly",
+        "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "build_reference": null,
+        "typeDef": "0x02000071",
+        "methods": {
+          "historical": [],
+          "current": [
+            {
+              "methodDef": "0x060002A3",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for Queue(int capacity = 4); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002A3"
+              },
+              "rva": "0xE142",
+              "il_range": "[0x0000,0x001A)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 52-57; .ctor"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 1; 0x060002A3",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1720-1745; .ctor",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002A4",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level int get_Size(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002A4"
+              },
+              "rva": "0xE15D",
+              "il_range": "[0x0000,0x0007)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 27-28; get_Size"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 2; 0x060002A4",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002A5",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void Push(T element); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002A5"
+              },
+              "rva": "0xE168",
+              "il_range": "[0x0000,0x0080)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 59-77; Push"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 3; 0x060002A5",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1746-1832; Push",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002A6",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for T? Pop(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002A6"
+              },
+              "rva": "0xE1F4",
+              "il_range": "[0x0000,0x00CC)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 79-107; Pop"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 4; 0x060002A6",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1833-1944; Pop",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002A7",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level bool TryPop(out T? result); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002A7"
+              },
+              "rva": "0xE2CC",
+              "il_range": "[0x0000,0x00B4)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 109-133; TryPop"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 5; 0x060002A7",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002A8",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level T? get_Front(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002A8"
+              },
+              "rva": "0xE38C",
+              "il_range": "[0x0000,0x003F)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 30-47; get_Front"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 6; 0x060002A8",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002A9",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level bool TryGetFront(out T? result); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002A9"
+              },
+              "rva": "0xE3D7",
+              "il_range": "[0x0000,0x002A)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 135-146; TryGetFront"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 7; 0x060002A9",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002AA",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level T? Get(int index); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002AA"
+              },
+              "rva": "0xE404",
+              "il_range": "[0x0000,0x00C4)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 148-175; Get"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 8; 0x060002AA",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002AB",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level void SetCapacity(int capacity); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002AB"
+              },
+              "rva": "0xE4D4",
+              "il_range": "[0x0000,0x028B)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 177-260; SetCapacity"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 9; 0x060002AB",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002AC",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level bool get_Empty(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002AC"
+              },
+              "rva": "0xE76B",
+              "il_range": "[0x0000,0x000A)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 49-50; get_Empty"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 10; 0x060002AC",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002AD",
+              "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF02",
+              "evidence_status": "DIRECT_CIL_FULL",
+              "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+              "verification_basis": "accepted PERF02 complete CIL for void Clear(); ordinary or generated selected method.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002AD"
+              },
+              "rva": "0xE776",
+              "il_range": "[0x0000,0x0038)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 262-270; Clear"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 11; 0x060002AD",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                },
+                {
+                  "path": "evidence/performance/PERF02_DIRECT_CIL.txt",
+                  "locator": "lines 1945-1981; Clear",
+                  "artifact_sha256": "d612572a59f6977f31355de266c08ccdc2b57542e2b6af025f965d4d0a680c13"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002AE",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level IEnumerator<T> GetEnumerator(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002AE"
+              },
+              "rva": "0xE7AF",
+              "il_range": "[0x0000,0x000C)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 316-317; GetEnumerator"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 12; 0x060002AE",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x060002AF",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level IEnumerator IEnumerable.GetEnumerator(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02000071",
+                "methodDef": "0x060002AF"
+              },
+              "rva": "0xE7BC",
+              "il_range": "[0x0000,0x0007)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 318-319; System.Collections.IEnumerable.GetEnumerator"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 13; 0x060002AF",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604670C",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level Enumerator(Queue<T> queue); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02007184",
+                "methodDef": "0x0604670C"
+              },
+              "rva": "0x12A9B8F",
+              "il_range": "[0x0000,0x002C)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 279-286; .ctor"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 2166; 0x0604670C",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604670D",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level bool MoveNext(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02007184",
+                "methodDef": "0x0604670D"
+              },
+              "rva": "0x12A9BBC",
+              "il_range": "[0x0000,0x0057)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 293-308; MoveNext"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 2167; 0x0604670D",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604670E",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level void Reset(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02007184",
+                "methodDef": "0x0604670E"
+              },
+              "rva": "0x12A9C1F",
+              "il_range": "[0x0000,0x0008)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 310-311; Reset"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 2168; 0x0604670E",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x0604670F",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level T IEnumerator<T>.get_Current(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02007184",
+                "methodDef": "0x0604670F"
+              },
+              "rva": "0x12A9C28",
+              "il_range": "[0x0000,0x0007)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 288-289; System.Collections.Generic.IEnumerator<T>.get_Current"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 2169; 0x0604670F",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x06046710",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level object? IEnumerator.get_Current(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02007184",
+                "methodDef": "0x06046710"
+              },
+              "rva": "0x12A9C30",
+              "il_range": "[0x0000,0x000C)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 290-291; System.Collections.IEnumerator.get_Current"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 2170; 0x06046710",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            },
+            {
+              "methodDef": "0x06046711",
+              "coverage": "SOURCE_ONLY_SELECTED_METHOD_PERF02",
+              "evidence_status": "SOURCE_ONLY",
+              "source_status": "SOURCE_ONLY",
+              "verification_basis": "source-level void Dispose(); archived metadata only; no complete persisted CIL body.",
+              "symbol_key": {
+                "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+                "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+                "typeDef": "0x02007184",
+                "methodDef": "0x06046711"
+              },
+              "rva": "0x12A9C3D",
+              "il_range": "[0x0000,0x0001)",
+              "evidence_references": [
+                {
+                  "path": "src/reconstructed/performance/Queue.cs",
+                  "locator": "lines 312-313; Dispose"
+                },
+                {
+                  "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/methods.jsonl",
+                  "locator": "row 2171; 0x06046711",
+                  "artifact_sha256": "e2388fa15ee38066b62b7795ceb638edfbf58bce0d1f61efcc9e96c8b66f36a5"
+                }
+              ]
+            }
+          ]
+        },
+        "scope": "Nineteen selected Queue and nested Enumerator methods.",
+        "completeness": "Four complete selected CIL bodies and fifteen source-only views including the entire nested Enumerator; generic element and backing-storage context, custom ring-buffer behavior, logging, and external populations unresolved; not whole-class or build-ready.",
+        "representation": "MIXED",
+        "curation_status": "NEEDS_EDITORIAL_REVIEW",
+        "export_status": "PUBLICATION_REVIEW_REQUIRED",
+        "duplicate_group": null,
+        "relationship": "Distinct execution-slice type; selected method keys are disjoint from historical and existing scheduling records.",
+        "supersession": {
+          "same_authority": true,
+          "qualified": false,
+          "scope": [],
+          "supersedes": [],
+          "superseded_by": []
+        },
+        "explanation": "The selected methods preserve the custom FIFO ring buffer, capacity growth/shrink, clear, and nested enumerator shape. No fresh CIL promotion is made for the Enumerator or other source-only members.",
+        "dependencies": [
+          "T, List<T>, and UnrealEngine.Extension.IClearable",
+          "Singleton<Log> and logging storage lowering",
+          "generic enumerator and external queue populations",
+          "unselected context and native budget"
+        ],
+        "editorial_changes": [
+          "None approved.",
+          "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+          "Preserve original string literals exactly."
+        ],
+        "validation": {
+          "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+          "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+          "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+          "equivalence": "NOT_ESTABLISHED",
+          "compilation": "NOT_BUILDABLE_WITH_CURRENT_CONTEXT",
+          "runtime": "PARKED_NOT_RUN",
+          "publication": "REVIEW_REQUIRED",
+          "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+        }
+      },
+      "associated_types": [
+        {
+          "typeDef": "0x02007184",
+          "parent_typeDef": "0x02000071",
+          "evidence_references": [
+            {
+              "path": "src/reconstructed/managed/full/CSharpScript/shards/bcdf009b92e6421939d65a3ec383b16d2ce16f584be51beed146e9e6f0bf0acb/evidence/raw/types.jsonl",
+              "locator": "row 96; type_token 0x02007184; declaring_type_token 0x02000071",
+              "artifact_sha256": "c18916e2ad659da316f29d6d05c7ce8856bad9166a13a673c3784ab978ea04ef"
+            },
+            {
+              "path": "src/reconstructed/performance/Queue.cs",
+              "locator": "lines 272-314; nested Enumerator boundary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

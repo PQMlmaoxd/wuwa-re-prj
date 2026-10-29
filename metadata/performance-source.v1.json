@@ -1,0 +1,339 @@
+{
+  "schema": "wuwa-reconstruction-performance-source-v1",
+  "version": 1,
+  "base_manifest_sha256": "7da6c8c7b2d95b8a488adaba7ef46d5775d434b75dfdbee55b5e8e9613a2899b",
+  "records": [
+    {
+      "id": "PTIMER",
+      "unit_id": null,
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/performance/managed/Timer.cs",
+      "original_size": 2779,
+      "original_sha256": "c5d437c8f4c80de3a163fbb80fc6c4968b3467cb280d8bf4c1f9d310e09ecbfa",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "DIRECT_CIL_FULL",
+      "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+      "verification_basis": "accepted PERF03 direct-CIL evidence and supplied source projection; no fresh binary extraction in this audit",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/performance/managed/Timer.cs",
+          "locator": "lines 1-83; selected Timer.Do and Timer.Clear projections"
+        },
+        {
+          "path": "docs/performance/PERF03_SCRIPT_RUNTIME_BRIDGE.md",
+          "locator": "lines 31-108 and 132-159; frozen inputs, direct CIL, reconstruction, and continuation chain",
+          "artifact_sha256": "f3d785ffe8a024fb4a09f47ad23e9a3fa469d9d3f97f27e6a2e438b8cf069fde"
+        },
+        {
+          "path": "evidence/performance/PERF03_DIRECT_CIL.txt",
+          "locator": "Timer.Do lines 334-465; Timer.Clear lines 466-488",
+          "artifact_sha256": "cd24738a2e66e11f13aaf0c3c0fca7d4323ea6f6821c8a27aba276a2dbc33127"
+        },
+        {
+          "path": "evidence/performance/PERF03_EVIDENCE.json",
+          "locator": "selected_methods, type_identities, and projection_hashes",
+          "artifact_sha256": "3a5b97eaace2880d319e1e3941f333901654c624bacb31df03c30982676110ad"
+        }
+      ],
+      "proposed_path": "src/managed/cs-e3fc67839851/timer/Timer.cs",
+      "proposed_path_reason": "Selected two-method timer fragment; exact-byte import only after approval. Not whole-class coverage or compile-ready.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "build_reference": null,
+      "typeDef": "0x02000BEC",
+      "methods": {
+        "historical": [],
+        "current": [
+          {
+            "methodDef": "0x06003267",
+            "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF03",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted PERF03 direct-CIL evidence; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02000BEC",
+              "methodDef": "0x06003267"
+            },
+            "rva": "0x226FC",
+            "il_range": "[0x0000,0x0109)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF03_SCRIPT_RUNTIME_BRIDGE.md",
+                "locator": "lines 62-108 and 132-159; Timer.Do order and exception boundary",
+                "artifact_sha256": "f3d785ffe8a024fb4a09f47ad23e9a3fa469d9d3f97f27e6a2e438b8cf069fde"
+              },
+              {
+                "path": "evidence/performance/PERF03_DIRECT_CIL.txt",
+                "locator": "lines 334-465; Timer.Do",
+                "artifact_sha256": "cd24738a2e66e11f13aaf0c3c0fca7d4323ea6f6821c8a27aba276a2dbc33127"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x06003269",
+            "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF03",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted PERF03 direct-CIL evidence; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02000BEC",
+              "methodDef": "0x06003269"
+            },
+            "rva": "0x22898",
+            "il_range": "[0x0000,0x0016)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF03_SCRIPT_RUNTIME_BRIDGE.md",
+                "locator": "lines 62-108; Timer.Clear three null stores",
+                "artifact_sha256": "f3d785ffe8a024fb4a09f47ad23e9a3fa469d9d3f97f27e6a2e438b8cf069fde"
+              },
+              {
+                "path": "evidence/performance/PERF03_DIRECT_CIL.txt",
+                "locator": "lines 466-488; Timer.Clear",
+                "artifact_sha256": "cd24738a2e66e11f13aaf0c3c0fca7d4323ea6f6821c8a27aba276a2dbc33127"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "Two selected Timer method bodies: Do and Clear.",
+      "completeness": "Complete selected direct-CIL bodies; constructors, remaining members, class packaging, and external dependencies unresolved. Not whole-class coverage or a build-ready unit.",
+      "representation": "Source-like direct-CIL projection; non-standalone.",
+      "curation_status": "NEEDS_EDITORIAL_REVIEW",
+      "export_status": "PUBLICATION_REVIEW_REQUIRED",
+      "duplicate_group": null,
+      "relationship": "Distinct TypeDef 0x02000BEC from PTIMER_INSTANCE; selected method sets are disjoint.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "The selected bodies preserve observed deadline and count advancement before Action or null-handle callback, filtered System.Exception logging that may escape through the logger, Loop == 0 repetition, and exactly three Clear nulls. Constructor and field packaging are context, not whole-class or build-ready evidence; native cadence, clock units, registry lifetimes, and physical allocation remain UNKNOWN.",
+      "dependencies": [
+        "TTimerAction callback delegate",
+        "TimerHandle and EState context",
+        "Stat and Singleton<Log> logging context",
+        "ELogModule, ELogAuthor, and Log.ErrorWithStack",
+        "compiler-generated inline-array logging argument projection",
+        "constructor, remaining members, and native clock or cadence semantics"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+        "Preserve original string literals exactly."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_BUILDABLE_WITH_CURRENT_CONTEXT",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "REVIEW_REQUIRED",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "PTIMER_INSTANCE",
+      "unit_id": null,
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/performance/managed/TimerSystemInstance.cs",
+      "original_size": 4931,
+      "original_sha256": "2607a87cd72841399c0f6159ea08a9bd2587317c57e7b92327dee1f819b12201",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "DIRECT_CIL_FULL",
+      "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+      "verification_basis": "accepted PERF03 direct-CIL evidence and supplied source projection; no fresh binary extraction in this audit",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/performance/managed/TimerSystemInstance.cs",
+          "locator": "lines 1-144; selected Next, DoAdd, Tick, and DoRemove projections"
+        },
+        {
+          "path": "docs/performance/PERF03_SCRIPT_RUNTIME_BRIDGE.md",
+          "locator": "lines 31-108 and 132-159; frozen inputs, direct CIL, reconstruction, and continuation chain",
+          "artifact_sha256": "f3d785ffe8a024fb4a09f47ad23e9a3fa469d9d3f97f27e6a2e438b8cf069fde"
+        },
+        {
+          "path": "evidence/performance/PERF03_DIRECT_CIL.txt",
+          "locator": "Next lines 1-35; DoAdd lines 36-166; Tick lines 167-300; DoRemove lines 301-333",
+          "artifact_sha256": "cd24738a2e66e11f13aaf0c3c0fca7d4323ea6f6821c8a27aba276a2dbc33127"
+        },
+        {
+          "path": "evidence/performance/PERF03_EVIDENCE.json",
+          "locator": "selected_methods, type_identities, and projection_hashes",
+          "artifact_sha256": "3a5b97eaace2880d319e1e3941f333901654c624bacb31df03c30982676110ad"
+        }
+      ],
+      "proposed_path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.cs",
+      "proposed_path_reason": "Selected four-method timer-system fragment; exact-byte import only after approval. Not whole-class coverage or compile-ready.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "build_reference": null,
+      "typeDef": "0x02000BED",
+      "methods": {
+        "historical": [],
+        "current": [
+          {
+            "methodDef": "0x06003271",
+            "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF03",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted PERF03 direct-CIL evidence; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02000BED",
+              "methodDef": "0x06003271"
+            },
+            "rva": "0x22AB8",
+            "il_range": "[0x0000,0x0015)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF03_SCRIPT_RUNTIME_BRIDGE.md",
+                "locator": "lines 62-108 and 132-146; Next delegation values",
+                "artifact_sha256": "f3d785ffe8a024fb4a09f47ad23e9a3fa469d9d3f97f27e6a2e438b8cf069fde"
+              },
+              {
+                "path": "evidence/performance/PERF03_DIRECT_CIL.txt",
+                "locator": "lines 1-35; TimerSystemInstance.Next",
+                "artifact_sha256": "cd24738a2e66e11f13aaf0c3c0fca7d4323ea6f6821c8a27aba276a2dbc33127"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x0600327E",
+            "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF03",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted PERF03 direct-CIL evidence; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02000BED",
+              "methodDef": "0x0600327E"
+            },
+            "rva": "0x23140",
+            "il_range": "[0x0000,0x00D8)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF03_SCRIPT_RUNTIME_BRIDGE.md",
+                "locator": "lines 62-95 and 132-145; DoAdd registration order",
+                "artifact_sha256": "f3d785ffe8a024fb4a09f47ad23e9a3fa469d9d3f97f27e6a2e438b8cf069fde"
+              },
+              {
+                "path": "evidence/performance/PERF03_DIRECT_CIL.txt",
+                "locator": "lines 36-166; TimerSystemInstance.DoAdd",
+                "artifact_sha256": "cd24738a2e66e11f13aaf0c3c0fca7d4323ea6f6821c8a27aba276a2dbc33127"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x0600326B",
+            "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF03",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted PERF03 direct-CIL evidence; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02000BED",
+              "methodDef": "0x0600326B"
+            },
+            "rva": "0x228C4",
+            "il_range": "[0x0000,0x0116)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF03_SCRIPT_RUNTIME_BRIDGE.md",
+                "locator": "lines 96-100 and 132-175; Tick order and finalizer drain",
+                "artifact_sha256": "f3d785ffe8a024fb4a09f47ad23e9a3fa469d9d3f97f27e6a2e438b8cf069fde"
+              },
+              {
+                "path": "evidence/performance/PERF03_DIRECT_CIL.txt",
+                "locator": "lines 167-300; TimerSystemInstance.Tick",
+                "artifact_sha256": "cd24738a2e66e11f13aaf0c3c0fca7d4323ea6f6821c8a27aba276a2dbc33127"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x0600327F",
+            "coverage": "DIRECT_CIL_FULL_SELECTED_BODY_PERF03",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted PERF03 direct-CIL evidence; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02000BED",
+              "methodDef": "0x0600327F"
+            },
+            "rva": "0x23224",
+            "il_range": "[0x0000,0x002E)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF03_SCRIPT_RUNTIME_BRIDGE.md",
+                "locator": "lines 101-102 and 167-175; DoRemove order",
+                "artifact_sha256": "f3d785ffe8a024fb4a09f47ad23e9a3fa469d9d3f97f27e6a2e438b8cf069fde"
+              },
+              {
+                "path": "evidence/performance/PERF03_DIRECT_CIL.txt",
+                "locator": "lines 301-333; TimerSystemInstance.DoRemove",
+                "artifact_sha256": "cd24738a2e66e11f13aaf0c3c0fca7d4323ea6f6821c8a27aba276a2dbc33127"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "Four selected TimerSystemInstance method bodies: Next, DoAdd, Tick, and DoRemove.",
+      "completeness": "Complete selected direct-CIL bodies; constructors, remaining members, class packaging, and external dependencies unresolved. Not whole-class coverage or a build-ready unit.",
+      "representation": "Source-like direct-CIL projection; non-standalone.",
+      "curation_status": "NEEDS_EDITORIAL_REVIEW",
+      "export_status": "PUBLICATION_REVIEW_REQUIRED",
+      "duplicate_group": null,
+      "relationship": "Distinct TypeDef 0x02000BED from PTIMER; selected method sets are disjoint.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "The selected bodies preserve observed Next delegation values (interval 1, loop 1, dilation 1; units UNKNOWN), DoAdd store-push-register order, Tick due-pop-before-state-check and Do/requeue-or-remove flow, finalizer-queue drain through unselected Remove, and DoRemove unregister/Trash/Clear/dictionary-removal order. Constructors, PriorityQueue comparer, Registry lifetimes, StatWeakMap behavior, and physical allocation remain UNKNOWN.",
+      "dependencies": [
+        "Timer and TimerHandle context",
+        "PriorityQueue<Timer> and comparer semantics",
+        "FinalizationRegistry<Timer,TimerHandle> lifetime",
+        "StatWeakMap and Stat.CreateWithStack",
+        "Log, ELogModule, and ELogAuthor",
+        "ConcurrentQueue pending-removal drain",
+        "unselected Remove and Registry finalizer body",
+        "constructors, remaining members, clock units, and physical allocation"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+        "Preserve original string literals exactly."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_BUILDABLE_WITH_CURRENT_CONTEXT",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "REVIEW_REQUIRED",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    }
+  ]
+}

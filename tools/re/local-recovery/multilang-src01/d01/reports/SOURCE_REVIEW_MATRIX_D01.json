@@ -1,0 +1,2705 @@
+{
+  "schema": "wuwa-reconstruction-multilang-source-review-d01-v1",
+  "stage": "D01",
+  "manifest_sha256": "48f8bf247fa73c5f240a695dead6c9fd8eacb533514102d5e69b375b015ad093",
+  "normalized_origin_class_enum": [
+    "RECOVERED_IMPLEMENTATION",
+    "RECOVERED_SOURCE_PROJECTION",
+    "SHIPPED_SCRIPT",
+    "INDEPENDENT_RESEARCH_MODEL",
+    "DECLARATION_OR_INTERFACE",
+    "HISTORICAL_ALTERNATIVE",
+    "METADATA_ONLY",
+    "UNRESOLVED"
+  ],
+  "final_disposition_enum": [
+    "IMPORTED_SOURCE_PROJECTION",
+    "IMPORTED_PRIMARY_SOURCE",
+    "DECLARATION_ONLY_NOT_IMPORTED",
+    "REFERENCE_ONLY",
+    "PRESERVED_HISTORICAL_ALTERNATIVE"
+  ],
+  "rows": [
+    {
+      "origin_id": "SRC-TS-CONFIG-BOSSPILINGBUFF",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/BossPilingBuff.ts",
+        "size": 1342,
+        "sha256": "c3ae3a7d2e2801d5db9ef020845072beb104162e7c75aa00bb58dcb5d93b4d61"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 7,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/BossPilingBuff.ts",
+        "size": 1342,
+        "sha256": "c3ae3a7d2e2801d5db9ef020845072beb104162e7c75aa00bb58dcb5d93b4d61",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface BossPilingBuffRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-BOSSRUSHBUFF",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/BossRushBuff.ts",
+        "size": 1695,
+        "sha256": "fb7bed56fca918d045acf6a377b9f5a2f86d2647892b6864d92439d084a74558"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 11,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/BossRushBuff.ts",
+        "size": 1695,
+        "sha256": "fb7bed56fca918d045acf6a377b9f5a2f86d2647892b6864d92439d084a74558",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface BossRushBuffRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-COMBOTEACHING",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/ComboTeaching.ts",
+        "size": 1724,
+        "sha256": "68005cb9f6b5a951acd638678456d66e51725a5f1a10f6444be93feb4841657c"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 11,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/ComboTeaching.ts",
+        "size": 1724,
+        "sha256": "68005cb9f6b5a951acd638678456d66e51725a5f1a10f6444be93feb4841657c",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface ComboTeachingRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-FLAGCHALLENGEROLEBUFF",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/FlagChallengeRoleBuff.ts",
+        "size": 1535,
+        "sha256": "71644f37fee6a3a2efd95bffce9fcbceacaf02a5c30d29f2bec562a35e145373"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 9,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/FlagChallengeRoleBuff.ts",
+        "size": 1535,
+        "sha256": "71644f37fee6a3a2efd95bffce9fcbceacaf02a5c30d29f2bec562a35e145373",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface FlagChallengeRoleBuffRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-FLOWTEXT",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/FlowText.ts",
+        "size": 1318,
+        "sha256": "291b1f2b5bc1dc1e0ae7f621746d2d45eddf8be9ca4c5570db40fb23c3430319"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 7,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/FlowText.ts",
+        "size": 1318,
+        "sha256": "291b1f2b5bc1dc1e0ae7f621746d2d45eddf8be9ca4c5570db40fb23c3430319",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface FlowTextRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-INTERACTDATA",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/InteractData.ts",
+        "size": 1577,
+        "sha256": "783a9fe13705fed573117aa60b1e1919ec9ed1d8098a8343b03519792719d412"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 10,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/InteractData.ts",
+        "size": 1577,
+        "sha256": "783a9fe13705fed573117aa60b1e1919ec9ed1d8098a8343b03519792719d412",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface InteractDataRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-KUROTATOGENERALGROWTH",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/KurotatoGeneralGrowth.ts",
+        "size": 1194,
+        "sha256": "249ee20398c6320bdd26fe0c76df3f0151c5015be4da155f0fc8870b9592641b"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 4,
+      "partial_count": 0,
+      "syntax_status": "DECLARED_MALFORMED_BY_INSPECTION",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/KurotatoGeneralGrowth.ts",
+        "size": 1194,
+        "sha256": "249ee20398c6320bdd26fe0c76df3f0151c5015be4da155f0fc8870b9592641b",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface KurotatoGeneralGrowthRow {",
+        "line 17: propertygrowth: DicStringFloat>[];  // OBSERVED generated-accessor voffset 10 (vector<table:DicStringFloat>)"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-PAYSHOPTAB",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/PayShopTab.ts",
+        "size": 1247,
+        "sha256": "414c7980b34b538fb24d0d2d9cfc1d2aa9fa35da61a5eaba41b41963dc4145c7"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 6,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/PayShopTab.ts",
+        "size": 1247,
+        "sha256": "414c7980b34b538fb24d0d2d9cfc1d2aa9fa35da61a5eaba41b41963dc4145c7",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface PayShopTabRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-ROVERROGUEROOM",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/RoverRogueRoom.ts",
+        "size": 1467,
+        "sha256": "9c4383dd89024f55d2c1b730b8d001e87775aa59888f7cd0c0dbb1d4366137c5"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 8,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/RoverRogueRoom.ts",
+        "size": 1467,
+        "sha256": "9c4383dd89024f55d2c1b730b8d001e87775aa59888f7cd0c0dbb1d4366137c5",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface RoverRogueRoomRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-SKILLTREE",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/SkillTree.ts",
+        "size": 2207,
+        "sha256": "1bd9a0e77db6cd9260ba73a1d7972f85e4a11ca6cec4440ab82b16bad997a103"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 17,
+      "partial_count": 0,
+      "syntax_status": "DECLARED_MALFORMED_BY_INSPECTION",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/SkillTree.ts",
+        "size": 2207,
+        "sha256": "1bd9a0e77db6cd9260ba73a1d7972f85e4a11ca6cec4440ab82b16bad997a103",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface SkillTreeRow {",
+        "line 28: property: ConfigPropValue>[];  // OBSERVED generated-accessor voffset 32 (vector<table:ConfigPropValue>)",
+        "line 29: consume: DicIntInt>[];  // OBSERVED generated-accessor voffset 34 (vector<table:DicIntInt>)"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-SORTRULE",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/SortRule.ts",
+        "size": 1246,
+        "sha256": "75d04322bea1f711d1ab01a09c6739ec61b6b3c4d1751bab68e953f9902374ad"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 6,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/SortRule.ts",
+        "size": 1246,
+        "sha256": "75d04322bea1f711d1ab01a09c6739ec61b6b3c4d1751bab68e953f9902374ad",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface SortRuleRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-CONFIG-TETRISMAP",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/config/TetrisMap.ts",
+        "size": 1613,
+        "sha256": "dc80e80843e58e5cbb0f84ac20d98f910a93f87651ff5ef5a38b387948412c9d"
+      },
+      "language": "TS",
+      "subsystem": "CONFIG_SCHEMA",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "INTERFACE_FIELDS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "generated JS config accessor",
+        "FlatBuffers vtable layout"
+      ],
+      "overlap": "No overlap with managed C# keys; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful reconstructed config declaration schema; preserved by exact copy; not executable and not a buildable TS module.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 10,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/typescript/declarations/config/TetrisMap.ts",
+        "size": 1613,
+        "sha256": "dc80e80843e58e5cbb0f84ac20d98f910a93f87651ff5ef5a38b387948412c9d",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 2: // Status: SCHEMA_RECOVERABLE_PENDING_IMPLEMENTATION.",
+        "line 13: export interface TetrisMapRow {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Type syntax was not compiler-verified; declared malformed rows are preserved unchanged.",
+        "No executable implementation; field names/types remain descriptive."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_SCHEMA_ONLY",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_ONLY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R2A_CONFIG_SPECIAL_TABLES.md",
+          "size": 12260,
+          "sha256": "916ac5c1f6c09349fa6cdcd2579f44bc2096399bd0d7ce221efbda59be66abe6",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-LOADING-PIPELINE",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/loading/LoadingPipeline.ts",
+        "size": 14152,
+        "sha256": "a37e54056fe0bffd293c6df420fbbf3a461361c76abdb95453057f9d13962e0a"
+      },
+      "language": "TS",
+      "subsystem": "LOADING_PIPELINE",
+      "origin_class": "UNRESOLVED",
+      "representation_class": "EMPTY_REFERENCE_SKELETON",
+      "category": "NOT_IMPORTED",
+      "implementation_content": "EMPTY_BODY_ONLY",
+      "declaration_content": "CLASS_AND_DECLARE_SHAPE",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_REFERENCE_ONLY",
+      "dependencies": [
+        "accepted R1a,R1b,R1c,R1d-B slices"
+      ],
+      "overlap": "No managed MethodDef assigned; reference only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "REFERENCE_ONLY",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Empty load skeleton and comments only; UNKNOWN ABI; retained as reference, not imported.",
+      "function_count": 1,
+      "body_count": 1,
+      "declaration_count": 2,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": null,
+      "line_evidence": [
+        "line 85: declare const NativeBoundary: {",
+        "line 114: export class LoadingPipeline {",
+        "line 121: async load(/* UNKNOWN original ABI; skeleton placeholder */): Promise<void> {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "UNKNOWN original ABI; empty body is a placeholder.",
+        "Not imported."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "REFERENCE_INTEGRATION_SOURCE",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_PLUS_SELECTED_MEMBER_SELECTOR",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R1E_LOADING_VERTICAL_SLICE.md",
+          "size": 10892,
+          "sha256": "6924f11c720c246de5746dc3d39b02ad996e7a78ba62b85f15a9ed212bf83840",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "REFERENCE_ARCHITECTURE_DOC"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-STREAMING-COMPLETION-TRANSITION",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/transition/StreamingCompletionTransition.ts",
+        "size": 17036,
+        "sha256": "fb9fafd01635374692bd0d5debcd3e70225e243ba6f2a79b25fff3cdde810cda"
+      },
+      "language": "TS",
+      "subsystem": "STREAMING_TRANSITION",
+      "origin_class": "RECOVERED_SOURCE_PROJECTION",
+      "representation_class": "DECLARATIVE_PROJECTION_WITH_CONST_TABLES",
+      "category": "PROJECTION",
+      "implementation_content": "CONSTANT_TABLES_ONLY",
+      "declaration_content": "DECLARED_FUNCTION_AND_CONST_SHAPES",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_DECLARATION_OR_PROJECTION",
+      "dependencies": [
+        "GameModeController.js observed bytes",
+        "accepted R1d-A native binding identities"
+      ],
+      "overlap": "No managed MethodDef assigned; reference only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Useful declarative transition projection with two observed constant tables; preserved by exact copy; no executable poll body.",
+      "function_count": 0,
+      "body_count": 2,
+      "declaration_count": 12,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/projections/typescript/StreamingCompletionTransition.ts",
+        "size": 17036,
+        "sha256": "fb9fafd01635374692bd0d5debcd3e70225e243ba6f2a79b25fff3cdde810cda",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 145: export const progressConstants = {",
+        "line 155: export const pollCadence = {",
+        "line 168: export declare function CheckVoxelStreamingCompletedFlow(): {",
+        "line 178: export declare function CheckStreamingCompletedFlow(): {",
+        "line 197: export declare const completionPredicate: {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Functions are declared, not implemented; no executable poll body.",
+        "Native ABI and streaming algorithm remain UNKNOWN."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "RECONSTRUCTED_SOURCE_MODEL",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_PLUS_SELECTED_MEMBER_SELECTOR",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/architecture/R1D_B_STREAMING_COMPLETION.md",
+          "size": 10357,
+          "sha256": "8b9d4219df0f4abafa3a73167c3f7ebd680d0696d3b037c290ccfed99c9d9ff2",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_ARCHITECTURE_DOC"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "evidence/reviews.jsonl",
+          "size": 122768,
+          "sha256": "0a884cb7c0580cdd12c2453e8217bb96e9adf5235f4a39623135dcccc1813104",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [],
+          "record_id": "REV-R1DB-0001",
+          "record_disposition": "ACCEPT",
+          "evidence_class": "ACCEPTED_REVIEW_LEDGER"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-TS-DATALAYER-TRANSITION",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/transition/DataLayerTransition.ts",
+        "size": 28648,
+        "sha256": "fd3474339f07d49dac4a1cc3f3aa3f78d53e1528a460190464126e24aa39342c"
+      },
+      "language": "TS",
+      "subsystem": "DATALAYER_TRANSITION",
+      "origin_class": "RECOVERED_SOURCE_PROJECTION",
+      "representation_class": "SOURCE_LIKE_PROJECTION",
+      "category": "PROJECTION",
+      "implementation_content": "PARTIAL_SOURCE_LIKE_BODY",
+      "declaration_content": "NO_NEW_DECLARATIONS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "GameModeController.js and accepted R1a/R1b/R1c inputs",
+        "native WorldPartition/Streaming boundaries (bodies UNKNOWN)",
+        "UiTimeDilation and ConfigDB boundaries"
+      ],
+      "overlap": "No managed MethodDef assigned; distinct from all old 533 keys.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": true,
+      "historical_active": false,
+      "reason": "Already imported immutable source projection; retained at existing path without re-copy.",
+      "function_count": 29,
+      "body_count": 29,
+      "declaration_count": 0,
+      "field_count": 0,
+      "partial_count": 4,
+      "syntax_status": "UNVERIFIED_TS_SYNTAX_TSC_UNAVAILABLE",
+      "physical_import": {
+        "path": "src/scripts/reconstructed/transition/DataLayerTransition.ts",
+        "size": 28648,
+        "sha256": "fd3474339f07d49dac4a1cc3f3aa3f78d53e1528a460190464126e24aa39342c",
+        "mode": "EXISTING_IMMUTABLE"
+      },
+      "line_evidence": [
+        "line 34: async function loadPhase9_SetDataLayerAndLoadSubLevel(gameModeModel: GameModeModel, mapConfig: MapConfig): Promise<void> {",
+        "line 77: static async loadDataLayers(mapConfig: MapConfig): Promise<void> {",
+        "line 142: static async updateStreamingQualityLevel(): Promise<void> {",
+        "line 324: async onLevelLoad(levelStreaming: LevelStreaming): Promise<void> {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "RECONSTRUCTED_SOURCE_MODEL",
+        "authority_id": "BLD-WUWA-0001",
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "SOURCE_MODULE_PATH_PLUS_SELECTED_MEMBER_SELECTOR",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "protocol/R1C_POST_INTEGRATION_SHA256SUMS.txt",
+          "size": 2568,
+          "sha256": "2d7826145b8e535f0472f05b519f3a601ac56b626c0880e9486f5c463414f248",
+          "locator": null,
+          "range_start": 1,
+          "range_end": 20,
+          "range_sha256": "713a096f5a39ce2a4e4c1b65b73ca55490cc80c9598041f376f7bf53108d87c8",
+          "contains": [
+            "src/reconstructed/transition/DataLayerTransition.ts",
+            "fd3474339f07d49dac4a1cc3f3aa3f78d53e1528a460190464126e24aa39342c"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_LIVESTATE_MANIFEST"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "evidence/reviews.jsonl",
+          "size": 122768,
+          "sha256": "0a884cb7c0580cdd12c2453e8217bb96e9adf5235f4a39623135dcccc1813104",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [
+            "\"id\": \"REV-R1C-0001\"",
+            "\"disposition\": \"ACCEPT\""
+          ],
+          "record_id": "REV-R1C-0001",
+          "record_disposition": "ACCEPT",
+          "evidence_class": "ACCEPTED_REVIEW_LEDGER"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-JS-EVENT-CORE",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/performance/script/Event.js",
+        "size": 10409,
+        "sha256": "a5873f3fb774d92c2e98f8dfa5f4a3fb9666719ab6b4723c685594bf3062e921"
+      },
+      "language": "JS",
+      "subsystem": "EVENT_CORE",
+      "origin_class": "RECOVERED_SOURCE_PROJECTION",
+      "representation_class": "SOURCE_LIKE_PROJECTION",
+      "category": "PROJECTION",
+      "implementation_content": "SELECTED_METHOD_BODIES",
+      "declaration_content": "CLASS_SHELL",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "JavaScript/Core/Event/Log",
+        "Stats",
+        "Preprocessor/Macro",
+        "EventConditionListener",
+        "omitted conditional registration/removal members"
+      ],
+      "overlap": "No managed MethodDef; distinct from all old 533 keys.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": true,
+      "historical_active": false,
+      "reason": "Already imported immutable source projection; retained at existing path without re-copy.",
+      "function_count": 20,
+      "body_count": 20,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_NODE_CHECK",
+      "physical_import": {
+        "path": "src/scripts/reconstructed/event/Event.js",
+        "size": 10409,
+        "sha256": "a5873f3fb774d92c2e98f8dfa5f4a3fb9666719ab6b4723c685594bf3062e921",
+        "mode": "EXISTING_IMMUTABLE"
+      },
+      "line_evidence": [
+        "line 9: // Class boundary: the 19 selected ordinary-listener root members/accessors are",
+        "line 26: class Event {",
+        "line 318: exports.Event = Event;"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SHIPPED_JS_INPUT",
+        "authority_id": null,
+        "binary_sha256": "816d4deb1ca3c0f80b8cd837b22a946164fbaeabd4f0c5d6ad31f30d41707f1f",
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_MODULE_PATH_PLUS_INPUT_SHA256_PLUS_MEMBER_SELECTOR",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "evidence/performance/PERF03B_EVIDENCE.json",
+          "size": 37414,
+          "sha256": "296216a4a081afad0eb6ac49b4642eb83c4f84cdf318a6a75fcda23c0cfe6744",
+          "locator": null,
+          "range_start": 51,
+          "range_end": 54,
+          "range_sha256": "0bd81bfb9a3bfe02362c62ea3dfadc9283bf404142177ff61778c38ce2a5dc58",
+          "contains": [
+            "JavaScript/Core/Event/Event.js",
+            "816d4deb1ca3c0f80b8cd837b22a946164fbaeabd4f0c5d6ad31f30d41707f1f"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_SOURCE_INPUT"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "evidence/performance/PERF03B_EVIDENCE.json",
+          "size": 37414,
+          "sha256": "296216a4a081afad0eb6ac49b4642eb83c4f84cdf318a6a75fcda23c0cfe6744",
+          "locator": null,
+          "range_start": 352,
+          "range_end": 354,
+          "range_sha256": "b35db66546172dc9597fec85c323b3052f4befd2a4163926752e9f57ffc63621",
+          "contains": [
+            "src/reconstructed/performance/script/Event.js",
+            "JavaScript/Core/Event/Event.js",
+            "816d4deb1ca3c0f80b8cd837b22a946164fbaeabd4f0c5d6ad31f30d41707f1f"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_PROJECTION_IDENTITY"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-JS-EVENT-CSHARP-BRIDGE",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/performance/script/EventCSharpBridge.js",
+        "size": 3173,
+        "sha256": "4887cc3d17c94281742282275ddb89587df85b2ea1a124da7e4095193821be54"
+      },
+      "language": "JS",
+      "subsystem": "EVENT_BINDING",
+      "origin_class": "RECOVERED_SOURCE_PROJECTION",
+      "representation_class": "SOURCE_LIKE_PROJECTION",
+      "category": "PROJECTION",
+      "implementation_content": "SELECTED_METHOD_BODIES",
+      "declaration_content": "CLASS_SHELL",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "cpp.FEventSystem",
+        "Core/Entity/Entity",
+        "Manager/ModelManager",
+        "EventSystem"
+      ],
+      "overlap": "Distinct primary import; alternate style view is historical.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": true,
+      "historical_active": false,
+      "reason": "Already imported immutable source projection; retained at existing path without re-copy.",
+      "function_count": 5,
+      "body_count": 5,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_NODE_CHECK",
+      "physical_import": {
+        "path": "src/scripts/reconstructed/event/EventCSharpBridge.js",
+        "size": 3173,
+        "sha256": "4887cc3d17c94281742282275ddb89587df85b2ea1a124da7e4095193821be54",
+        "mode": "EXISTING_IMMUTABLE"
+      },
+      "line_evidence": [
+        "line 21: class EventCSharpBridge {",
+        "line 22: static InitializeEnvironment() {",
+        "line 76: exports.EventCSharpBridge = EventCSharpBridge;"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SHIPPED_JS_INPUT",
+        "authority_id": null,
+        "binary_sha256": "6c91779f6f0f5c25c72ecfaa61aac679a809100e78aecfc5dd4bc61ef325d9ab",
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_MODULE_PATH_PLUS_INPUT_SHA256_PLUS_MEMBER_SELECTOR",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "evidence/performance/PERF03_EVIDENCE.json",
+          "size": 29036,
+          "sha256": "3a5b97eaace2880d319e1e3941f333901654c624bacb31df03c30982676110ad",
+          "locator": null,
+          "range_start": 101,
+          "range_end": 101,
+          "range_sha256": "25d8480be95320c8c647689fee3be9a32a76467534d49e036d4d8a2de6c6c7c3",
+          "contains": [
+            "JavaScript/Game/Common/Event/EventCSharpBridge.js",
+            "6c91779f6f0f5c25c72ecfaa61aac679a809100e78aecfc5dd4bc61ef325d9ab"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_SOURCE_INPUT"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "evidence/performance/PERF03_EVIDENCE.json",
+          "size": 29036,
+          "sha256": "3a5b97eaace2880d319e1e3941f333901654c624bacb31df03c30982676110ad",
+          "locator": null,
+          "range_start": 223,
+          "range_end": 223,
+          "range_sha256": "02e83667390c3b35b37a3116173c3a4d315a6f3a28fd917ec3d8b2194444f971",
+          "contains": [
+            "src/reconstructed/performance/script/EventCSharpBridge.js",
+            "4887cc3d17c94281742282275ddb89587df85b2ea1a124da7e4095193821be54",
+            "6c91779f6f0f5c25c72ecfaa61aac679a809100e78aecfc5dd4bc61ef325d9ab"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_PROJECTION_IDENTITY"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-JS-EVENT-CSHARP-BRIDGE-R15",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/typescript/Game/Common/Event/EventCSharpBridge.js",
+        "size": 3129,
+        "sha256": "67443871c698669029877b7aa81c984739a3c30f768bac82bfb745e5cc9f1409"
+      },
+      "language": "JS",
+      "subsystem": "EVENT_BINDING_HISTORICAL",
+      "origin_class": "HISTORICAL_ALTERNATIVE",
+      "representation_class": "HISTORICAL_ALTERNATIVE_SOURCE_VIEW",
+      "category": "HISTORICAL",
+      "implementation_content": "SELECTED_HISTORICAL_BODIES",
+      "declaration_content": "CLASS_SHELL",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_HISTORICAL_ALTERNATIVE",
+      "dependencies": [
+        "same logical module as primary bridge view"
+      ],
+      "overlap": "HISTORICAL_ALTERNATIVE_ACTIVE_FALSE; same lineage as EventCSharpBridge, not a second active bridge.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "PRESERVED_HISTORICAL_ALTERNATIVE",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Historical alternative source view; exact copy preserved with active=false; not merged with current C# or Event bridge.",
+      "function_count": 5,
+      "body_count": 5,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_NODE_CHECK",
+      "physical_import": {
+        "path": "src/scripts/javascript/historical/bridge-r15/EventCSharpBridge.js",
+        "size": 3129,
+        "sha256": "67443871c698669029877b7aa81c984739a3c30f768bac82bfb745e5cc9f1409",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 4: // Retained snapshot SHA-256: 6c91779f6f0f5c25c72ecfaa61aac679a809100e78aecfc5dd4bc61ef325d9ab",
+        "line 14: exports.EventCSharpBridge = void 0;",
+        "line 21: class EventCSharpBridge {",
+        "line 22: static InitializeEnvironment() {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Historical snapshot view; not current source; active=false.",
+        "No merge or second active bridge."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SHIPPED_JS_INPUT",
+        "authority_id": null,
+        "binary_sha256": "6c91779f6f0f5c25c72ecfaa61aac679a809100e78aecfc5dd4bc61ef325d9ab",
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_MODULE_PATH_PLUS_INPUT_SHA256_PLUS_STYLE_VARIANT",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/PERF03B_JS_EVENT_DISPATCH.md",
+          "size": 33060,
+          "sha256": "297854024e15458cc12babf1bb91896e4652d1c991337b46916f8bfb3860b861",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [
+            "816d4deb1ca3c0f80b8cd837b22a946164fbaeabd4f0c5d6ad31f30d41707f1f",
+            "6c91779f6f0f5c25c72ecfaa61aac679a809100e78aecfc5dd4bc61ef325d9ab"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_PERFORMANCE_REPORT"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "evidence/performance/PERF03B_EVIDENCE.json",
+          "size": 37414,
+          "sha256": "296216a4a081afad0eb6ac49b4642eb83c4f84cdf318a6a75fcda23c0cfe6744",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [
+            "\"closure_status\": \"PASS\"",
+            "a5873f3fb774d92c2e98f8dfa5f4a3fb9666719ab6b4723c685594bf3062e921"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_EVIDENCE_RECORD"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-JS-CHARACTER-HIT-R27",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/managed/semantic/gameplay/r27_historical_js/CharacterHitComponent.historical.reconstructed.js",
+        "size": 8184,
+        "sha256": "743ea45f367383f380ea4290912f1485a47a4f6fd6e7d29e9e1c9cb9c4aa830a"
+      },
+      "language": "JS",
+      "subsystem": "GAMEPLAY_CHARACTER_HIT_HISTORICAL",
+      "origin_class": "HISTORICAL_ALTERNATIVE",
+      "representation_class": "HISTORICAL_ALTERNATIVE_SOURCE_VIEW",
+      "category": "HISTORICAL",
+      "implementation_content": "SELECTED_HISTORICAL_BODIES",
+      "declaration_content": "CLASS_SHELL",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_HISTORICAL_ALTERNATIVE",
+      "dependencies": [
+        "BaseHitComponent",
+        "retained JS helper/root surface"
+      ],
+      "overlap": "HISTORICAL_ALTERNATIVE_ACTIVE_FALSE; not current C# source; no merge.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "PRESERVED_HISTORICAL_ALTERNATIVE",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Historical alternative source view; exact copy preserved with active=false; not merged with current C# or Event bridge.",
+      "function_count": 5,
+      "body_count": 5,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_NODE_CHECK",
+      "physical_import": {
+        "path": "src/scripts/javascript/historical/gameplay-r27/CharacterHitComponent.historical.reconstructed.js",
+        "size": 8184,
+        "sha256": "743ea45f367383f380ea4290912f1485a47a4f6fd6e7d29e9e1c9cb9c4aa830a",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 12: // Exactly five complete retained function bodies are selected below, in the",
+        "line 20: g6r(t, i) {",
+        "line 36: f6r(t, i) {",
+        "line 59: v6r(t, i, e, s = -1, h = 1) {",
+        "line 93: a6r(t) {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Historical snapshot view; not current source; active=false.",
+        "No merge or second active bridge."
+      ],
+      "predecessor_origin_class": "HISTORICAL",
+      "authority": {
+        "kind": "HISTORICAL_JS_SNAPSHOT",
+        "authority_id": null,
+        "binary_sha256": "03ab7a42cf41c2357fef862ae64ca25915ba843d1fcabb3ec07212db2905adb2",
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_MODULE_PATH_PLUS_INPUT_SHA256_PLUS_SELECTED_BODY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "protocol/R5A1_JS_CORPUS_SHA256SUMS.txt",
+          "size": 2616799,
+          "sha256": "43fd2b560dbb137ca336da48138addf8eb871830ec5f66b183d592f544694913",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [
+            "Game/NewWorld/Character/Common/Component/CharacterHitComponent.js",
+            "Game/NewWorld/Character/Role/Component/RoleElementComponent.js"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "HISTORICAL_MANIFEST"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-JS-ROLE-ELEMENT-R28",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/managed/semantic/gameplay/r28_historical_js/RoleElementComponent.historical.reconstructed.js",
+        "size": 3939,
+        "sha256": "9ac8c91588af2d7d9b84e4550763a1e637caa719b00b75bd17821e1decf9bdd5"
+      },
+      "language": "JS",
+      "subsystem": "GAMEPLAY_ROLE_ELEMENT_HISTORICAL",
+      "origin_class": "HISTORICAL_ALTERNATIVE",
+      "representation_class": "HISTORICAL_ALTERNATIVE_SOURCE_VIEW",
+      "category": "HISTORICAL",
+      "implementation_content": "SELECTED_HISTORICAL_BODIES",
+      "declaration_content": "CLASS_SHELL",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_HISTORICAL_ALTERNATIVE",
+      "dependencies": [
+        "retained JS class/root surface"
+      ],
+      "overlap": "HISTORICAL_ALTERNATIVE_ACTIVE_FALSE; not current C# source; no merge.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "PRESERVED_HISTORICAL_ALTERNATIVE",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Historical alternative source view; exact copy preserved with active=false; not merged with current C# or Event bridge.",
+      "function_count": 5,
+      "body_count": 5,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_NODE_CHECK",
+      "physical_import": {
+        "path": "src/scripts/javascript/historical/gameplay-r28/RoleElementComponent.historical.reconstructed.js",
+        "size": 3939,
+        "sha256": "9ac8c91588af2d7d9b84e4550763a1e637caa719b00b75bd17821e1decf9bdd5",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 11: // Exactly five complete retained function bodies are selected below, in the",
+        "line 21: set kin(t) {",
+        "line 45: Fin(t) {",
+        "line 59: TriggerEvents(t) {",
+        "line 69: ClearElementEnergy(t, e = CharacterBuffIds_1.buffId.ElementClean) {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Historical snapshot view; not current source; active=false.",
+        "No merge or second active bridge."
+      ],
+      "predecessor_origin_class": "HISTORICAL",
+      "authority": {
+        "kind": "HISTORICAL_JS_SNAPSHOT",
+        "authority_id": null,
+        "binary_sha256": "e1bd124e7c771e75ff8a2fa17f3aa4ec56756c08111a4c0ef8d90bf329f22e0d",
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_MODULE_PATH_PLUS_INPUT_SHA256_PLUS_SELECTED_BODY",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "protocol/R5A1_JS_CORPUS_SHA256SUMS.txt",
+          "size": 2616799,
+          "sha256": "43fd2b560dbb137ca336da48138addf8eb871830ec5f66b183d592f544694913",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [
+            "Game/NewWorld/Character/Common/Component/CharacterHitComponent.js",
+            "Game/NewWorld/Character/Role/Component/RoleElementComponent.js"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "HISTORICAL_MANIFEST"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-JS-CHECK-PERF03B-SEMANTICS",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "evidence/performance/check_perf03b_semantics.js",
+        "size": 35552,
+        "sha256": "ef38f2f9dff97afdae6908e162b66304de592b072d47d71239f2d86cbbd461d0"
+      },
+      "language": "JS",
+      "subsystem": "INTERNAL_CHECKER",
+      "origin_class": "INDEPENDENT_RESEARCH_MODEL",
+      "representation_class": "INTERNAL_CHECKER",
+      "category": "NOT_IMPORTED",
+      "implementation_content": "INTERNAL_CHECKER_BODIES",
+      "declaration_content": "FUNCTIONS_AND_CONSTANTS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_REFERENCE_ONLY",
+      "dependencies": [
+        "node:assert",
+        "node:crypto",
+        "node:fs",
+        "node:path",
+        "node:vm"
+      ],
+      "overlap": "No managed MethodDef assigned; not imported.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "REFERENCE_ONLY",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Internal author checker; not game implementation or copied dependency; not imported.",
+      "function_count": 21,
+      "body_count": 21,
+      "declaration_count": 15,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_NODE_CHECK",
+      "physical_import": null,
+      "line_evidence": [
+        "line 3: // PERF03B: dependency-free static/source/differential check.",
+        "line 118: function sha256Bytes(bytes) {",
+        "line 235: function runSuite(file) {",
+        "line 568: function checkSourceAndInputs() {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Internal checker only; not game code; not imported."
+      ],
+      "predecessor_origin_class": "INTERNAL",
+      "authority": {
+        "kind": "INTERNAL_CHECKER",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "REPOSITORY_PATH_ONLY_INTERNAL",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "evidence/performance/PERF03B_EVIDENCE.json",
+          "size": 37414,
+          "sha256": "296216a4a081afad0eb6ac49b4642eb83c4f84cdf318a6a75fcda23c0cfe6744",
+          "locator": null,
+          "range_start": null,
+          "range_end": null,
+          "range_sha256": null,
+          "contains": [
+            "\"closure_status\": \"PASS\"",
+            "a5873f3fb774d92c2e98f8dfa5f4a3fb9666719ab6b4723c685594bf3062e921"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_EVIDENCE_RECORD"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-CPP-CORECLR-NATIVE-THREAD",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/performance/native/CoreclrNativeThread.cpp",
+        "size": 1641,
+        "sha256": "16048310ef7e6539e2b20b20f14f7aad7267e3de7c46c077b2bad6cd651450bb"
+      },
+      "language": "CPP",
+      "subsystem": "RUNTIME_THREAD",
+      "origin_class": "RECOVERED_SOURCE_PROJECTION",
+      "representation_class": "SOURCE_LIKE_PROJECTION",
+      "category": "PROJECTION",
+      "implementation_content": "SOURCE_LIKE_BODY",
+      "declaration_content": "FUNCTIONS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "opaque native CALL/INDIRECT boundaries",
+        "Win32 thread/lock APIs where observed"
+      ],
+      "overlap": "No managed MethodDef; distinct native model.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": true,
+      "historical_active": false,
+      "reason": "Already imported immutable source projection; retained at existing path without re-copy.",
+      "function_count": 2,
+      "body_count": 2,
+      "declaration_count": 2,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_CPP_OPAQUE_MODEL",
+      "physical_import": {
+        "path": "src/models/native/CoreclrNativeThread.cpp",
+        "size": 1641,
+        "sha256": "16048310ef7e6539e2b20b20f14f7aad7267e3de7c46c077b2bad6cd651450bb",
+        "mode": "EXISTING_IMMUTABLE"
+      },
+      "line_evidence": [
+        "line 17: uint32_t mono_native_thread_create(",
+        "line 30: uint32_t mono_native_thread_join(DWORD thread_id) {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Opaque native source-like model; cannot stand alone as an implementation."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "NATIVE_BINARY_STATIC_EVIDENCE",
+        "authority_id": null,
+        "binary_sha256": "8c968ce9703d37ff046ec4f46a1f3de880f5450f8f7131cb368f1a54e29e5e38",
+        "mvid": null,
+        "type_def": null,
+        "rva": "0x26fe00/0x26fe50",
+        "export": "mono_native_thread_create/mono_native_thread_join"
+      },
+      "identity_scheme": "BINARY_SHA256_PLUS_RVA_OR_EXPORT_PLUS_EXPORT_ORDINAL",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_FS01_GAME_FILE_DISCOVERY.md",
+          "size": 24720,
+          "sha256": "4e15250ae96b4ff3d6ee43ac22c9dbfba8f359f2360e7de00fc0b4320a180d27",
+          "locator": null,
+          "range_start": 103,
+          "range_end": 104,
+          "range_sha256": "6f2ae351a9d4f2bdf5aaa575a90a187811edc459781f4b78b752f4b6fee98349",
+          "contains": [
+            "mono_native_thread_create",
+            "mono_native_thread_join",
+            "0x26fe00 / 0x26f200",
+            "0x26fe50 / 0x26f250",
+            "47 bytes",
+            "88 bytes"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_BODY_BOUND"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_FS01_GAME_FILE_DISCOVERY.md",
+          "size": 24720,
+          "sha256": "4e15250ae96b4ff3d6ee43ac22c9dbfba8f359f2360e7de00fc0b4320a180d27",
+          "locator": null,
+          "range_start": 127,
+          "range_end": 128,
+          "range_sha256": "b4da9804d5f17e59d6ab5fd5df359ce1918ca74ed06149bf56e236f043c2f014",
+          "contains": [
+            "8c968ce9703d37ff046ec4f46a1f3de880f5450f8f7131cb368f1a54e29e5e38"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_BINARY_IDENTITY"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_FS01_GAME_FILE_DISCOVERY.md",
+          "size": 24720,
+          "sha256": "4e15250ae96b4ff3d6ee43ac22c9dbfba8f359f2360e7de00fc0b4320a180d27",
+          "locator": null,
+          "range_start": 338,
+          "range_end": 338,
+          "range_sha256": "a39c424eef76e8dcc210594d6f461508f690693a483918ad0b6ff317967389f8",
+          "contains": [
+            "src/reconstructed/performance/native/CoreclrNativeThread.cpp",
+            "2 function"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_SOURCE_PROJECTION"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-CPP-CORECLR-THREAD-ORIGIN",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/performance/native/CoreclrThreadOrigin.cpp",
+        "size": 17301,
+        "sha256": "51ade140ac0d2910e5185c9c209b5f01e107bd1daf55e24c8c1c070f1bfa4ce7"
+      },
+      "language": "CPP",
+      "subsystem": "RUNTIME_THREAD",
+      "origin_class": "RECOVERED_SOURCE_PROJECTION",
+      "representation_class": "SOURCE_LIKE_PROJECTION",
+      "category": "PROJECTION",
+      "implementation_content": "SOURCE_LIKE_BODY",
+      "declaration_content": "FUNCTIONS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "opaque native CALL/INDIRECT boundaries",
+        "Win32 thread/lock APIs where observed"
+      ],
+      "overlap": "No managed MethodDef; distinct native model.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": true,
+      "historical_active": false,
+      "reason": "Already imported immutable source projection; retained at existing path without re-copy.",
+      "function_count": 2,
+      "body_count": 2,
+      "declaration_count": 2,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_CPP_OPAQUE_MODEL",
+      "physical_import": {
+        "path": "src/models/native/CoreclrThreadOrigin.cpp",
+        "size": 17301,
+        "sha256": "51ade140ac0d2910e5185c9c209b5f01e107bd1daf55e24c8c1c070f1bfa4ce7",
+        "mode": "EXISTING_IMMUTABLE"
+      },
+      "line_evidence": [
+        "line 23: void caller_0x18034FA30() {",
+        "line 82: void thread_start_0x18034FBD0(std::intptr_t incoming_rcx) {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Opaque native source-like model; cannot stand alone as an implementation."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "NATIVE_BINARY_STATIC_EVIDENCE",
+        "authority_id": null,
+        "binary_sha256": "8c968ce9703d37ff046ec4f46a1f3de880f5450f8f7131cb368f1a54e29e5e38",
+        "mvid": null,
+        "type_def": null,
+        "rva": "0x34FA30/0x34FBD0",
+        "export": "caller_0x18034FA30/thread_start_0x18034FBD0"
+      },
+      "identity_scheme": "BINARY_SHA256_PLUS_RVA_OR_EXPORT_PLUS_EXPORT_ORDINAL",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_CALL01_THREAD_ORIGIN.md",
+          "size": 17900,
+          "sha256": "3f328731ec00177711b494fe88cf2b2ddb93051ad3f0b39cf39898384008a4f8",
+          "locator": null,
+          "range_start": 22,
+          "range_end": 23,
+          "range_sha256": "7896b67b5ea34811821eb826325844c015aaefa4ec78e828bb8393c14a361c4e",
+          "contains": [
+            "0x34FA30",
+            "0x34FBD0",
+            "0x18034FA30",
+            "0x18034FBD0",
+            "7f09a66ab5c95df32821d8519a41e63417bb84a084a0b155144dcace9e9ae241",
+            "ed9ec6ca6511b8c1341a608686d21940f393637225d5c15278814dd3c2e45c11"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_BODY_BOUND"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_CALL01_THREAD_ORIGIN.md",
+          "size": 17900,
+          "sha256": "3f328731ec00177711b494fe88cf2b2ddb93051ad3f0b39cf39898384008a4f8",
+          "locator": null,
+          "range_start": 203,
+          "range_end": 215,
+          "range_sha256": "972247e40ef96d5cf0b18e51a1298d9089975a1730bf2eb28a3d51a261a822ab",
+          "contains": [
+            "0x18034FA30",
+            "0x18034FBD0",
+            "CoreclrThreadOrigin.cpp",
+            "exactly two"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_SOURCE_PROJECTION"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_CALL01_THREAD_ORIGIN.md",
+          "size": 17900,
+          "sha256": "3f328731ec00177711b494fe88cf2b2ddb93051ad3f0b39cf39898384008a4f8",
+          "locator": null,
+          "range_start": 315,
+          "range_end": 324,
+          "range_sha256": "bb5302f6631b235284fec5d047faca9c5afb553516cf8670add6d1898ec4cd35",
+          "contains": [
+            "8c968ce9703d37ff046ec4f46a1f3de880f5450f8f7131cb368f1a54e29e5e38",
+            "4991408"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_BINARY_IDENTITY"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-CPP-LIBXELL-HELPER-TARGET",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/performance/native/LibxellHelperTarget.cpp",
+        "size": 3335,
+        "sha256": "67962955c2a27846264bd7042fccb0ef5aabc80fd9fe9f3082864ce63a3e772c"
+      },
+      "language": "CPP",
+      "subsystem": "RUNTIME_LIBXELL",
+      "origin_class": "RECOVERED_SOURCE_PROJECTION",
+      "representation_class": "SOURCE_LIKE_PROJECTION",
+      "category": "PROJECTION",
+      "implementation_content": "SOURCE_LIKE_BODY",
+      "declaration_content": "FUNCTIONS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "opaque native CALL/INDIRECT boundaries",
+        "Win32 thread/lock APIs where observed"
+      ],
+      "overlap": "No managed MethodDef; distinct native model.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": true,
+      "historical_active": false,
+      "reason": "Already imported immutable source projection; retained at existing path without re-copy.",
+      "function_count": 1,
+      "body_count": 1,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_CPP_OPAQUE_MODEL",
+      "physical_import": {
+        "path": "src/models/native/LibxellHelperTarget.cpp",
+        "size": 3335,
+        "sha256": "67962955c2a27846264bd7042fccb0ef5aabc80fd9fe9f3082864ce63a3e772c",
+        "mode": "EXISTING_IMMUTABLE"
+      },
+      "line_evidence": [
+        "line 26: void projected_RVA_0xc110() {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Opaque native source-like model; cannot stand alone as an implementation."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "NATIVE_BINARY_STATIC_EVIDENCE",
+        "authority_id": null,
+        "binary_sha256": "61aeeab7fdcfb6d1742f86c14c68c663d759607d01a6132645c857291eaebb86",
+        "mvid": null,
+        "type_def": null,
+        "rva": "0xc110",
+        "export": "projected_RVA_0xc110"
+      },
+      "identity_scheme": "BINARY_SHA256_PLUS_RVA_OR_EXPORT_PLUS_EXPORT_ORDINAL",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_IFACE04_HELPER_TARGET.md",
+          "size": 27932,
+          "sha256": "44b3a75bc8d65aa862778d3c1b257b3efa01ad0e4175bee0c5800dcb40257616",
+          "locator": null,
+          "range_start": 22,
+          "range_end": 23,
+          "range_sha256": "66322eff48323fccf7478177551d71103a01e397c56b56303fc70180de54da12",
+          "contains": [
+            "411504",
+            "61aeeab7fdcfb6d1742f86c14c68c663d759607d01a6132645c857291eaebb86"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_BINARY_IDENTITY"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_IFACE04_HELPER_TARGET.md",
+          "size": 27932,
+          "sha256": "44b3a75bc8d65aa862778d3c1b257b3efa01ad0e4175bee0c5800dcb40257616",
+          "locator": null,
+          "range_start": 378,
+          "range_end": 381,
+          "range_sha256": "45fed3ffdbe31b48a53b060260063ae59caabef6fdd7151aa47405243eeba7da",
+          "contains": [
+            "src/reconstructed/performance/native/LibxellHelperTarget.cpp",
+            "3335",
+            "67962955c2a27846264bd7042fccb0ef5aabc80fd9fe9f3082864ce63a3e772c"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_SOURCE_PROJECTION"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_IFACE04_HELPER_TARGET.md",
+          "size": 27932,
+          "sha256": "44b3a75bc8d65aa862778d3c1b257b3efa01ad0e4175bee0c5800dcb40257616",
+          "locator": null,
+          "range_start": 543,
+          "range_end": 560,
+          "range_sha256": "9eb32e6c0b5c89053b64d4d089afc300e8636b2d757d0f035f7cb3f2c3bf7a59",
+          "contains": [
+            "TARGET_RVA=0xc110",
+            "RVA_[0xc110,0xc189)",
+            "SOURCE_FILES_CREATED=src/reconstructed/performance/native/LibxellHelperTarget.cpp",
+            "3335_BYTES",
+            "67962955c2a27846264bd7042fccb0ef5aabc80fd9fe9f3082864ce63a3e772c"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_BODY_BOUND"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-CPP-LIBXELL-SLEEP-IMPLEMENTATION",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/performance/native/LibxellSleepImplementation.cpp",
+        "size": 4262,
+        "sha256": "9000bd4fb062dfc10d149089987db032df8153cb31274189e133da899ae51114"
+      },
+      "language": "CPP",
+      "subsystem": "RUNTIME_LIBXELL",
+      "origin_class": "RECOVERED_SOURCE_PROJECTION",
+      "representation_class": "SOURCE_LIKE_PROJECTION",
+      "category": "PROJECTION",
+      "implementation_content": "SOURCE_LIKE_BODY",
+      "declaration_content": "FUNCTIONS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "opaque native CALL/INDIRECT boundaries",
+        "Win32 thread/lock APIs where observed"
+      ],
+      "overlap": "No managed MethodDef; distinct native model.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": true,
+      "historical_active": false,
+      "reason": "Already imported immutable source projection; retained at existing path without re-copy.",
+      "function_count": 1,
+      "body_count": 1,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "UNVERIFIED_CPP_OPAQUE_MODEL",
+      "physical_import": {
+        "path": "src/models/native/LibxellSleepImplementation.cpp",
+        "size": 4262,
+        "sha256": "9000bd4fb062dfc10d149089987db032df8153cb31274189e133da899ae51114",
+        "mode": "EXISTING_IMMUTABLE"
+      },
+      "line_evidence": [
+        "line 27: void projected_RVA_0xc8c0() {"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Opaque native source-like model; cannot stand alone as an implementation."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "NATIVE_BINARY_STATIC_EVIDENCE",
+        "authority_id": null,
+        "binary_sha256": "61aeeab7fdcfb6d1742f86c14c68c663d759607d01a6132645c857291eaebb86",
+        "mvid": null,
+        "type_def": null,
+        "rva": "0xc8c0",
+        "export": "projected_RVA_0xc8c0"
+      },
+      "identity_scheme": "BINARY_SHA256_PLUS_RVA_OR_EXPORT_PLUS_EXPORT_ORDINAL",
+      "evidence_references": [
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_IFACE02_LIBXELL_DESTINATION.md",
+          "size": 20236,
+          "sha256": "dd57fdc5ffeef7c1ba561c00bbf38230035132e59127f5f375743b84f33b8837",
+          "locator": null,
+          "range_start": 19,
+          "range_end": 20,
+          "range_sha256": "d9a8481b43bc46673f86a9f7e6c8aaed52a9ef4198660f35d509a2808fc8c564",
+          "contains": [
+            "411504",
+            "61aeeab7fdcfb6d1742f86c14c68c663d759607d01a6132645c857291eaebb86"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_BINARY_IDENTITY"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_IFACE02_LIBXELL_DESTINATION.md",
+          "size": 20236,
+          "sha256": "dd57fdc5ffeef7c1ba561c00bbf38230035132e59127f5f375743b84f33b8837",
+          "locator": null,
+          "range_start": 34,
+          "range_end": 56,
+          "range_sha256": "06b570ed3e018842622bf8f2050a1478a626ab7d5e4cb6e9fd9ad4f3a020d7e0",
+          "contains": [
+            "0xc8c0",
+            "0x18000c8c0",
+            "68 bytes",
+            "0xc904"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_BODY_BOUND"
+        },
+        {
+          "root_id": "RESEARCH_ROOT",
+          "path": "docs/performance/NATIVE_IFACE02_LIBXELL_DESTINATION.md",
+          "size": 20236,
+          "sha256": "dd57fdc5ffeef7c1ba561c00bbf38230035132e59127f5f375743b84f33b8837",
+          "locator": null,
+          "range_start": 230,
+          "range_end": 233,
+          "range_sha256": "856c59a4562f46c638a6f9bc0572bcc677e07e9700edf89d1c961889f88ebf70",
+          "contains": [
+            "src/reconstructed/performance/native/LibxellSleepImplementation.cpp",
+            "4262",
+            "9000bd4fb062dfc10d149089987db032df8153cb31274189e133da899ae51114"
+          ],
+          "record_id": null,
+          "record_disposition": null,
+          "evidence_class": "ACCEPTED_NATIVE_SOURCE_PROJECTION"
+        }
+      ]
+    },
+    {
+      "origin_id": "SRC-HPP-FEVENTSYSTEM",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/native/FEventSystem.hpp",
+        "size": 2847,
+        "sha256": "9e68d212cf57d5f44f18fa0701ebf4e44a5f90b0e13b3c1686286355dcb23490"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "NATIVE_EVENT_BOUNDARY",
+      "origin_class": "METADATA_ONLY",
+      "representation_class": "METADATA_ONLY_COMMENT_SHELL",
+      "category": "NOT_IMPORTED",
+      "implementation_content": "NONE",
+      "declaration_content": "NONE",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_METADATA_ONLY",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "REFERENCE_ONLY",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Only comments and #pragma once; no actual declarations or bodies; not imported.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 0,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": null,
+      "line_evidence": [
+        "line 10: // Identity-only reconstruction. The registered native entry points of the",
+        "line 25: // No function bodies are reconstructed. Per-dispatch copy-vs-forward",
+        "line 28: #pragma once"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "No declarations or bodies; native semantics UNRESOLVED_NONPLAIN at rest."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    },
+    {
+      "origin_id": "SRC-HPP-KUROKVSTORE",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/native/KuroKVStore.hpp",
+        "size": 2708,
+        "sha256": "64b8bb976304e660148d28b90ba1cfe896634b153e23e3d2f7031867a52feedc"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "NATIVE_KV_BOUNDARY",
+      "origin_class": "METADATA_ONLY",
+      "representation_class": "METADATA_ONLY_COMMENT_SHELL",
+      "category": "NOT_IMPORTED",
+      "implementation_content": "NONE",
+      "declaration_content": "NONE",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_METADATA_ONLY",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "REFERENCE_ONLY",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Only comments and #pragma once; no actual declarations or bodies; not imported.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 0,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": null,
+      "line_evidence": [
+        "line 2: // Identity-only reconstruction. Native bodies are UNRESOLVED_NONPLAIN in the",
+        "line 21: // Identity-only reconstruction of the native cross-language KV surface.",
+        "line 37: #pragma once"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "No declarations or bodies; native semantics UNRESOLVED_NONPLAIN at rest."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    },
+    {
+      "origin_id": "SRC-HPP-STREAMING-COMPLETION-BRIDGE",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/native/StreamingCompletionBridge.hpp",
+        "size": 8541,
+        "sha256": "9ef853036faf9ff0b44eeb5c6dad51e5b13a8fc9187b3ee063a0309a88dc4252"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "NATIVE_STREAMING_BINDING",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "SIX_FORWARD_STRUCTS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Already accepted source-like projection; retained immutably.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 6,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": {
+        "path": "src/projections/native/include/StreamingCompletionBridge.hpp",
+        "size": 8541,
+        "sha256": "9ef853036faf9ff0b44eeb5c6dad51e5b13a8fc9187b3ee063a0309a88dc4252",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 66: struct WorldPartitionStreamingSourceComponent_IsStreamingCompletedForLayers2_Binding;",
+        "line 72: struct WorldPartitionStreamingSourceComponent_EnableStreamingSource_Binding;",
+        "line 98: struct WorldPartitionStreamingSourceComponent_IsStreamingSourceEnabled_Binding;"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Forward declarations only; no ABI, signatures, or bodies.",
+        "Static identity evidence only; not independently re-verified here."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    },
+    {
+      "origin_id": "SRC-HPP-WORLD-PARTITION-BRIDGE",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "src/reconstructed/native/WorldPartitionBridge.hpp",
+        "size": 8756,
+        "sha256": "6b10a10f1c0af210b72d45128416620e63b5e67eed5568c432ab66d68b33fe48"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "NATIVE_WORLD_PARTITION_BINDING",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_OR_INTERFACE",
+      "category": "PROJECTION",
+      "implementation_content": "NONE",
+      "declaration_content": "TWENTY_SIX_FORWARD_STRUCTS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_SOURCE_PROJECTION",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Already accepted source-like projection; retained immutably.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 26,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": {
+        "path": "src/projections/native/include/WorldPartitionBridge.hpp",
+        "size": 8756,
+        "sha256": "6b10a10f1c0af210b72d45128416620e63b5e67eed5568c432ab66d68b33fe48",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 10: // behavioral reconstruction. Every struct below is a forward declaration with",
+        "line 53: struct KR_SetWorldPartitionDataLayerState_Binding;   // code VA 0x160e76d60",
+        "line 65: struct LMN_BindLoadStreamLevel_Binding;   // code VA 0x160f26720",
+        "line 87: struct SC_EnableStreamingSource_Binding;        // 0x164f3baa0 (no full binding string; identity via table + JS) role_status OBSERVED"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Forward declarations only; no ABI, signatures, or bodies.",
+        "Static identity evidence only; not independently re-verified here."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    },
+    {
+      "origin_id": "SRC-HPP-EVIDENCE-LABELS",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "include/reconstructed/evidence_labels.hpp",
+        "size": 437,
+        "sha256": "d15408e960b6cab2b8dac567354de2f70180b6dbb416f6f2e5a1d984478b370c"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "RESEARCH_TOOLING_LABELS",
+      "origin_class": "INDEPENDENT_RESEARCH_MODEL",
+      "representation_class": "PRIMARY_TOOLING_DECLARATION",
+      "category": "PRIMARY",
+      "implementation_content": "NONE",
+      "declaration_content": "TWO_ENUMS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_ORIGIN",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "IMPORTED_PRIMARY_SOURCE",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "Two actual enums used by research tooling only; no gameplay authority; preserved as primary tooling source.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 2,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": {
+        "path": "src/native/include/research/evidence_labels.hpp",
+        "size": 437,
+        "sha256": "d15408e960b6cab2b8dac567354de2f70180b6dbb416f6f2e5a1d984478b370c",
+        "mode": "EXACT_BYTE_COPY"
+      },
+      "line_evidence": [
+        "line 7: #pragma once",
+        "line 10: enum class EvidenceLabel { Observed, Inferred, Reconstructed, RuntimeVerified, Unknown };",
+        "line 11: enum class ClaimStatus { Observation, Inference, Hypothesis, Verified, Rejected, Stale };"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    },
+    {
+      "origin_id": "SRC-HPP-RESOURCE-INTERFACES",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "include/reconstructed/resource_interfaces.hpp",
+        "size": 540,
+        "sha256": "ee575d61da88cb6727fa07b504e88e6309bcae46d3bd458efb38ff4d8a4a8b6b"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "RESOURCE_BOUNDARY_DECLARATION",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_ONLY_PLACEHOLDER",
+      "category": "NOT_IMPORTED",
+      "implementation_content": "NONE",
+      "declaration_content": "ONE_FORWARD_CLASS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_REFERENCE_ONLY",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "DECLARATION_ONLY_NOT_IMPORTED",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "One forward declaration plus metadata; placeholder only, not a useful API; not imported.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": null,
+      "line_evidence": [
+        "line 7: #pragma once",
+        "line 15: class ResourceManagerBoundary;"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Placeholder forward declaration only; not imported."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    },
+    {
+      "origin_id": "SRC-HPP-STREAMING-INTERFACES",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "include/reconstructed/streaming_interfaces.hpp",
+        "size": 525,
+        "sha256": "a4f4fd67cf7881fc01b730e05e274bba71ee941d8c85b781d7059630f63e7acb"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "STREAMING_BOUNDARY_DECLARATION",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_ONLY_PLACEHOLDER",
+      "category": "NOT_IMPORTED",
+      "implementation_content": "NONE",
+      "declaration_content": "ONE_FORWARD_CLASS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_REFERENCE_ONLY",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "DECLARATION_ONLY_NOT_IMPORTED",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "One forward declaration plus metadata; placeholder only, not a useful API; not imported.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": null,
+      "line_evidence": [
+        "line 7: #pragma once",
+        "line 15: class LoadModePolicy;"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Placeholder forward declaration only; not imported."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    },
+    {
+      "origin_id": "SRC-HPP-TRANSITION-INTERFACES",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "include/reconstructed/transition_interfaces.hpp",
+        "size": 600,
+        "sha256": "3f30c73cbf3db7c8ace5f6a0f340f5281b15308e3b14c9243819d9b18576cdb6"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "TRANSITION_BOUNDARY_DECLARATION",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_ONLY_PLACEHOLDER",
+      "category": "NOT_IMPORTED",
+      "implementation_content": "NONE",
+      "declaration_content": "ONE_FORWARD_CLASS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_REFERENCE_ONLY",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "DECLARATION_ONLY_NOT_IMPORTED",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "One forward declaration plus metadata; placeholder only, not a useful API; not imported.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": null,
+      "line_evidence": [
+        "line 7: #pragma once",
+        "line 16: class LoadingCoordinator;"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Placeholder forward declaration only; not imported."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    },
+    {
+      "origin_id": "SRC-HPP-WORLD-PARTITION-INTERFACES",
+      "original": {
+        "root_id": "RESEARCH_ROOT",
+        "path": "include/reconstructed/world_partition_interfaces.hpp",
+        "size": 522,
+        "sha256": "59a52317e7e4d6512c9accf920f56c1769bd56b0c867ffa85a391e1e6934d5f0"
+      },
+      "language": "CPP_HEADER",
+      "subsystem": "WORLD_PARTITION_BOUNDARY_DECLARATION",
+      "origin_class": "DECLARATION_OR_INTERFACE",
+      "representation_class": "DECLARATION_ONLY_PLACEHOLDER",
+      "category": "NOT_IMPORTED",
+      "implementation_content": "NONE",
+      "declaration_content": "ONE_FORWARD_CLASS",
+      "provenance_confidence": "ACCEPTED_PREDECESSOR_REFERENCE_ONLY",
+      "dependencies": [
+        "none imported"
+      ],
+      "overlap": "No implementation overlap; declaration only.",
+      "distribution": "INTERNAL_ONLY_NOT_REVIEWED",
+      "disposition": "DECLARATION_ONLY_NOT_IMPORTED",
+      "already_imported": false,
+      "historical_active": false,
+      "reason": "One forward declaration plus metadata; placeholder only, not a useful API; not imported.",
+      "function_count": 0,
+      "body_count": 0,
+      "declaration_count": 1,
+      "field_count": 0,
+      "partial_count": 0,
+      "syntax_status": "SYNTAX_OK_GXX_SYNTAX_ONLY",
+      "physical_import": null,
+      "line_evidence": [
+        "line 7: #pragma once",
+        "line 15: class WorldPartitionBoundary;"
+      ],
+      "limitations": [
+        "Source-like reconstruction, not original developer source.",
+        "No buildability or semantic pass is claimed.",
+        "Placeholder forward declaration only; not imported."
+      ],
+      "predecessor_origin_class": "RECONSTRUCTED",
+      "authority": {
+        "kind": "SOURCE_DECLARATION_ONLY",
+        "authority_id": null,
+        "binary_sha256": null,
+        "mvid": null,
+        "type_def": null,
+        "rva": null,
+        "export": null
+      },
+      "identity_scheme": "ORIGINAL_PATH_PLUS_DECLARATION_SURFACE",
+      "evidence_references": []
+    }
+  ]
+}

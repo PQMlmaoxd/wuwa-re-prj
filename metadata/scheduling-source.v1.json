@@ -1,0 +1,306 @@
+{
+  "schema": "wuwa-reconstruction-scheduling-source-v1",
+  "version": 1,
+  "manifest_sha256": "7da6c8c7b2d95b8a488adaba7ef46d5775d434b75dfdbee55b5e8e9613a2899b",
+  "performance_source_sha256": "bd8b2ef69be52e2c4f18fb9080e049d1b2e9da6bc377777b43e3c984cc6aa040",
+  "records": [
+    {
+      "record": {
+        "id": "PSCHED_GRAPH",
+        "unit_id": null,
+        "namespace_context": "global (observed)",
+        "original_path": "src/reconstructed/performance/TaskGraph.cs",
+        "original_size": 10715,
+        "original_sha256": "2a6b17d8e10c287437b450d8fa87f717c008fa6571fcd3bd26c61eb603b5373a",
+        "hash_basis": "raw_source_file_bytes",
+        "evidence_status": "UNKNOWN",
+        "source_status": "SOURCE_ONLY",
+        "verification_basis": "mixed selected-method evidence; five complete CIL bodies and seven source-only selected views from accepted PERF01 evidence; no fresh binary extraction in this task",
+        "evidence_references": [
+          {
+            "path": "src/reconstructed/performance/TaskGraph.cs",
+            "locator": "lines 1-245; root and associated source boundaries"
+          },
+          {
+            "path": "evidence/performance/PERF01_VERIFICATION.md",
+            "locator": "lines 30-54, 76-88, and 116-169; critical CIL, archive checks, and review limits",
+            "artifact_sha256": "f3ce66c7ddf8a66d518194ade50e4b811ec105b1447863d20e1b1c348e6f6c14"
+          },
+          {
+            "path": "docs/performance/PERF01_THREAD_TASK_ARCHITECTURE.md",
+            "locator": "lines 21-29, 31-69, and 72-78; layers, scheduling gate, and logging lowering",
+            "artifact_sha256": "bbd33cf4cc6f724c3b63a48cb0166b8b3654ad2bea95619c5b77dce651b989de"
+          },
+          {
+            "path": "docs/performance/PERF_GRAPH01_CUMULATIVE_PRIORITY.md",
+            "locator": "lines 569-587; accepted source and raw pins",
+            "artifact_sha256": "7d0e01aad3375822bb329cbe88e10c99d88bf11cbdb0efb43b835ad5e4e7974d"
+          },
+          {
+            "path": "evidence/performance/bounded_il_critical.cil.txt",
+            "locator": "sections at lines 9-1307; selected critical CIL including excluded plumbing context",
+            "artifact_sha256": "dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"
+          },
+          {
+            "path": "evidence/performance/bounded_il_evidence.json",
+            "locator": "complete_il_evidence; 13 stored sections, only 12 selected batch methods FULL",
+            "artifact_sha256": "27da81c574be0c48af138527737a6262d7930568ab4974fd78e3adbbcf3e1c29"
+          },
+          {
+            "path": "evidence/performance/identity_and_selection.json",
+            "locator": "28 method pins; 0x0601C916, 0x0601C91A, 0x0601C91B, 0x0604A4F2, and 0x0604A4F3 absent",
+            "artifact_sha256": "31ac1c70b8ed20c1caa79a6b83084e8143488e3b7e9c86f87f6272e490f2dd92"
+          },
+          {
+            "path": "src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl",
+            "locator": "rows 909-914, 2319-2323, and 2499",
+            "artifact_sha256": "8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"
+          },
+          {
+            "path": "src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/types.jsonl",
+            "locator": "rows 44, 196, 197, and 296",
+            "artifact_sha256": "5d0dc02d5f95660002177781608d9f9d1d8b3f439bc28fa0d74473ded01cd5c5"
+          }
+        ],
+        "proposed_path": "src/managed/cs-e3fc67839851/scheduling/TaskGraph.cs",
+        "proposed_path_reason": "Selected TaskGraph and associated nested-type methods; exact-byte import only after approval. Not whole-class coverage or compile-ready.",
+        "authority_id": "MANAGED-CS-E3FC67839851",
+        "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "authority_sha256_kind": "managed_assembly",
+        "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "build_reference": null,
+        "typeDef": "0x020034D4",
+        "methods": {
+          "historical": [],
+          "current": [
+            {"methodDef":"0x0601C916","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level static constructor; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D4","methodDef":"0x0601C916"},"rva":"0x88EBF0","il_range":"[0x0000,0x001E)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 20-25; static constructor boundary"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 909; 0x0601C916","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0601C917","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for TaskGraph.Compare; ordinary method.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D4","methodDef":"0x0601C917"},"rva":"0x88EC10","il_range":"[0x0000,0x0022)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 27-35; Compare"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 9-38; TaskGraph.Compare","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 910; 0x0601C917","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0601C918","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level constructor; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D4","methodDef":"0x0601C918"},"rva":"0x88EC40","il_range":"[0x0000,0x01F2)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 37-93; constructor"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 911; 0x0601C918","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0601C919","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level async Run wrapper; associated MoveNext 0x0604A4F4 has complete CIL; the Run body itself has no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D4","methodDef":"0x0601C919"},"rva":"0x88EE5C","il_range":"[0x0000,0x003F)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 95-231; Run wrapper and local-function context"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 912; 0x0601C919","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0601C91A","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level static default-value method; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D4","methodDef":"0x0601C91A"},"rva":"0x88EEA7","il_range":"[0x0000,0x0001)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 233-237; CreateStaticDefaultValue"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 913; 0x0601C91A","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0601C91B","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level static reset method; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D4","methodDef":"0x0601C91B"},"rva":"0x88EEA9","il_range":"[0x0000,0x0007)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 239-245; ResetStaticDefaultValue"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 914; 0x0601C91B","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0604A4F0","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level local-function wrapper; associated MoveNext 0x060506E6 has complete CIL; the wrapper has no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200968E","methodDef":"0x0604A4F0"},"rva":"0x14296C8","il_range":"[0x0000,0x0037)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 117-179; ScheduleTask local-function wrapper"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 2319; 0x0604A4F0","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0604A4F1","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for the generated local dispatcher; source-level local function.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200968E","methodDef":"0x0604A4F1"},"rva":"0x142970C","il_range":"[0x0000,0x00F6)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 181-227; TrySchedulingTasks"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 606-726; TaskGraph.<Run>g__TrySchedulingTasks|1","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 2320; 0x0604A4F1","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0604A4F2","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level success continuation; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200968E","methodDef":"0x0604A4F2"},"rva":"0x142980E","il_range":"[0x0000,0x0007)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 203-210; success continuation boundary"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 2321; 0x0604A4F2","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0604A4F3","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for the generated error continuation.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200968E","methodDef":"0x0604A4F3"},"rva":"0x1429818","il_range":"[0x0000,0x003D)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 203-223; error continuation"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 727-777; TaskGraph.<Run>b__3","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 2322; 0x0604A4F3","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x0604A4F4","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for Run state-machine MoveNext; source-level async representation.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200968F","methodDef":"0x0604A4F4"},"rva":"0x1429864","il_range":"[0x0000,0x01D1)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 95-231; Run source-level state-machine context"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 778-1002; TaskGraph.<Run>d__6.MoveNext","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 2323; 0x0604A4F4","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]},
+            {"methodDef":"0x060506E6","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for ScheduleTask state-machine MoveNext; source-level local-function representation.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200CE0E","methodDef":"0x060506E6"},"rva":"0x164EA6C","il_range":"[0x0000,0x0282)","evidence_references":[{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 117-179; ScheduleTask source-level state-machine context"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 1003-1307; TaskGraph.<<Run>g__ScheduleTask|0>d.MoveNext","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/methods.jsonl","locator":"row 2499; 0x060506E6","artifact_sha256":"8f57b8e7e768e02a05623f0f44a9962202764f5878f97db023af8d55bc928eb9"}]}
+          ]
+        },
+        "scope": "Twelve selected TaskGraph and associated nested-type methods.",
+        "completeness": "Selected 12 qualified methods across root TaskGraph and three nested declaring types; source-level async/local-function/continuation representation and partial compiler lowering; three plumbing methods explicitly excluded; external dependencies and runtime unresolved; not whole-class or build-ready.",
+        "representation": "Mixed method proof; source-level async/local-function/continuation representation with partial compiler lowering; non-standalone.",
+        "curation_status": "NEEDS_EDITORIAL_REVIEW",
+        "export_status": "PUBLICATION_REVIEW_REQUIRED",
+        "duplicate_group": null,
+        "relationship": "Root TypeDef 0x020034D4 with associated declaring Types 0x0200968E, 0x0200968F, and 0x0200CE0E; method keys are disjoint from historical records.",
+        "supersession": {
+          "same_authority": true,
+          "qualified": false,
+          "scope": [],
+          "supersedes": [],
+          "superseded_by": []
+        },
+        "explanation": "The selected set preserves the accepted Compare and scheduler CIL methods while representing async/local-function behavior at source level. The three nested types are associated by proven hierarchy: 0x0200968E and 0x0200968F parent 0x020034D4, and 0x0200CE0E parent 0x0200968E. The historically false compiler-generated flag on 0x0200CE0E is not used as association evidence. Plumbing methods 0x0604A4EF, 0x0604A4F5, and 0x060506E7 are excluded. This is not six additional independently preserved declarations or a faithful state-machine source form.",
+        "dependencies": [
+          "IGraphNode and IGraphNodeWithDependencies context",
+          "IRunOptions, UniTask, UniTaskCompletionSource, and CompositeError",
+          "PriorityQueue<string> and TaskUtils call paths",
+          "Singleton<Log>, ELogModule, ELogAuthor, and compiler-generated inline-array logging lowering",
+          "excluded plumbing methods 0x0604A4EF, 0x0604A4F5, and 0x060506E7",
+          "source-only constructor and field-initialization verification, unselected member context, runtime scheduling, thread placement, and native budget remain unresolved"
+        ],
+        "editorial_changes": [
+          "None approved.",
+          "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+          "Preserve original string literals exactly."
+        ],
+        "validation": {
+          "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+          "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+          "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+          "equivalence": "NOT_ESTABLISHED",
+          "compilation": "NOT_BUILDABLE_WITH_CURRENT_CONTEXT",
+          "runtime": "PARKED_NOT_RUN",
+          "publication": "REVIEW_REQUIRED",
+          "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+        }
+      },
+      "associated_types": [
+        {"typeDef":"0x0200968E","parent_typeDef":"0x020034D4","evidence_references":[{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/types.jsonl","locator":"row 196; type_token 0x0200968E; declaring_type_token 0x020034D4","artifact_sha256":"5d0dc02d5f95660002177781608d9f9d1d8b3f439bc28fa0d74473ded01cd5c5"},{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 117-179; generated display-class source boundary"}]},
+        {"typeDef":"0x0200968F","parent_typeDef":"0x020034D4","evidence_references":[{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/types.jsonl","locator":"row 197; type_token 0x0200968F; declaring_type_token 0x020034D4","artifact_sha256":"5d0dc02d5f95660002177781608d9f9d1d8b3f439bc28fa0d74473ded01cd5c5"},{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 95-231; Run state-machine source boundary"}]},
+        {"typeDef":"0x0200CE0E","parent_typeDef":"0x0200968E","evidence_references":[{"path":"src/reconstructed/managed/full/CSharpScript/shards/6ef1ac9f3b7c3584d8dc5d548be0fd71b292e9c09e2351ff8af9df966a957a93/evidence/raw/types.jsonl","locator":"row 296; type_token 0x0200CE0E; declaring_type_token 0x0200968E","artifact_sha256":"5d0dc02d5f95660002177781608d9f9d1d8b3f439bc28fa0d74473ded01cd5c5"},{"path":"src/reconstructed/performance/TaskGraph.cs","locator":"lines 117-179; nested local-function state-machine boundary"}]}
+      ]
+    },
+    {
+      "record": {
+        "id": "PSCHED_UTILS",
+        "unit_id": null,
+        "namespace_context": "global (observed)",
+        "original_path": "src/reconstructed/performance/TaskUtils.cs",
+        "original_size": 9108,
+        "original_sha256": "f156234df333c606e4d3ea92445f39954f7beb9ed1797f44f55f70751edfc4fd",
+        "hash_basis": "raw_source_file_bytes",
+        "evidence_status": "UNKNOWN",
+        "source_status": "SOURCE_ONLY",
+        "verification_basis": "mixed selected-method evidence; two complete CIL bodies and four source-only selected views from accepted PERF01 evidence; no fresh binary extraction in this task",
+        "evidence_references": [
+          {"path":"src/reconstructed/performance/TaskUtils.cs","locator":"lines 1-226; selected utility methods"},
+          {"path":"evidence/performance/PERF01_VERIFICATION.md","locator":"lines 30-54, 76-88, and 116-169","artifact_sha256":"f3ce66c7ddf8a66d518194ade50e4b811ec105b1447863d20e1b1c348e6f6c14"},
+          {"path":"docs/performance/PERF01_THREAD_TASK_ARCHITECTURE.md","locator":"lines 21-29, 31-69, and 72-78","artifact_sha256":"bbd33cf4cc6f724c3b63a48cb0166b8b3654ad2bea95619c5b77dce651b989de"},
+          {"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"sections at lines 382-602; selected utility critical CIL","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},
+          {"path":"evidence/performance/bounded_il_evidence.json","locator":"complete_il_evidence; selected method records","artifact_sha256":"27da81c574be0c48af138527737a6262d7930568ab4974fd78e3adbbcf3e1c29"},
+          {"path":"evidence/performance/identity_and_selection.json","locator":"28 method pins; selected TaskUtils tokens","artifact_sha256":"31ac1c70b8ed20c1caa79a6b83084e8143488e3b7e9c86f87f6272e490f2dd92"},
+          {"path":"src/reconstructed/managed/full/CSharpScript/shards/e7fbd9dbdcdbe310d1a3ae7baae4fc8d44e71464a3e7f0a25d8993b1a4e1ef9e/evidence/raw/methods.jsonl","locator":"rows 1131-1136","artifact_sha256":"710853723d0f943cc08f5c87ab69eb0abbad6965f24927c7058762c08675daa6"},
+          {"path":"src/reconstructed/managed/full/CSharpScript/shards/e7fbd9dbdcdbe310d1a3ae7baae4fc8d44e71464a3e7f0a25d8993b1a4e1ef9e/evidence/raw/types.jsonl","locator":"row 94","artifact_sha256":"337bd39b6261393c37a61137040558afaaba4e05dffda59727093f25bec33d97"}
+        ],
+        "proposed_path": "src/managed/cs-e3fc67839851/scheduling/TaskUtils.cs",
+        "proposed_path_reason": "Selected six-method TaskUtils view; exact-byte import only after approval. Not whole-class coverage or compile-ready.",
+        "authority_id": "MANAGED-CS-E3FC67839851",
+        "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "authority_sha256_kind": "managed_assembly",
+        "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "build_reference": null,
+        "typeDef": "0x020034D9",
+        "methods": {
+          "historical": [],
+          "current": [
+            {"methodDef":"0x0601C940","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary helper; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D9","methodDef":"0x0601C940"},"rva":"0x88FD58","il_range":"[0x0000,0x0052)","evidence_references":[{"path":"src/reconstructed/performance/TaskUtils.cs","locator":"lines 10-25; GetNodesWithNoDependencies"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/e7fbd9dbdcdbe310d1a3ae7baae4fc8d44e71464a3e7f0a25d8993b1a4e1ef9e/evidence/raw/methods.jsonl","locator":"row 1131; 0x0601C940","artifact_sha256":"710853723d0f943cc08f5c87ab69eb0abbad6965f24927c7058762c08675daa6"}]},
+            {"methodDef":"0x0601C941","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary helper; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D9","methodDef":"0x0601C941"},"rva":"0x88FDC8","il_range":"[0x0000,0x0050)","evidence_references":[{"path":"src/reconstructed/performance/TaskUtils.cs","locator":"lines 27-39; GetNewDependsOnMap"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/e7fbd9dbdcdbe310d1a3ae7baae4fc8d44e71464a3e7f0a25d8993b1a4e1ef9e/evidence/raw/methods.jsonl","locator":"row 1132; 0x0601C941","artifact_sha256":"710853723d0f943cc08f5c87ab69eb0abbad6965f24927c7058762c08675daa6"}]},
+            {"methodDef":"0x0601C942","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for TaskUtils.TopologicalSort; ordinary method.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D9","methodDef":"0x0601C942"},"rva":"0x88FE34","il_range":"[0x0000,0x009E)","evidence_references":[{"path":"src/reconstructed/performance/TaskUtils.cs","locator":"lines 41-67; TopologicalSort"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 382-481; TaskUtils.TopologicalSort","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/e7fbd9dbdcdbe310d1a3ae7baae4fc8d44e71464a3e7f0a25d8993b1a4e1ef9e/evidence/raw/methods.jsonl","locator":"row 1133; 0x0601C942","artifact_sha256":"710853723d0f943cc08f5c87ab69eb0abbad6965f24927c7058762c08675daa6"}]},
+            {"methodDef":"0x0601C943","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for TaskUtils.GetNodeCumulativePriorities; ordinary method.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D9","methodDef":"0x0601C943"},"rva":"0x88FEF0","il_range":"[0x0000,0x00C7)","evidence_references":[{"path":"src/reconstructed/performance/TaskUtils.cs","locator":"lines 69-103; GetNodeCumulativePriorities"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 482-602; TaskUtils.GetNodeCumulativePriorities","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/e7fbd9dbdcdbe310d1a3ae7baae4fc8d44e71464a3e7f0a25d8993b1a4e1ef9e/evidence/raw/methods.jsonl","locator":"row 1134; 0x0601C943","artifact_sha256":"710853723d0f943cc08f5c87ab69eb0abbad6965f24927c7058762c08675daa6"}]},
+            {"methodDef":"0x0601C944","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary helper; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D9","methodDef":"0x0601C944"},"rva":"0x88FFD4","il_range":"[0x0000,0x01FF)","evidence_references":[{"path":"src/reconstructed/performance/TaskUtils.cs","locator":"lines 105-195; SearchForCycleDFS"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/e7fbd9dbdcdbe310d1a3ae7baae4fc8d44e71464a3e7f0a25d8993b1a4e1ef9e/evidence/raw/methods.jsonl","locator":"row 1135; 0x0601C944","artifact_sha256":"710853723d0f943cc08f5c87ab69eb0abbad6965f24927c7058762c08675daa6"}]},
+            {"methodDef":"0x0601C945","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary helper; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x020034D9","methodDef":"0x0601C945"},"rva":"0x8901FC","il_range":"[0x0000,0x008D)","evidence_references":[{"path":"src/reconstructed/performance/TaskUtils.cs","locator":"lines 197-225; GraphHasCycles"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/e7fbd9dbdcdbe310d1a3ae7baae4fc8d44e71464a3e7f0a25d8993b1a4e1ef9e/evidence/raw/methods.jsonl","locator":"row 1136; 0x0601C945","artifact_sha256":"710853723d0f943cc08f5c87ab69eb0abbad6965f24927c7058762c08675daa6"}]}
+          ]
+        },
+        "scope": "Six selected TaskUtils methods.",
+        "completeness": "All six selected TaskUtils methods; external graph types and missing helper bodies unresolved; not whole-class or build-ready.",
+        "representation": "Source-like selected method view with mixed method proof; non-standalone.",
+        "curation_status": "NEEDS_EDITORIAL_REVIEW",
+        "export_status": "PUBLICATION_REVIEW_REQUIRED",
+        "duplicate_group": null,
+        "relationship": "Distinct TypeDef 0x020034D9; method keys are disjoint from historical and other scheduling records.",
+        "supersession": {
+          "same_authority": true,
+          "qualified": false,
+          "scope": [],
+          "supersedes": [],
+          "superseded_by": []
+        },
+        "explanation": "The selected utility methods preserve the accepted graph, cycle, and cumulative-priority helper order. Two methods have selected complete CIL and four remain source-only. This is a partial class view, not whole-class recovery or a standalone build unit.",
+        "dependencies": [
+          "IGraphNodeWithDependencies, OneOf, and graph result types",
+          "graph helper behavior and dictionary iteration ordering",
+          "enclosing type and unassessed dependency context",
+          "external scheduling callers, runtime, and native budget"
+        ],
+        "editorial_changes": [
+          "None approved.",
+          "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+          "Preserve original string literals exactly."
+        ],
+        "validation": {
+          "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+          "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+          "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+          "equivalence": "NOT_ESTABLISHED",
+          "compilation": "NOT_BUILDABLE_WITH_CURRENT_CONTEXT",
+          "runtime": "PARKED_NOT_RUN",
+          "publication": "REVIEW_REQUIRED",
+          "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+        }
+      },
+      "associated_types": []
+    },
+    {
+      "record": {
+        "id": "PSCHED_HEAP",
+        "unit_id": null,
+        "namespace_context": "global (observed)",
+        "original_path": "src/reconstructed/performance/PriorityQueue.cs",
+        "original_size": 7853,
+        "original_sha256": "48d2102543b23a10077b86b6621b0f805f60c1dc8b3773b85a0baf2b46b1bb4d",
+        "hash_basis": "raw_source_file_bytes",
+        "evidence_status": "UNKNOWN",
+        "source_status": "SOURCE_ONLY",
+        "verification_basis": "mixed selected-method evidence; five complete CIL bodies and ten source-only selected views from accepted PERF01 evidence; no fresh binary extraction in this task",
+        "evidence_references": [
+          {"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 1-243; selected heap members"},
+          {"path":"evidence/performance/PERF01_VERIFICATION.md","locator":"lines 30-54, 76-88, and 116-169","artifact_sha256":"f3ce66c7ddf8a66d518194ade50e4b811ec105b1447863d20e1b1c348e6f6c14"},
+          {"path":"docs/performance/PERF01_THREAD_TASK_ARCHITECTURE.md","locator":"lines 21-29, 31-69, and 72-78","artifact_sha256":"bbd33cf4cc6f724c3b63a48cb0166b8b3654ad2bea95619c5b77dce651b989de"},
+          {"path":"docs/performance/PERF_HEAP01_DOWN_RECOVERY.md","locator":"Down 0x06000278 correction and selected heap evidence","artifact_sha256":"8c41d95d48af200561e8c4fe2da514ea909c79d8105f72adbdd998fe4149b5f1"},
+          {"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"sections at lines 42-381; selected heap critical CIL","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},
+          {"path":"evidence/performance/bounded_il_evidence.json","locator":"complete_il_evidence; selected method records","artifact_sha256":"27da81c574be0c48af138527737a6262d7930568ab4974fd78e3adbbcf3e1c29"},
+          {"path":"evidence/performance/identity_and_selection.json","locator":"28 method pins; selected heap tokens","artifact_sha256":"31ac1c70b8ed20c1caa79a6b83084e8143488e3b7e9c86f87f6272e490f2dd92"},
+          {"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"rows 66-80","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"},
+          {"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/types.jsonl","locator":"row 3","artifact_sha256":"9179f8a8e1fd3ef3f046a6b5d3a423fa356aec2498a4138ef910038d63edffa2"}
+        ],
+        "proposed_path": "src/managed/cs-e3fc67839851/scheduling/PriorityQueue.cs",
+        "proposed_path_reason": "Selected fifteen-member PriorityQueue view; exact-byte import only after approval. Not whole-class coverage or compile-ready.",
+        "authority_id": "MANAGED-CS-E3FC67839851",
+        "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "authority_sha256_kind": "managed_assembly",
+        "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "build_reference": null,
+        "typeDef": "0x0200006B",
+        "methods": {
+          "historical": [],
+          "current": [
+            {"methodDef":"0x0600026B","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level constructor; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x0600026B"},"rva":"0xD708","il_range":"[0x0000,0x0024)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 44-49; constructor"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 66; 0x0600026B","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x0600026C","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary method; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x0600026C"},"rva":"0xD730","il_range":"[0x0000,0x008A)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 51-65; Clone"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 67; 0x0600026C","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x0600026D","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level accessor; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x0600026D"},"rva":"0xD7E4","il_range":"[0x0000,0x000C)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 16-18; get_Size"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 68; 0x0600026D","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x0600026E","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level accessor; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x0600026E"},"rva":"0xD7F1","il_range":"[0x0000,0x000F)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 20-22; get_Empty"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 69; 0x0600026E","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x0600026F","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level accessor with logging path; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x0600026F"},"rva":"0xD804","il_range":"[0x0000,0x0040)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 24-42; get_Top"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 70; 0x0600026F","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000270","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary method; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000270"},"rva":"0xD850","il_range":"[0x0000,0x0017)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 67-73; Clear"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 71; 0x06000270","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000271","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary method; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000271"},"rva":"0xD868","il_range":"[0x0000,0x000D)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 75-80; Has"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 72; 0x06000271","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000272","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for PriorityQueue.Push; ordinary method.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000272"},"rva":"0xD878","il_range":"[0x0000,0x002E)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 82-90; Push"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 42-77; PriorityQueue<T>.Push","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 73; 0x06000272","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000273","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for PriorityQueue.Pop; ordinary method.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000273"},"rva":"0xD8B4","il_range":"[0x0000,0x00B0)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 92-118; Pop"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 78-168; PriorityQueue<T>.Pop","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 74; 0x06000273","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000274","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary method; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000274"},"rva":"0xD970","il_range":"[0x0000,0x00C6)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 120-148; Remove"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 75; 0x06000274","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000275","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary method; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000275"},"rva":"0xDA44","il_range":"[0x0000,0x0040)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 150-170; Update"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 76; 0x06000275","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000276","coverage":"SOURCE_ONLY_SELECTED_METHOD_PERF01","evidence_status":"SOURCE_ONLY","source_status":"SOURCE_ONLY","verification_basis":"source-level ordinary method; archived metadata only; no complete persisted CIL body.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000276"},"rva":"0xDA90","il_range":"[0x0000,0x0023)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 172-180; Heapify"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 77; 0x06000276","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000277","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for PriorityQueue.Up; ordinary method.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000277"},"rva":"0xDAC0","il_range":"[0x0000,0x0044)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 182-202; Up"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 169-230; PriorityQueue<T>.Up","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 78; 0x06000277","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000278","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for PriorityQueue.Down; ordinary method; 0x06000278 is Down and 0x06000277 is Up.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000278"},"rva":"0xDB10","il_range":"[0x0000,0x0095)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 204-231; Down"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 231-327; PriorityQueue<T>.Down","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 79; 0x06000278","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]},
+            {"methodDef":"0x06000279","coverage":"DIRECT_CIL_FULL_SELECTED_BODY_PERF01","evidence_status":"DIRECT_CIL_FULL","source_status":"RECONSTRUCTED_FROM_DIRECT_CIL","verification_basis":"accepted PERF01 complete CIL for PriorityQueue.Swap; ordinary method.","symbol_key":{"full_authority_sha256":"e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db","mvid":"2d6d37cb-76e5-4075-8220-3eeca41471e3","typeDef":"0x0200006B","methodDef":"0x06000279"},"rva":"0xDBB4","il_range":"[0x0000,0x0063)","evidence_references":[{"path":"src/reconstructed/performance/PriorityQueue.cs","locator":"lines 233-242; Swap"},{"path":"evidence/performance/bounded_il_critical.cil.txt","locator":"lines 328-381; PriorityQueue<T>.Swap","artifact_sha256":"dc44f6a8044d8e67927833f9783e8918ecabcd9051094ad5dfa1fd68570a48f5"},{"path":"src/reconstructed/managed/full/CSharpScript/shards/3e1facc4e6f297ee4666b05aa99bf905c9c0f54eaf0502dac773a1d9bf1a3721/evidence/raw/methods.jsonl","locator":"row 80; 0x06000279","artifact_sha256":"3793941c4a7b60c32c5e87bbd45bca1316cd99e72cb22f23ea2ad9579da29863"}]}
+          ]
+        },
+        "scope": "Fifteen selected PriorityQueue members.",
+        "completeness": "All fifteen selected PriorityQueue members; generic comparer behavior, logging storage, and external heap populations unresolved; not whole-class or build-ready.",
+        "representation": "Source-like selected method view with mixed method proof; non-standalone.",
+        "curation_status": "NEEDS_EDITORIAL_REVIEW",
+        "export_status": "PUBLICATION_REVIEW_REQUIRED",
+        "duplicate_group": null,
+        "relationship": "Distinct TypeDef 0x0200006B; method keys are disjoint from historical and other scheduling records.",
+        "supersession": {
+          "same_authority": true,
+          "qualified": false,
+          "scope": [],
+          "supersedes": [],
+          "superseded_by": []
+        },
+        "explanation": "The selected heap members preserve the observed indexed min-heap, duplicate/update/remove behavior, and the corrected Push 0x06000272, Pop 0x06000273, Up 0x06000277, and Down 0x06000278 identities. Five methods have selected complete CIL and ten remain source-only. This is a partial class view, not whole-class recovery or a standalone build unit.",
+        "dependencies": [
+          "Comparison<T>, List<T>, Dictionary<T,int>, and UnrealEngine.Extension.IClearable",
+          "Singleton<Log>, ELogModule, ELogAuthor, and logging storage lowering",
+          "generic comparer behavior and external heap populations",
+          "source-only constructor and field-initialization verification, unassessed context, runtime, and native budget"
+        ],
+        "editorial_changes": [
+          "None approved.",
+          "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+          "Preserve original string literals exactly."
+        ],
+        "validation": {
+          "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+          "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+          "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+          "equivalence": "NOT_ESTABLISHED",
+          "compilation": "NOT_BUILDABLE_WITH_CURRENT_CONTEXT",
+          "runtime": "PARKED_NOT_RUN",
+          "publication": "REVIEW_REQUIRED",
+          "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+        }
+      },
+      "associated_types": []
+    }
+  ]
+}

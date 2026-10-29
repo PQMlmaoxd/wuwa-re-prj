@@ -1,0 +1,1066 @@
+{
+  "accepted_class_counts": {
+    "DIRECT_CIL_FULL": 246,
+    "METADATA_ONLY": 1,
+    "SOURCE_ONLY": 280,
+    "UNKNOWN": 6
+  },
+  "baseline": {
+    "graph_id": "0f7cbec61d3b8e6a0fa767b06180c04156b0a65b72e02ff2c7a06ba531d4e643",
+    "known_methods": 305856,
+    "snapshot_id": "d805365e60cf1b1c156dceeb1b496779de082744e6d0c82dd126b1b5f452fcf6",
+    "snapshot_rows": 41456
+  },
+  "command": "source-inventory",
+  "coverage_role": "REPORT_NOT_SELF_PROVING_AUTHORITY",
+  "coverage_schema": "wuwa-reconstruction-source-closure-coverage-v1",
+  "current_survey": {
+    "baseline_curated_expected": 104,
+    "baseline_curated_present": 104,
+    "changed_size": [],
+    "changed_size_count": 0,
+    "curated_files_observed": 112,
+    "errors": [],
+    "missing": [],
+    "missing_count": 0,
+    "new_curated": [
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/ai/AiLibrary.cs",
+        "size": 10703
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/attributes/ActiveBuffInternal.cs",
+        "size": 17340
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/attributes/BaseAttributeComponent.cs",
+        "size": 12755
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/attributes/BaseAttributeStorage.cs",
+        "size": 10186
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/attributes/CharacterAttributeComponent.cs",
+        "size": 4122
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/attributes/LockValue.cs",
+        "size": 2854
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/buffs/BaseBuffComponent.cs",
+        "size": 16082
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/buffs/BuffController.cs",
+        "size": 2158
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/collision/RoleKuroFastCollisionComponent.cs",
+        "size": 4399
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/damage/BaseDamageComponent.ExecDamageEvent.cs",
+        "size": 2484
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/damage/BaseDamageComponent.cs",
+        "size": 23591
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/damage/CharacterHitComponent.cs",
+        "size": 31566
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/damage/CharacterStatisticsComponent.DamageCombat.cs",
+        "size": 2192
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/damage/CharacterStatisticsComponent.DamageReceiver.cs",
+        "size": 2510
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/damage/CharacterStatisticsComponent.ListViewFilter.cs",
+        "size": 2207
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/elements/RoleElementComponent.cs",
+        "size": 8062
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/elements/RoleElementResource.cs",
+        "size": 1381
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/Entity.cs",
+        "size": 3387
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/EntityComponent.cs",
+        "size": 3710
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/EntitySystem.cs",
+        "size": 2837
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/RangeComponent.LifecycleRecovery.cs",
+        "size": 29054
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/RangeComponent.PendingEventDrain.cs",
+        "size": 9839
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/RangeComponent.cs",
+        "size": 18577
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/TickComponentInfo.cs",
+        "size": 1190
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/TickComponentManager.cs",
+        "size": 4574
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/TickEntityGroup.cs",
+        "size": 1134
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/entity/TickEntityManager.cs",
+        "size": 6402
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/event/EventArgs.Invoke.Enum2.cs",
+        "size": 2870
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/event/EventSystem.EmitWithTarget.Enum2.cs",
+        "size": 3382
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/events/GameplayEventTrigger.cs",
+        "size": 2082
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/events/TagSwitchedTask.cs",
+        "size": 1413
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/events/Trigger.cs",
+        "size": 4183
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/gameplay/Calculation.FormulaOneInvocation.cs",
+        "size": 4611
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/input/CharacterInputCommands.cs",
+        "size": 4550
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/input/InputBlueprintFunctionLibrary.cs",
+        "size": 2403
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/input/InputFunctionCommon.cs",
+        "size": 6190
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/input/InputFunctionVisionSkill2.cs",
+        "size": 5645
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/loading/GameModePromise.cs",
+        "size": 2400
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/loading/LoadMapController.cs",
+        "size": 2072
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/loading/SubLevel.Visibility.cs",
+        "size": 5980
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/loading/SubLevel.cs",
+        "size": 4605
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/loading/SubLevelController.Execution.cs",
+        "size": 8718
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/loading/SubLevelController.Streaming.cs",
+        "size": 8991
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/loading/WorldGlobal.cs",
+        "size": 4330
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/movement/CharacterFightStateComponent.cs",
+        "size": 7854
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/movement/CharacterGlideComponent.cs",
+        "size": 2210
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/movement/CharacterMoveComponent.JumpHandoff.cs",
+        "size": 7950
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/movement/CharacterMoveComponent.Landing.cs",
+        "size": 3977
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/movement/CharacterMoveComponent.cs",
+        "size": 4770
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/movement/CharacterUnifiedStateComponent.Landing.cs",
+        "size": 8964
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/projectiles/BulletCollisionSystem.cs",
+        "size": 24279
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/projectiles/BulletController.cs",
+        "size": 9323
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/projectiles/BulletDataLogic.cs",
+        "size": 3013
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/projectiles/BulletHitCountUtil.cs",
+        "size": 2306
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/projectiles/BulletModel.cs",
+        "size": 1917
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/projectiles/BulletUtil.cs",
+        "size": 1717
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/scheduling/AsyncTask.cs",
+        "size": 1287
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/scheduling/Completion.cs",
+        "size": 3160
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/BaseAbilityComponent.cs",
+        "size": 4230
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/BaseSkillCdComponent.cs",
+        "size": 1130
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/BaseSkillComponent.cs",
+        "size": 39029
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/CharacterPassiveSkillComponent.cs",
+        "size": 22998
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/CharacterSkillCdComponent.cs",
+        "size": 1701
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/CharacterSkillComponent.JumpHandoff.cs",
+        "size": 2067
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/GroupSkillCdInfo.cs",
+        "size": 5120
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/PassiveSkillCdInfo.cs",
+        "size": 4383
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/Skill.cs",
+        "size": 6755
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/SkillBehaviorAction.cs",
+        "size": 11466
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/SkillBehaviorMisc.cs",
+        "size": 1342
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/SkillEffects.cs",
+        "size": 5930
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/TsAnimNotifyStateCounterAttack.cs",
+        "size": 8634
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/TsTaskSelectSkill.cs",
+        "size": 4055
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/skills/TsTaskUseSkill.cs",
+        "size": 3999
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/state/StateMachineCommon.Switch.cs",
+        "size": 2836
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/targeting/BaseLockOnComponent.cs",
+        "size": 5645
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/targeting/CharacterLockOnComponent.cs",
+        "size": 5807
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/targeting/LockOnInfo.cs",
+        "size": 1909
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/targeting/LockOnUtils.cs",
+        "size": 3752
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/CooperationController.cs",
+        "size": 6860
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/CooperationModel.cs",
+        "size": 1514
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/QteCooperationHandler.cs",
+        "size": 3069
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/RoleQteComponent.cs",
+        "size": 14890
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/RoleTeamComponent.cs",
+        "size": 21096
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/SceneTeamController.cs",
+        "size": 10695
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/SceneTeamCooperationHandler.cs",
+        "size": 2598
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/SceneTeamItem.cs",
+        "size": 1245
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/teams/SceneTeamModel.cs",
+        "size": 5265
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/tick/Core.cs",
+        "size": 9471
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/tick/TickSystem.cs",
+        "size": 12551
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/tick/Ticker.cs",
+        "size": 2145
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/tick/Time.cs",
+        "size": 9522
+      },
+      {
+        "extension": "cs",
+        "path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.PendingEventBoundaries.cs",
+        "size": 3771
+      },
+      {
+        "extension": "cpp",
+        "path": "src/models/native/CoreclrNativeThread.cpp",
+        "size": 1641
+      },
+      {
+        "extension": "cpp",
+        "path": "src/models/native/CoreclrThreadOrigin.cpp",
+        "size": 17301
+      },
+      {
+        "extension": "cpp",
+        "path": "src/models/native/LibxellHelperTarget.cpp",
+        "size": 3335
+      },
+      {
+        "extension": "cpp",
+        "path": "src/models/native/LibxellSleepImplementation.cpp",
+        "size": 4262
+      },
+      {
+        "extension": "js",
+        "path": "src/scripts/reconstructed/event/Event.js",
+        "size": 10409
+      },
+      {
+        "extension": "js",
+        "path": "src/scripts/reconstructed/event/EventCSharpBridge.js",
+        "size": 3173
+      },
+      {
+        "extension": "ts",
+        "path": "src/scripts/reconstructed/transition/DataLayerTransition.ts",
+        "size": 28648
+      }
+    ],
+    "new_curated_count": 99,
+    "new_research": [],
+    "new_research_count": 0,
+    "new_research_cs_count": 0,
+    "new_research_non_cs_count": 0,
+    "research_files_observed": 38816,
+    "supplement_curated_expected": 8,
+    "supplement_curated_present": 8,
+    "truncated": false,
+    "unexpected_new_curated": [],
+    "unexpected_new_curated_count": 0
+  },
+  "exit": 0,
+  "family_accounting": {
+    "families": [
+      {
+        "changed_size": 0,
+        "disposition_class": "GENERATED_REFERENCE_SOURCE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_CANONICAL_FULL",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Canonical full shard sources; generated reference bodies, not semantic proof.",
+        "origin_class": "GENERATED_REFERENCE_SOURCE",
+        "present": 28937,
+        "snapshot_count": 28937,
+        "surveyed": 28937
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "GENERATED_REFERENCE_SOURCE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_P1_B2B_PILOT",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "P1 B2B pilot shard sources; generated body candidates on a disjoint cohort.",
+        "origin_class": "GENERATED_REFERENCE_SOURCE",
+        "present": 88,
+        "snapshot_count": 88,
+        "surveyed": 88
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "HISTORICAL_ALTERNATIVE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_PILOT_FIX1",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Historical pilot-fix1 generated sources; not DIRECT_CIL.",
+        "origin_class": "HISTORICAL_ALTERNATIVE",
+        "present": 82,
+        "snapshot_count": 82,
+        "surveyed": 82
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "HISTORICAL_ALTERNATIVE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_PILOT",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Historical pilot generated sources; not DIRECT_CIL.",
+        "origin_class": "HISTORICAL_ALTERNATIVE",
+        "present": 72,
+        "snapshot_count": 72,
+        "surveyed": 72
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "HISTORICAL_ALTERNATIVE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_B2C",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Staged B2C shard sources; historical generated family.",
+        "origin_class": "HISTORICAL_ALTERNATIVE",
+        "present": 51,
+        "snapshot_count": 51,
+        "surveyed": 51
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "CURATED_MODEL_OR_REFERENCE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_SEMANTIC_GAMEPLAY",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Accepted gameplay semantic overlays; per-file evidence differs.",
+        "origin_class": "CURATED_MODEL_OR_REFERENCE",
+        "present": 69,
+        "snapshot_count": 69,
+        "surveyed": 69
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "CURATED_MODEL_OR_REFERENCE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_PERFORMANCE",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Accepted performance overlays and curated C# sources; per-file evidence differs.",
+        "origin_class": "CURATED_MODEL_OR_REFERENCE",
+        "present": 38,
+        "snapshot_count": 38,
+        "surveyed": 38
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "HISTORICAL_ALTERNATIVE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_HISTORICAL_PRODUCTION",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Historical production/campaign generated sources; not current curated identity.",
+        "origin_class": "HISTORICAL_ALTERNATIVE",
+        "present": 2051,
+        "snapshot_count": 2051,
+        "surveyed": 2051
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "HISTORICAL_ALTERNATIVE",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_HISTORICAL_CANARY",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Historical canary generated sources; not current curated identity.",
+        "origin_class": "HISTORICAL_ALTERNATIVE",
+        "present": 966,
+        "snapshot_count": 966,
+        "surveyed": 966
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "CURATED_MODEL",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_CURATED_IMPORTED",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "The 13 pre-existing curated C# files observed at graph snapshot time.",
+        "origin_class": "CURATED_MODEL",
+        "present": 13,
+        "snapshot_count": 13,
+        "surveyed": 13
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "DECLARATION_ONLY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "NONMANAGED_CPP_HEADER_INCLUDE",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Declaration-only include headers; no implementation import.",
+        "origin_class": "DECLARATION_ONLY",
+        "present": 5,
+        "snapshot_count": 5,
+        "surveyed": 5
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "MIXED_EXPLICIT_ROWS",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "NONMANAGED_SRC_RECONSTRUCTED",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "The 28 source-like non-managed rows under src/reconstructed; row-level dispositions are explicit.",
+        "origin_class": "MIXED_EXPLICIT_ROWS",
+        "present": 28,
+        "snapshot_count": 28,
+        "surveyed": 28
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "INTERNAL_ONLY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "INTERNAL_CHECKER",
+        "missing": 0,
+        "not_surveyed": 1,
+        "notes": "Internal differential checker, not game code.",
+        "origin_class": "INTERNAL_ONLY",
+        "present": 0,
+        "snapshot_count": 1,
+        "surveyed": 0
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "UNRESOLVED_OTHER",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "SRC_RECONSTRUCTED_OTHER",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Non-source metadata/evidence files under src/reconstructed; indexed historically, not source imports.",
+        "origin_class": "UNRESOLVED_OTHER",
+        "present": 3235,
+        "snapshot_count": 3235,
+        "surveyed": 3235
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "INTERNAL_ONLY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "MANAGED_CS_OTHER_FIXTURE_TOOL",
+        "missing": 0,
+        "not_surveyed": 6,
+        "notes": "Remaining .cs fixtures/tools outside managed families.",
+        "origin_class": "INTERNAL_ONLY",
+        "present": 0,
+        "snapshot_count": 6,
+        "surveyed": 0
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "UNRESOLVED",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "OTHER_SOURCE",
+        "missing": 0,
+        "not_surveyed": 248,
+        "notes": "Other source-kind rows outside the managed/source families; current disposition unresolved.",
+        "origin_class": "UNRESOLVED",
+        "present": 27,
+        "snapshot_count": 275,
+        "surveyed": 27
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "NON_SOURCE_AUXILIARY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "OTHER_EVIDENCE",
+        "missing": 0,
+        "not_surveyed": 1779,
+        "notes": "Evidence rows outside source families.",
+        "origin_class": "NON_SOURCE_AUXILIARY",
+        "present": 0,
+        "snapshot_count": 1779,
+        "surveyed": 0
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "NON_SOURCE_AUXILIARY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "OTHER_PROTOCOL",
+        "missing": 0,
+        "not_surveyed": 207,
+        "notes": "Protocol rows outside source families.",
+        "origin_class": "NON_SOURCE_AUXILIARY",
+        "present": 0,
+        "snapshot_count": 207,
+        "surveyed": 0
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "NON_SOURCE_AUXILIARY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "OTHER_TOOLING",
+        "missing": 0,
+        "not_surveyed": 93,
+        "notes": "Tooling rows outside source families.",
+        "origin_class": "NON_SOURCE_AUXILIARY",
+        "present": 0,
+        "snapshot_count": 93,
+        "surveyed": 0
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "NON_SOURCE_AUXILIARY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "OTHER_GOVERNANCE",
+        "missing": 0,
+        "not_surveyed": 12,
+        "notes": "Governance rows outside source families.",
+        "origin_class": "NON_SOURCE_AUXILIARY",
+        "present": 0,
+        "snapshot_count": 12,
+        "surveyed": 0
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "NON_SOURCE_AUXILIARY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "OTHER_BACKUP",
+        "missing": 0,
+        "not_surveyed": 7,
+        "notes": "Backup rows outside source families.",
+        "origin_class": "NON_SOURCE_AUXILIARY",
+        "present": 0,
+        "snapshot_count": 7,
+        "surveyed": 0
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "NON_SOURCE_AUXILIARY",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "OTHER_OPAQUE",
+        "missing": 0,
+        "not_surveyed": 274,
+        "notes": "Opaque/binary rows outside source families; not read.",
+        "origin_class": "NON_SOURCE_AUXILIARY",
+        "present": 3167,
+        "snapshot_count": 3441,
+        "surveyed": 3167
+      },
+      {
+        "changed_size": 0,
+        "disposition_class": "UNRESOLVED",
+        "evidence_scope": "METADATA_ONLY_HISTORICAL_ROW",
+        "family_id": "OTHER_OTHERWISE",
+        "missing": 0,
+        "not_surveyed": 0,
+        "notes": "Explicit fallback; must have zero rows.",
+        "origin_class": "UNRESOLVED",
+        "present": 0,
+        "snapshot_count": 0,
+        "surveyed": 0
+      }
+    ],
+    "family_total": 41456,
+    "snapshot_total": 41456,
+    "zero_loss": true
+  },
+  "findings": [],
+  "imports": {
+    "deterministic_views": 1,
+    "exact_imports": 7,
+    "files": 8,
+    "function_views": 60,
+    "proof_anchors": 25
+  },
+  "limits": [
+    "Supplementary view; the original 104 C# files / 533 qualified identities remain the separate baseline.",
+    "Supplemented totals 105 C# files / 537 qualified identities are a candidate only; this manifest does not silently create v7.",
+    "No runtime, native execution, CIL extraction, binary inspection, build compatibility, or semantic PASS is claimed.",
+    "TS/JS/CPP imports have no managed MethodDef. The new C# view has four new qualified keys (3 bodies + 1 embedded generated callback).",
+    "Graph representation labels are declared evidence axes, not semantic verification.",
+    "Coverage census is a report, not self-proving authority.",
+    "Public distribution remains DISABLED/INTERNAL_ONLY."
+  ],
+  "manifest": {
+    "path": "metadata/source-closure.v1.json",
+    "sha256": "42f70e404a13bfbe5545ba81b946630d60a5ec15f2218d004abedff6a95e1b1d"
+  },
+  "non_managed": {
+    "exact_set": true,
+    "manifest_rows": 34,
+    "snapshot_expected_rows": 34
+  },
+  "ok": true,
+  "production_manifest_pin": "42f70e404a13bfbe5545ba81b946630d60a5ec15f2218d004abedff6a95e1b1d",
+  "source_graph_join": {
+    "abstract_metadata_authority": "current accepted class from the current manifest/fullkey; graph inference is not authoritative",
+    "accepted_class_counts": {
+      "DIRECT_CIL_FULL": 246,
+      "METADATA_ONLY": 1,
+      "SOURCE_ONLY": 280,
+      "UNKNOWN": 6
+    },
+    "accepted_current_rows": 533,
+    "body_hash_verified_false": 2399,
+    "body_hash_verified_true": 22,
+    "body_present_outside_supplement_exact": 2248,
+    "body_sha_rows": 2421,
+    "candidate_raw_associated_definition": "raw/body/source association candidate; not a recovered source-body count",
+    "candidate_raw_associated_rows": 305855,
+    "canonical_rows": 303456,
+    "coverage_counts": {
+      "13 selected partial-file method checks": 13,
+      "ASYNC_LIFTED_FULL_SEMANTIC_BODY": 2,
+      "CURATED_IMPORTED_METHOD": 204,
+      "DECOMPILE_OK/DECOMPILER_DIAGNOSTIC": 6,
+      "DECOMPILE_OK/RESOLVED": 2248,
+      "DECOMPILE_OK/UNRESOLVED_ASSEMBLY": 68,
+      "DECOMPILE_OK/UNRESOLVED_GENERIC": 57,
+      "DECOMPILE_OK/UNRESOLVED_MEMBER": 20,
+      "FULL_CIL": 84,
+      "FULL_SELECTED_BODY": 42,
+      "FULL_SELECTED_BODY; FULL_CIL": 54,
+      "FULL_SELECTED_BODY; PRIMARY_FRESH_CIL": 6,
+      "FULL_SELECTED_BODY; SOURCE_AND_RAW_SUMMARY_ONLY": 7,
+      "FULL_SELECTED_BODY; UNKNOWN": 23,
+      "FULL_SELECTED_BODY; UNKNOWN; PRIMARY_FRESH_CIL; FULL_CIL": 6,
+      "FULL_SELECTED_BODY; UNKNOWN; SOURCE_AND_RAW_SUMMARY_ONLY": 4,
+      "FULL_SELECTED_BODY; UNKNOWN; SOURCE_ONLY_PRIMARY_ILSPY; SOURCE_ONLY": 7,
+      "METHOD_PROVENANCE_METADATA": 303456,
+      "PRIMARY_FRESH_CIL; FULL_CIL; FULL_SELECTED_BODY": 1,
+      "PRIMARY_FRESH_CIL; FULL_CIL; FULL_SELECTED_BODY; UNKNOWN": 7,
+      "PRIMARY_FRESH_CIL; FULL_SELECTED_BODY": 1,
+      "SOURCE_AND_METADATA_ONLY; FULL_SELECTED_BODY": 28,
+      "SOURCE_AND_METADATA_ONLY; FULL_SELECTED_BODY; UNKNOWN": 8,
+      "SOURCE_AND_RAW_SUMMARY_ONLY; FULL_SELECTED_BODY": 7,
+      "SOURCE_AND_RAW_SUMMARY_ONLY; FULL_SELECTED_BODY; UNKNOWN": 9,
+      "UNKNOWN": 5,
+      "capture=COMPLETE; body_status=GENERATED_IDENTITY_RETAINED; BODY_PROJECTED_ONCE": 5,
+      "capture=COMPLETE; body_status=GENERATED_IDENTITY_RETAINED; LAMBDA_BODY_PROJECTED_ONCE": 1,
+      "capture=COMPLETE; body_status=RECONSTRUCTED; DIRECT_IL_VERIFIED": 9,
+      "capture=ERROR; body_status=UNKNOWN_DIRECT_CIL": 1,
+      "classification=FULL; 6 RangeComponent-prefixed selected methods only": 3,
+      "classification=FULL_GENERATED_CALLBACK; 6 RangeComponent-prefixed selected methods only": 1,
+      "classification=PARTIAL_LIFECYCLE_EXCERPT; 6 RangeComponent-prefixed selected methods only": 2,
+      "coverage=DIRECT_CIL_FULL_CONFIRMED_LOAD01": 1,
+      "coverage=FULL_ACCEPTED_PRIOR_CIL": 1,
+      "coverage=HISTORICAL_SOURCE_ONLY_OVERLAP_SUPERSEDED_BY_E17_FOR_SELECTED_METHOD": 1,
+      "coverage=HISTORICAL_SOURCE_ONLY_OVERLAP_SUPERSEDED_BY_E18_FOR_SELECTED_METHOD": 1,
+      "single Time source fragment; selected method inventory": 15,
+      "source=SOURCE_VERIFIED; direct_il=DIRECT_IL_VERIFIED": 10,
+      "source=SOURCE_VERIFIED; direct_il=NOT_CAPTURED": 6,
+      "source=SOURCE_VERIFIED; direct_il=UNKNOWN_DIRECT_CIL": 1,
+      "source_reconstruction; 9 source_body_tokens": 9,
+      "type/name inferred; file association not an explicit per-file map": 36
+    },
+    "denominator_graph_rows": 305856,
+    "direct_rows": 231,
+    "duplicate_method_ids": 0,
+    "evidence_counts": {
+      "": 4,
+      "ASYNC_LIFTED_FULL_SEMANTIC_BODY": 2,
+      "COMPLETE": 15,
+      "COMPLETE_DIRECT_CIL_METHOD_COUNT_9": 9,
+      "COMPLETE_RESPONSE_RETAINED": 1,
+      "DIRECT_CIL_COMPLETE=true": 13,
+      "DIRECT_CIL_FULL": 92,
+      "DIRECT_IL_VERIFIED": 24,
+      "ERROR": 1,
+      "EXACT_METHOD_MAP": 59,
+      "EXACT_PARTIAL_EXCERPT": 1,
+      "FULL": 3,
+      "FULL_CIL": 84,
+      "FULL_GENERATED_CALLBACK": 1,
+      "FULL_SELECTED_BODY": 42,
+      "FULL_SELECTED_BODY; FULL_CIL": 54,
+      "FULL_SELECTED_BODY; PRIMARY_FRESH_CIL": 6,
+      "FULL_SELECTED_BODY; SOURCE_AND_RAW_SUMMARY_ONLY": 7,
+      "FULL_SELECTED_BODY; UNKNOWN": 23,
+      "FULL_SELECTED_BODY; UNKNOWN; PRIMARY_FRESH_CIL; FULL_CIL": 6,
+      "FULL_SELECTED_BODY; UNKNOWN; SOURCE_AND_RAW_SUMMARY_ONLY": 4,
+      "FULL_SELECTED_BODY; UNKNOWN; SOURCE_ONLY_PRIMARY_ILSPY; SOURCE_ONLY": 7,
+      "GENERATED_IDENTITY_RETAINED; BODY_PROJECTED_ONCE": 5,
+      "GENERATED_IDENTITY_RETAINED; LAMBDA_BODY_PROJECTED_ONCE": 1,
+      "METADATA_ONLY": 2,
+      "METADATA_RAW_PROVENANCE": 303456,
+      "MIGRATION_METHOD_RECORD": 4,
+      "NOT_CAPTURED": 6,
+      "P1_METHOD_PROVENANCE": 2399,
+      "PARTIAL_LIFECYCLE_EXCERPT": 2,
+      "PARTIAL_PENDING_FIELD_BLOCK_ONLY": 1,
+      "PARTIAL_TIMER_REGION_ONLY": 1,
+      "PERF02_PROJECTION_METHOD": 17,
+      "PERF04B_SOURCE_BODY_TOKEN": 9,
+      "PERF04_METHOD_INVENTORY": 16,
+      "PERF05_TYPE_NAME_INFERRED": 16,
+      "PERF07_TYPE_NAME_INFERRED": 15,
+      "PERF08_TYPE_NAME_INFERRED": 20,
+      "PERF09_METHOD_CHECK": 13,
+      "PERF11_RANGE_SELECTED_METHOD": 6,
+      "PRIMARY_FRESH_CIL; FULL_CIL; FULL_SELECTED_BODY": 1,
+      "PRIMARY_FRESH_CIL; FULL_CIL; FULL_SELECTED_BODY; UNKNOWN": 7,
+      "PRIMARY_FRESH_CIL; FULL_SELECTED_BODY": 1,
+      "RAW_BODY_HASH_ONLY": 2399,
+      "RECONSTRUCTED; DIRECT_IL_VERIFIED": 9,
+      "SEMANTIC_OVERLAY_ROW": 301,
+      "SOURCE_AND_METADATA_ONLY; FULL_SELECTED_BODY": 28,
+      "SOURCE_AND_METADATA_ONLY; FULL_SELECTED_BODY; UNKNOWN": 8,
+      "SOURCE_AND_RAW_SUMMARY_ONLY; FULL_SELECTED_BODY": 7,
+      "SOURCE_AND_RAW_SUMMARY_ONLY; FULL_SELECTED_BODY; UNKNOWN": 9,
+      "SOURCE_ONLY": 102,
+      "SOURCE_VERIFIED": 51,
+      "SOURCE_VERIFIED_ONLY": 2,
+      "TYPE_NAME_INFERRED": 57,
+      "UNKNOWN": 17,
+      "UNKNOWN_DIRECT_CIL": 4
+    },
+    "exclusive_axis_counts": {
+      "ACCEPTED_DIRECT_CIL_FULL": 246,
+      "ACCEPTED_METADATA_ONLY": 1,
+      "ACCEPTED_SOURCE_ONLY": 280,
+      "ACCEPTED_UNKNOWN": 6,
+      "CANONICAL_METADATA_RAW_PROVENANCE_SOURCE_ASSOCIATION": 302920,
+      "GRAPH_DECLARED_SOURCE_ONLY": 151,
+      "NEW_SCOPED_DIRECT_CIL_BACKED": 4,
+      "P1_DECOMPILE_OK_BODY_PRESENT": 2248
+    },
+    "exclusive_axis_sum": 305856,
+    "graph_axis_precedence": "current accepted 533 and new 4 override graph declarations; remaining rows use P1 body, declared CIL, canonical metadata association, source-only, raw-associated, or abstract/unresolved",
+    "graph_declared_labels_are_not_semantic_pass": true,
+    "graph_outside_supplemented_primary": 305319,
+    "graph_rows": 305856,
+    "invalid_method_ids": 0,
+    "method_id_validation": "FULL_KEY_RECOMPUTED_PER_ROW",
+    "new_keys_found_in_graph": 4,
+    "new_keys_found_sample": [
+      "d6fb119c90f7542603c9f65a56e4a7b8ea8b939a2213dd004b97b57736366b4b",
+      "15317f6709492c324bf3b8a50f65eb5bc0c4ece88124f2ad50e184ead83f7465",
+      "f04fa49831fe864ed87c2e555f50eee2cf3e724af1304683963ac69166137fe1",
+      "40ae6f3a99e3ae22fe93416d189ba4e2193f22c15ff00442b469f2a4f1d06bd4"
+    ],
+    "new_qualified_keys": 4,
+    "new_scoped_rows": 4,
+    "old_absent_truncated": false,
+    "old_keys_absent": 0,
+    "old_keys_absent_sample": [],
+    "old_keys_found": 533,
+    "old_qualified_keys": 533,
+    "old_qualified_keys_sha256": "512b50b90894a7529f1652a4b73c233d9a08d835612bb4dd536b9e4fd5f87801",
+    "outside_primary_body_present_keyed_by_full_method_id": true,
+    "p1_body_rows": 2248,
+    "p1_rows": 2399,
+    "payload_hash_validated_during_read": true,
+    "raw_associated_rows": 303456,
+    "raw_body_hash_only_rows": 2399,
+    "representation_kinds": {
+      "CANONICAL_METHOD_PROVENANCE": 303456,
+      "CURATED_IMPORTED": 102,
+      "CURATED_ORIGINAL": 102,
+      "GAMEPLAY_SEMANTIC_OVERLAY": 301,
+      "P1_METHOD_PROVENANCE": 2399,
+      "PERFORMANCE_METHOD_LINK": 116
+    },
+    "semantic_status": "NOT_VERIFIED",
+    "source_association_rows": 305856,
+    "supplemented_class_counts": {
+      "DIRECT_CIL_FULL": 250,
+      "METADATA_ONLY": 1,
+      "SOURCE_ONLY": 280,
+      "UNKNOWN": 6
+    },
+    "unique_method_ids": 305856
+  },
+  "status": "CENSUS_OK",
+  "supplemented_class_counts": {
+    "DIRECT_CIL_FULL": 250,
+    "METADATA_ONLY": 1,
+    "SOURCE_ONLY": 280,
+    "UNKNOWN": 6
+  },
+  "supplemented_totals": {
+    "c_files": 105,
+    "new_c_files": 1,
+    "new_qualified_keys": 4,
+    "old_c_files": 104,
+    "old_qualified_keys": 533,
+    "qualified_keys": 537,
+    "v7_created": false
+  },
+  "trust_status": "PRODUCTION_PIN_AUTHORIZED",
+  "coverage_of_manifest_sha256": "42f70e404a13bfbe5545ba81b946630d60a5ec15f2218d004abedff6a95e1b1d"
+}

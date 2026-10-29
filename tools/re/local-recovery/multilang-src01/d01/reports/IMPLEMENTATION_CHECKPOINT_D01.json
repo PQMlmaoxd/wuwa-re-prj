@@ -1,0 +1,308 @@
+{
+  "schema": "wuwa-reconstruction-multilang-implementation-checkpoint-d01-v1",
+  "stage": "D01",
+  "campaign": "RE-MULTILANG-SRC01",
+  "status": "CHECKPOINT_CANDIDATE_PENDING_PRIMARY_AUDIT",
+  "not_final": true,
+  "publication": "DISABLED_INTERNAL_ONLY",
+  "predecessor": {
+    "path": "metadata/source-closure.v1.json",
+    "bytes": 198579,
+    "sha256": "42f70e404a13bfbe5545ba81b946630d60a5ec15f2218d004abedff6a95e1b1d",
+    "origins": 34,
+    "imports": 8,
+    "baseline_curated_files": 104,
+    "expected_predecessor_curated": 112
+  },
+  "successor": {
+    "path": "metadata/source-closure.multilang.v1.json",
+    "bytes": 112698,
+    "sha256": "48f8bf247fa73c5f240a695dead6c9fd8eacb533514102d5e69b375b015ad093",
+    "status": "CHECKPOINT_CANDIDATE_PENDING_PRIMARY_AUDIT",
+    "not_final": true,
+    "publication": "DISABLED_INTERNAL_ONLY",
+    "expected_curated_files": 131,
+    "production_pin": null,
+    "production_pin_status": "SUCCESSOR_PRIMARY_AUDIT_PENDING"
+  },
+  "code": {
+    "source_closure": {
+      "path": "tools/re/src/registry/source_closure.rs",
+      "bytes": 177464,
+      "sha256": "b41a7ab389003e9dbad102a054b8bc8ecaf07df0c90e9f09eb2e27180a27d244"
+    },
+    "multilang": {
+      "path": "tools/re/src/registry/source_closure/multilang.rs",
+      "bytes": 73439,
+      "sha256": "c84fe43c0599e5ac3692df6bd286889730c6e53f745c0e5f8de25b82aeeb6a48"
+    },
+    "registry_bin_unchanged": "tools/re/src/registry.rs",
+    "cargo_manifest_unchanged": "tools/re/Cargo.toml"
+  },
+  "counts": {
+    "origins": 34,
+    "existing_imports": 7,
+    "new_imports": 19,
+    "physical_files": 26,
+    "not_imported": 8,
+    "primary": 1,
+    "projections": 22,
+    "historical": 3,
+    "origin_language_counts": {
+      "TS": 15,
+      "JS": 6,
+      "CPP": 4,
+      "CPP_HEADER": 9
+    },
+    "physical_language_counts": {
+      "TS": {
+        "total": 14,
+        "new": 13
+      },
+      "JS": {
+        "total": 5,
+        "new": 3
+      },
+      "CPP": {
+        "total": 4,
+        "new": 0
+      },
+      "CPP_HEADER": {
+        "total": 3,
+        "new": 3
+      }
+    },
+    "predecessor_expected_curated_files": 112,
+    "new_expected_curated_files": 19,
+    "expected_curated_files": 131
+  },
+  "normalized_origin_classes": {
+    "DECLARATION_OR_INTERFACE": 18,
+    "UNRESOLVED": 1,
+    "RECOVERED_SOURCE_PROJECTION": 8,
+    "HISTORICAL_ALTERNATIVE": 3,
+    "INDEPENDENT_RESEARCH_MODEL": 2,
+    "METADATA_ONLY": 2
+  },
+  "final_dispositions": {
+    "IMPORTED_SOURCE_PROJECTION": 22,
+    "REFERENCE_ONLY": 4,
+    "PRESERVED_HISTORICAL_ALTERNATIVE": 3,
+    "IMPORTED_PRIMARY_SOURCE": 1,
+    "DECLARATION_ONLY_NOT_IMPORTED": 4
+  },
+  "route_policy": {
+    "route_count": 34,
+    "physical_paths": 26,
+    "new_paths": 19,
+    "existing_paths": 7,
+    "route_table_code": "tools/re/local-recovery/multilang-src01/d01/reports/route-table-code.json",
+    "route_policy_manifest": "tools/re/local-recovery/multilang-src01/d01/reports/route-policy.json",
+    "exact_route_table_in_code": true,
+    "balanced_promotion_allowed": false
+  },
+  "typed_fields": {
+    "all_equal_to_predecessor": true,
+    "fields": [
+      "predecessor_origin_class",
+      "authority",
+      "identity_scheme",
+      "evidence_references"
+    ],
+    "proof": "tools/re/local-recovery/multilang-src01/d01/reports/typed-fields-proof.json"
+  },
+  "physical": {
+    "count": 26,
+    "new": 19,
+    "existing": 7,
+    "all_byte_equal": true,
+    "originals_34_equal_parent": true,
+    "proof": "tools/re/local-recovery/multilang-src01/d01/reports/import-preservation.json",
+    "old_import_proof": "tools/re/local-recovery/multilang-src01/reports/import-byte-proofs.json"
+  },
+  "source_review": {
+    "rows": 34,
+    "matrix": "tools/re/local-recovery/multilang-src01/d01/reports/SOURCE_REVIEW_MATRIX_D01.json",
+    "old_matrix_preserved": "tools/re/local-recovery/multilang-src01/reports/SOURCE_REVIEW_MATRIX.json",
+    "old_matrix_sha256": "dcb98a9f85fe93161cce60677a20012d90b1cbb51145a82b2e9cbed74707ef93"
+  },
+  "docs": {
+    "readme": {
+      "bytes": 7076,
+      "sha256": "9635e4f9ab634e356ee16c7fe3b33b5f20ca9cc087f454a475ad7ae8b7fe03d3"
+    },
+    "source_index": {
+      "bytes": 58569,
+      "sha256": "49e2bd641b0e29320d44343ea00d39a79727a2c9fadc8243fd22bbfcf4e6db7f",
+      "prefix_bytes": 46461,
+      "prefix_sha256": "e2057c7ed11cc556146db6b24d1f8ce4a3e3b72b67a7464e6524a47a87936c11"
+    },
+    "closure": {
+      "bytes": 28020,
+      "sha256": "287ea6badc6000f5f93e4197ef043b5375a179627f9c06f61d0f723e80000db0",
+      "prefix_bytes": 14351,
+      "prefix_sha256": "103837650b8b95b054a9df21a1d430e6dc900784479c737087861ac493a2ef5a"
+    },
+    "diffs": [
+      {
+        "path": "tools/re/local-recovery/multilang-src01/d01/reports/source_closure.d01.diff.txt",
+        "adds": 8,
+        "deletes": 0
+      },
+      {
+        "path": "tools/re/local-recovery/multilang-src01/d01/reports/multilang.d01.diff.txt",
+        "adds": 944,
+        "deletes": 126
+      },
+      {
+        "path": "tools/re/local-recovery/multilang-src01/d01/reports/manifest.d01.diff.txt",
+        "adds": 1104,
+        "deletes": 83
+      },
+      {
+        "path": "tools/re/local-recovery/multilang-src01/d01/reports/README.d01.diff.txt",
+        "adds": 25,
+        "deletes": 11
+      },
+      {
+        "path": "tools/re/local-recovery/multilang-src01/d01/reports/SOURCE_INDEX.d01.diff.txt",
+        "adds": 120,
+        "deletes": 85
+      },
+      {
+        "path": "tools/re/local-recovery/multilang-src01/d01/reports/RECOVERED_SOURCE_CLOSURE.d01.diff.txt",
+        "adds": 110,
+        "deletes": 97
+      }
+    ]
+  },
+  "backups": {
+    "manifest": "tools/re/local-recovery/multilang-src01/d01/backups/pre-edit/BACKUP_MANIFEST.json",
+    "sha256": "df9e690ef0a7ef70db18cffa169adaa2467ecf1dac7f45fa8150b1c6df067e43",
+    "rows": 6,
+    "restore": "NOT_TESTED"
+  },
+  "old_authority": {
+    "baseline_c_files": 104,
+    "baseline_qualified_keys": 533,
+    "qualified_keys_sha256": "512b50b90894a7529f1652a4b73c233d9a08d835612bb4dd536b9e4fd5f87801",
+    "classes": {
+      "DIRECT_CIL_FULL": 246,
+      "SOURCE_ONLY": 280,
+      "UNKNOWN": 6,
+      "METADATA_ONLY": 1
+    },
+    "supplemented_c_files": 105,
+    "supplemented_qualified_keys": 537,
+    "new_c_files": 1,
+    "new_keys": 4,
+    "restatused": false
+  },
+  "historical_acceptance": {
+    "tools/re/local-recovery/recovered-source-closure01/reports/phase-e-final/PRIMARY_FINAL.json": {
+      "bytes": 19756,
+      "sha256": "33418d60066d8de702d9322f32b650d1f64d493dfb8e7686d0659ffe0dd1bc29"
+    },
+    "tools/re/local-recovery/recovered-source-closure01/reports/phase-e-final/FREEZE.json": {
+      "bytes": 18865,
+      "sha256": "139a3a64c5aaf5c4db62376b6aa0a64ae93b5e516bcde8b7199c0a86cdc79209"
+    },
+    "metadata/source-closure.v1.json": {
+      "bytes": 198579,
+      "sha256": "42f70e404a13bfbe5545ba81b946630d60a5ec15f2218d004abedff6a95e1b1d"
+    },
+    "metadata/source-closure.coverage.v1.json": {
+      "bytes": 35702,
+      "sha256": "fff8373b6f6abbd2a83cb3ddac48b645371026775cba7fc313f67abc6bc8448b"
+    }
+  },
+  "checks": [
+    {
+      "command": "cargo check --all-targets --locked --offline --manifest-path tools/re/Cargo.toml",
+      "outcome": "PASS",
+      "log": "tools/re/local-recovery/multilang-src01/d01/reports/cargo-check.d01.txt"
+    },
+    {
+      "command": "cargo fmt --all --manifest-path tools/re/Cargo.toml -- --check",
+      "outcome": "PASS",
+      "log": "tools/re/local-recovery/multilang-src01/d01/reports/cargo-fmt-check.d01.txt"
+    },
+    {
+      "command": "cargo test --locked --offline --manifest-path tools/re/Cargo.toml source_closure",
+      "outcome": "PASS 32 passed, 0 failed, 1 admin-ignored",
+      "log": "tools/re/local-recovery/multilang-src01/d01/reports/cargo-test.source_closure.d01.txt"
+    },
+    {
+      "command": "cargo test ... successor_fixture_seam_preserves_predecessor_and_reports_131 -- --nocapture",
+      "outcome": "PASS 1 passed; explicit parent 42f70e40 + successor 48f8bf24; 131 census",
+      "log": "tools/re/local-recovery/multilang-src01/d01/reports/trusted-candidate-fixture.d01.txt"
+    },
+    {
+      "command": "corpus-registry source-status",
+      "outcome": "EXPECTED BLOCK exit 2 TRUST_PIN_UNAVAILABLE",
+      "log": "tools/re/local-recovery/multilang-src01/d01/reports/production-source-status.blocked.json"
+    },
+    {
+      "command": "corpus-registry source-verify --curated-root . --research-root ..",
+      "outcome": "EXPECTED BLOCK exit 2 TRUST_PIN_UNAVAILABLE",
+      "log": "tools/re/local-recovery/multilang-src01/d01/reports/production-source-verify.blocked.json"
+    },
+    {
+      "command": "corpus-registry source-lookup --origin-id SRC-TS-CONFIG-SKILLTREE --curated-root . --research-root ..",
+      "outcome": "EXPECTED BLOCK exit 2 TRUST_PIN_UNAVAILABLE",
+      "log": "tools/re/local-recovery/multilang-src01/d01/reports/production-source-lookup.blocked.json"
+    }
+  ],
+  "syntax": {
+    "js": {
+      "status": "REUSED_BYTE_IDENTICAL_RECEIPT",
+      "raw": "tools/re/local-recovery/multilang-src01/reports/syntax-node-check.raw.txt",
+      "sha256": "31a00b811794d0b8ef51b6cbcbdbf19fab5250ff00ba3424dcb3da8fd7e2e88f"
+    },
+    "headers": {
+      "status": "REUSED_BYTE_IDENTICAL_RECEIPT",
+      "raw": "tools/re/local-recovery/multilang-src01/reports/syntax-gxx.raw.txt",
+      "sha256": "c4611602902024c057a5925c47417560bd92b23085a54b43b6f4804fcbd22c02"
+    },
+    "ts": {
+      "status": "TSC_UNAVAILABLE",
+      "raw": "tools/re/local-recovery/multilang-src01/reports/syntax-ts.raw.txt",
+      "sha256": "d500ca7b824057f6bdebb6d577f4f5d55e6f8cb05532a50c06b9e51501aea479",
+      "malformed_preserved": 2
+    },
+    "native_cpp": {
+      "status": "UNVERIFIED_OPAQUE_MODEL",
+      "files": 4
+    }
+  },
+  "not_run": [
+    "full suite",
+    "freeze",
+    "source-inventory graph census",
+    "provenance re-run",
+    "tsc",
+    "native RE/runtime",
+    "publication",
+    "primary acceptance/FINAL"
+  ],
+  "limitations": [
+    "Successor is a source-like, evidence-backed integration view; it is not original developer source and not a buildable whole project.",
+    "Physical copies are exact bytes; syntax-only checks do not establish buildability, ABI, semantics, or runtime behavior.",
+    "Three config schemas are known malformed by inspection and are preserved unchanged; TypeScript compiler was unavailable.",
+    "Native bridge headers are forward declarations only; native bodies, ABI, ownership, and signatures remain UNKNOWN.",
+    "Historical JS alternatives are inactive PRESERVED_HISTORICAL_ALTERNATIVE rows and must not be merged into current C# or the active Event bridge.",
+    "FEventSystem and KuroKVStore retain normalized origin class METADATA_ONLY but final disposition REFERENCE_ONLY because they contain only comments and #pragma once.",
+    "Normalized origin_class values are separate from exact predecessor_origin_class labels; authority, identity_scheme, and evidence_references are exact typed predecessor fields, not self-asserted proof.",
+    "The exact 34-origin route policy is encoded in code; counts alone are not sufficient to authorize a route.",
+    "Predecessor manifest, coverage, imports, receipts, and old 104/533 authority remain immutable and separately authoritative.",
+    "Publication remains DISABLED; distribution is INTERNAL_ONLY_NOT_REVIEWED."
+  ],
+  "budget": {
+    "schema": "wuwa-reconstruction-multilang-preservation-budget-d01-v1",
+    "actual_bytes": 1321171,
+    "actual_mib": 1.26,
+    "file_count": 69,
+    "within_limit": true,
+    "limit_bytes": 26214400
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "schema": "wuwa-reconstruction-imports-v3",
+  "version": 3,
+  "manifest_sha256": "7da6c8c7b2d95b8a488adaba7ef46d5775d434b75dfdbee55b5e8e9613a2899b",
+  "previous_receipt_sha256": "24f3b419274648fbbc22a064623d7ff18953ca4e3ad3ab15a5ac243d520086ce",
+  "performance_source_sha256": "bd8b2ef69be52e2c4f18fb9080e049d1b2e9da6bc377777b43e3c984cc6aa040",
+  "imports": [
+    {
+      "id": "E18",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "method_identity": {
+        "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "typeDef": "0x020000A3",
+        "methodDef": "0x0600042E"
+      },
+      "original_path": "src/reconstructed/performance/managed/entity/Event.Emit.Enum2.DirectCIL.cs",
+      "imported_path": "src/managed/cs-e3fc67839851/event/Event.Emit.Enum2.DirectCIL.cs",
+      "original_size": 1625,
+      "imported_size": 1625,
+      "original_sha256": "fe86060f87034a64bc98db6355681ee35b9cbc5f00809ee797834f0c4e27cd11",
+      "imported_sha256": "fe86060f87034a64bc98db6355681ee35b9cbc5f00809ee797834f0c4e27cd11",
+      "exact_byte_comparison": "PASS",
+      "implementation_scope": "One selected public generic Event Emit method body.",
+      "source_completeness": "Complete selected direct-CIL body; constructor, callee, containing class, and external dependencies unresolved.",
+      "unresolved_dependencies": [
+        "Event<TName,TType> context and generic constraints",
+        "EventArgs<T1,T2> constructor MethodDef 0x06000457",
+        "IEventArgs",
+        "EmitInternal<T1> MethodDef 0x06000434"
+      ],
+      "editorial_status": "NEEDS_EDITORIAL_REVIEW",
+      "compilation_status": "NOT_RUN",
+      "equivalence_status": "NOT_ESTABLISHED",
+      "publication_status": "DISABLED",
+      "runtime_status": "PARKED"
+    },
+    {
+      "id": "E17",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "method_identity": {
+        "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "typeDef": "0x020000A3",
+        "methodDef": "0x06000434"
+      },
+      "original_path": "src/reconstructed/performance/managed/entity/Event.EmitInternal.DirectCIL.cs",
+      "imported_path": "src/managed/cs-e3fc67839851/event/Event.EmitInternal.DirectCIL.cs",
+      "original_size": 9820,
+      "imported_size": 9820,
+      "original_sha256": "7492158dbaf34884a100d7c9e387003719ab88372de2f903c90be45af8626d8c",
+      "imported_sha256": "7492158dbaf34884a100d7c9e387003719ab88372de2f903c90be45af8626d8c",
+      "exact_byte_comparison": "PASS",
+      "implementation_scope": "One selected private generic Event EmitInternal method body.",
+      "source_completeness": "Complete selected direct-CIL body; containing class, generic constraints, helpers, and external dependencies unresolved.",
+      "unresolved_dependencies": [
+        "Event<TName,TType> context",
+        "IEventArgs",
+        "ConditionListener<T1>",
+        "Stat, Log, inline-array helpers, and mutation helpers"
+      ],
+      "editorial_status": "NEEDS_EDITORIAL_REVIEW",
+      "compilation_status": "NOT_RUN",
+      "equivalence_status": "NOT_ESTABLISHED",
+      "publication_status": "DISABLED",
+      "runtime_status": "PARKED"
+    },
+    {
+      "id": "E13",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "method_identity": {
+        "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+        "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+        "typeDef": "0x020000A3",
+        "methodDef": "0x06000435"
+      },
+      "original_path": "src/reconstructed/performance/managed/entity/Event.ExecuteHandlesInternal.cs",
+      "imported_path": "src/managed/cs-e3fc67839851/event/Event.ExecuteHandlesInternal.cs",
+      "original_size": 6312,
+      "imported_size": 6312,
+      "original_sha256": "d82a1c8e62c3677548f88980bd798f8b487dccfaba75896c496f22eebfc19bdb",
+      "imported_sha256": "d82a1c8e62c3677548f88980bd798f8b487dccfaba75896c496f22eebfc19bdb",
+      "exact_byte_comparison": "PASS",
+      "implementation_scope": "One selected private generic handler-execution method body.",
+      "source_completeness": "Complete selected direct-CIL body; listener, callback, helper, native, and runtime behavior unresolved.",
+      "unresolved_dependencies": [
+        "Event<TName,TType> context and retained Enum or Delegate constraints",
+        "IEventArgs.Invoke",
+        "ConditionListener<T1>",
+        "Stat, Log, and compiler-generated inline-array helpers"
+      ],
+      "editorial_status": "NEEDS_EDITORIAL_REVIEW",
+      "compilation_status": "NOT_RUN",
+      "equivalence_status": "NOT_ESTABLISHED",
+      "publication_status": "DISABLED",
+      "runtime_status": "PARKED"
+    },
+    {
+      "id": "D",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "methods": [
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x06018865"
+          },
+          "evidence_status": "SOURCE_ONLY",
+          "source_status": "SOURCE_ONLY"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x06018867"
+          },
+          "evidence_status": "DIRECT_CIL_FULL",
+          "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x06018868"
+          },
+          "evidence_status": "UNKNOWN",
+          "source_status": "UNKNOWN"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x06018869"
+          },
+          "evidence_status": "UNKNOWN",
+          "source_status": "UNKNOWN"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x0601886A"
+          },
+          "evidence_status": "UNKNOWN",
+          "source_status": "UNKNOWN"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x0601886B"
+          },
+          "evidence_status": "UNKNOWN",
+          "source_status": "UNKNOWN"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x0601886C"
+          },
+          "evidence_status": "UNKNOWN",
+          "source_status": "UNKNOWN"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x06018873"
+          },
+          "evidence_status": "UNKNOWN",
+          "source_status": "UNKNOWN"
+        }
+      ],
+      "original_path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+      "imported_path": "src/managed/cs-e3fc67839851/gameplay/Calculation.DamageFormula.cs",
+      "original_size": 15892,
+      "imported_size": 15892,
+      "original_sha256": "6790caeb69bd9764e6e20df2fc0ed2724fa5a7eed842fb3dc8e396fff5891759",
+      "imported_sha256": "6790caeb69bd9764e6e20df2fc0ed2724fa5a7eed842fb3dc8e396fff5891759",
+      "exact_byte_comparison": "PASS",
+      "implementation_scope": "Eight selected ordinary method bodies from Calculation; one raw-only, one accepted full-CIL claim, and six per-method evidence statuses not assessed in this audit.",
+      "source_completeness": "The source header states that all eight selected source bodies are present. Per-method proof is mixed and six statuses are UNKNOWN here; this is not whole-class coverage or a standalone compilation unit.",
+      "unresolved_dependencies": [
+        "Calculation context and IStaticVariableResetter",
+        "Aki.Config and Aki.Protocol",
+        "SnapshotPayload, AttributeSnapshot, and external calculation helpers"
+      ],
+      "evidence_status": "UNKNOWN",
+      "source_status": "SOURCE_ONLY",
+      "editorial_status": "NEEDS_EDITORIAL_REVIEW",
+      "compilation_status": "NOT_RUN",
+      "equivalence_status": "NOT_ESTABLISHED",
+      "publication_status": "DISABLED",
+      "runtime_status": "PARKED"
+    },
+    {
+      "id": "T",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "methods": [
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02002EB2",
+            "methodDef": "0x0601886E"
+          },
+          "evidence_status": "SOURCE_ONLY",
+          "source_status": "SOURCE_ONLY"
+        }
+      ],
+      "original_path": "src/reconstructed/managed/semantic/gameplay/Calculation.cs",
+      "imported_path": "src/managed/cs-e3fc67839851/gameplay/Calculation.cs",
+      "original_size": 1531,
+      "imported_size": 1531,
+      "original_sha256": "61d4c7e5434fde34b963c00012f2460b4bda7a1281a5791dbd85bcaba0b5ae39",
+      "imported_sha256": "61d4c7e5434fde34b963c00012f2460b4bda7a1281a5791dbd85bcaba0b5ae39",
+      "exact_byte_comparison": "PASS",
+      "implementation_scope": "One selected ToughCalculation method view from Calculation.",
+      "source_completeness": "Partial source-only view; packaging convenience only and not whole-class recovery.",
+      "unresolved_dependencies": [
+        "Calculation context and IStaticVariableResetter",
+        "AttributeSnapshot",
+        "EAttributeType operands with independently unproved numeric identities"
+      ],
+      "evidence_status": "SOURCE_ONLY",
+      "source_status": "SOURCE_ONLY",
+      "editorial_status": "NEEDS_EDITORIAL_REVIEW",
+      "compilation_status": "NOT_RUN",
+      "equivalence_status": "NOT_ESTABLISHED",
+      "publication_status": "DISABLED",
+      "runtime_status": "PARKED"
+    },
+    {
+      "id": "PTIMER",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "methods": [
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02000BEC",
+            "methodDef": "0x06003267"
+          },
+          "evidence_status": "DIRECT_CIL_FULL",
+          "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02000BEC",
+            "methodDef": "0x06003269"
+          },
+          "evidence_status": "DIRECT_CIL_FULL",
+          "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL"
+        }
+      ],
+      "original_path": "src/reconstructed/performance/managed/Timer.cs",
+      "imported_path": "src/managed/cs-e3fc67839851/timer/Timer.cs",
+      "original_size": 2779,
+      "imported_size": 2779,
+      "original_sha256": "c5d437c8f4c80de3a163fbb80fc6c4968b3467cb280d8bf4c1f9d310e09ecbfa",
+      "imported_sha256": "c5d437c8f4c80de3a163fbb80fc6c4968b3467cb280d8bf4c1f9d310e09ecbfa",
+      "exact_byte_comparison": "PASS",
+      "implementation_scope": "Two selected Timer method bodies: Do and Clear.",
+      "source_completeness": "Complete selected direct-CIL bodies; constructors, remaining members, class packaging, and external dependencies unresolved. Not whole-class coverage or a build-ready unit.",
+      "unresolved_dependencies": [
+        "TTimerAction callback delegate",
+        "TimerHandle and EState context",
+        "Stat and Singleton<Log> logging context",
+        "ELogModule, ELogAuthor, and Log.ErrorWithStack",
+        "compiler-generated inline-array logging argument projection",
+        "constructor, remaining members, and native clock or cadence semantics"
+      ],
+      "evidence_status": "DIRECT_CIL_FULL",
+      "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+      "editorial_status": "NEEDS_EDITORIAL_REVIEW",
+      "compilation_status": "NOT_RUN",
+      "equivalence_status": "NOT_ESTABLISHED",
+      "publication_status": "DISABLED",
+      "runtime_status": "PARKED"
+    },
+    {
+      "id": "PTIMER_INSTANCE",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "methods": [
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02000BED",
+            "methodDef": "0x06003271"
+          },
+          "evidence_status": "DIRECT_CIL_FULL",
+          "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02000BED",
+            "methodDef": "0x0600327E"
+          },
+          "evidence_status": "DIRECT_CIL_FULL",
+          "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02000BED",
+            "methodDef": "0x0600326B"
+          },
+          "evidence_status": "DIRECT_CIL_FULL",
+          "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL"
+        },
+        {
+          "method_identity": {
+            "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+            "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+            "typeDef": "0x02000BED",
+            "methodDef": "0x0600327F"
+          },
+          "evidence_status": "DIRECT_CIL_FULL",
+          "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL"
+        }
+      ],
+      "original_path": "src/reconstructed/performance/managed/TimerSystemInstance.cs",
+      "imported_path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.cs",
+      "original_size": 4931,
+      "imported_size": 4931,
+      "original_sha256": "2607a87cd72841399c0f6159ea08a9bd2587317c57e7b92327dee1f819b12201",
+      "imported_sha256": "2607a87cd72841399c0f6159ea08a9bd2587317c57e7b92327dee1f819b12201",
+      "exact_byte_comparison": "PASS",
+      "implementation_scope": "Four selected TimerSystemInstance method bodies: Next, DoAdd, Tick, and DoRemove.",
+      "source_completeness": "Complete selected direct-CIL bodies; constructors, remaining members, class packaging, and external dependencies unresolved. Not whole-class coverage or a build-ready unit.",
+      "unresolved_dependencies": [
+        "Timer and TimerHandle context",
+        "PriorityQueue<Timer> and comparer semantics",
+        "FinalizationRegistry<Timer,TimerHandle> lifetime",
+        "StatWeakMap and Stat.CreateWithStack",
+        "Log, ELogModule, and ELogAuthor",
+        "ConcurrentQueue pending-removal drain",
+        "unselected Remove and Registry finalizer body",
+        "constructors, remaining members, clock units, and physical allocation"
+      ],
+      "evidence_status": "DIRECT_CIL_FULL",
+      "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+      "editorial_status": "NEEDS_EDITORIAL_REVIEW",
+      "compilation_status": "NOT_RUN",
+      "equivalence_status": "NOT_ESTABLISHED",
+      "publication_status": "DISABLED",
+      "runtime_status": "PARKED"
+    }
+  ]
+}

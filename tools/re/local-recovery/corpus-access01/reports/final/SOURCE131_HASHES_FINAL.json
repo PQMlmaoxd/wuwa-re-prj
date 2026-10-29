@@ -1,0 +1,1739 @@
+{
+  "schema": "wuwa-reconstruction-corpus-access01-final-source131-v1",
+  "count": 131,
+  "total_bytes": 878106,
+  "mismatched": 0,
+  "files": [
+    {
+      "path": "src/managed/cs-e3fc67839851/ai/AiLibrary.cs",
+      "bytes": 10703,
+      "sha256": "e46a91808e70a93435f1a84dc9ff9fe880c17a354b76f22bb360de53eb3fc48c",
+      "declared_sha256": "e46a91808e70a93435f1a84dc9ff9fe880c17a354b76f22bb360de53eb3fc48c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/attributes/ActiveBuffInternal.cs",
+      "bytes": 17340,
+      "sha256": "00a91e64185776bb10b1ba7a52edf1973eedec5b4f053effbf78f96cbc681d49",
+      "declared_sha256": "00a91e64185776bb10b1ba7a52edf1973eedec5b4f053effbf78f96cbc681d49",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/attributes/BaseAttributeComponent.cs",
+      "bytes": 12755,
+      "sha256": "ebee23e1fb7a8d1ea6f048fb53b19a669f228f92c001db621b004a8f2ea70b86",
+      "declared_sha256": "ebee23e1fb7a8d1ea6f048fb53b19a669f228f92c001db621b004a8f2ea70b86",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/attributes/BaseAttributeStorage.cs",
+      "bytes": 10186,
+      "sha256": "20fad70c25a20cca2a1107cab1afef9991b3a9e963c5a39c454ec9acc054e6a9",
+      "declared_sha256": "20fad70c25a20cca2a1107cab1afef9991b3a9e963c5a39c454ec9acc054e6a9",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/attributes/CharacterAttributeComponent.cs",
+      "bytes": 4122,
+      "sha256": "f388801e704c5698598b8a30165a362e7c4fd85a3496a822d9e4a788d570fb7b",
+      "declared_sha256": "f388801e704c5698598b8a30165a362e7c4fd85a3496a822d9e4a788d570fb7b",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/attributes/LockValue.cs",
+      "bytes": 2854,
+      "sha256": "521000ebaffe31a7b12cbc5c437b9427d98d8fefdc198a9f20f1aaba6528f11f",
+      "declared_sha256": "521000ebaffe31a7b12cbc5c437b9427d98d8fefdc198a9f20f1aaba6528f11f",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/buffs/BaseBuffComponent.cs",
+      "bytes": 16082,
+      "sha256": "7d9b831acc1c9c1700dbbe87f806900f242d6b4430ace993a6b71cd9cc2e51ea",
+      "declared_sha256": "7d9b831acc1c9c1700dbbe87f806900f242d6b4430ace993a6b71cd9cc2e51ea",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/buffs/BuffController.cs",
+      "bytes": 2158,
+      "sha256": "2973ec90e9e096e1a4625a6bc94ba99727303e6c27dc4e11827e288ec3c73819",
+      "declared_sha256": "2973ec90e9e096e1a4625a6bc94ba99727303e6c27dc4e11827e288ec3c73819",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/collision/RoleKuroFastCollisionComponent.cs",
+      "bytes": 4399,
+      "sha256": "5373e34145ebd50242ecd2436abd8fd2d313d9ca75f5dc2ab706ebebd6468065",
+      "declared_sha256": "5373e34145ebd50242ecd2436abd8fd2d313d9ca75f5dc2ab706ebebd6468065",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/damage/BaseDamageComponent.ExecDamageEvent.cs",
+      "bytes": 2484,
+      "sha256": "97cea85559ce30b53b1333ab6a93388da71ee1e8ba304718b8977a457032baae",
+      "declared_sha256": "97cea85559ce30b53b1333ab6a93388da71ee1e8ba304718b8977a457032baae",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/damage/BaseDamageComponent.cs",
+      "bytes": 23591,
+      "sha256": "6e3f3543638d808945f16e1e1ee5055caf951795bf4d69c6416dd5c1fa6adda2",
+      "declared_sha256": "6e3f3543638d808945f16e1e1ee5055caf951795bf4d69c6416dd5c1fa6adda2",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/damage/CharacterHitComponent.cs",
+      "bytes": 31566,
+      "sha256": "a384ab0319e11f6316437adfd8a8fd952ff7b0873714b6b8da50cba10842f822",
+      "declared_sha256": "a384ab0319e11f6316437adfd8a8fd952ff7b0873714b6b8da50cba10842f822",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/damage/CharacterStatisticsComponent.DamageCombat.cs",
+      "bytes": 2192,
+      "sha256": "45b8bedaab38ee971ddc3b2d2c442df58f33272f2f2e990119fa8fbf1c18a5b0",
+      "declared_sha256": "45b8bedaab38ee971ddc3b2d2c442df58f33272f2f2e990119fa8fbf1c18a5b0",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/damage/CharacterStatisticsComponent.DamageReceiver.cs",
+      "bytes": 2510,
+      "sha256": "c46af6471aeceba1e2fcf49236126c4fad3ed1e8b782840da0470c4394eb0280",
+      "declared_sha256": "c46af6471aeceba1e2fcf49236126c4fad3ed1e8b782840da0470c4394eb0280",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/damage/CharacterStatisticsComponent.ListViewFilter.cs",
+      "bytes": 2207,
+      "sha256": "ed45dd0d5fd69839f50c935f32d2a11c0a1e72e01cb3faa475b3a5559553cdba",
+      "declared_sha256": "ed45dd0d5fd69839f50c935f32d2a11c0a1e72e01cb3faa475b3a5559553cdba",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/elements/RoleElementComponent.cs",
+      "bytes": 8062,
+      "sha256": "8517757f4b444d9f61ce44a9999e58a179dfd2289728a8e98b9ab27d2f574af9",
+      "declared_sha256": "8517757f4b444d9f61ce44a9999e58a179dfd2289728a8e98b9ab27d2f574af9",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/elements/RoleElementResource.cs",
+      "bytes": 1381,
+      "sha256": "376509fb76e8506e1cdf66ea451868fdcdf93d96f9dc800b4fc7d7dfc17e8756",
+      "declared_sha256": "376509fb76e8506e1cdf66ea451868fdcdf93d96f9dc800b4fc7d7dfc17e8756",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/Entity.cs",
+      "bytes": 3387,
+      "sha256": "9e27be9587f700539d9ec3e21f694dd2fc71053e6c5281457f310ab760b92992",
+      "declared_sha256": "9e27be9587f700539d9ec3e21f694dd2fc71053e6c5281457f310ab760b92992",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/EntityComponent.cs",
+      "bytes": 3710,
+      "sha256": "0445721bd7a051be09983796aab6ee7286c26494912ff34310ea631da8076167",
+      "declared_sha256": "0445721bd7a051be09983796aab6ee7286c26494912ff34310ea631da8076167",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/EntitySystem.cs",
+      "bytes": 2837,
+      "sha256": "2b17779aad6cbdc3b8fdfd9edbf240baaf51eb0dbe8d21a65e6f1c0c9baa3fb6",
+      "declared_sha256": "2b17779aad6cbdc3b8fdfd9edbf240baaf51eb0dbe8d21a65e6f1c0c9baa3fb6",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/RangeComponent.LifecycleRecovery.cs",
+      "bytes": 29054,
+      "sha256": "dfb847c7982f5ab0b32c1bd64c5e68ff7949c3ad4b3d5c9fa54b5c3d1ca08356",
+      "declared_sha256": "dfb847c7982f5ab0b32c1bd64c5e68ff7949c3ad4b3d5c9fa54b5c3d1ca08356",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/RangeComponent.PendingEventDrain.cs",
+      "bytes": 9839,
+      "sha256": "2efdad631c62af834db0d2d3f17e540da4e11803f7daba50ec9ac329eda83fe8",
+      "declared_sha256": "2efdad631c62af834db0d2d3f17e540da4e11803f7daba50ec9ac329eda83fe8",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "parent",
+          "label": "IMP-08-RANGE-PENDING-DRAIN"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/RangeComponent.cs",
+      "bytes": 18577,
+      "sha256": "d3928fd7eb23bbce6ce2fb415cc0477ec62e016a5906f047660bee1f2ed80a28",
+      "declared_sha256": "d3928fd7eb23bbce6ce2fb415cc0477ec62e016a5906f047660bee1f2ed80a28",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/TickComponentInfo.cs",
+      "bytes": 1190,
+      "sha256": "ef97d9f94525d066c83e0acc741b7aa5012b3e233d1c5d258ddd2505916aaf5e",
+      "declared_sha256": "ef97d9f94525d066c83e0acc741b7aa5012b3e233d1c5d258ddd2505916aaf5e",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/TickComponentManager.cs",
+      "bytes": 4574,
+      "sha256": "34c5f92b908d2ecc4d840fb8648f939fadda5d695b5f446dc37f90e780c17fe4",
+      "declared_sha256": "34c5f92b908d2ecc4d840fb8648f939fadda5d695b5f446dc37f90e780c17fe4",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/TickEntityGroup.cs",
+      "bytes": 1134,
+      "sha256": "fd9a3406f252a76ffe044972442960ea7b7d692d6b93cb60291af336efa96941",
+      "declared_sha256": "fd9a3406f252a76ffe044972442960ea7b7d692d6b93cb60291af336efa96941",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/entity/TickEntityManager.cs",
+      "bytes": 6402,
+      "sha256": "d2908682b31b5c792db2925d1f8c15af809639073b01636bd3b99d4b5fc561b5",
+      "declared_sha256": "d2908682b31b5c792db2925d1f8c15af809639073b01636bd3b99d4b5fc561b5",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/event/Event.Emit.Enum2.DirectCIL.cs",
+      "bytes": 1625,
+      "sha256": "fe86060f87034a64bc98db6355681ee35b9cbc5f00809ee797834f0c4e27cd11",
+      "declared_sha256": "fe86060f87034a64bc98db6355681ee35b9cbc5f00809ee797834f0c4e27cd11",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/event/Event.EmitInternal.DirectCIL.cs",
+      "bytes": 9820,
+      "sha256": "7492158dbaf34884a100d7c9e387003719ab88372de2f903c90be45af8626d8c",
+      "declared_sha256": "7492158dbaf34884a100d7c9e387003719ab88372de2f903c90be45af8626d8c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/event/Event.ExecuteHandlesInternal.cs",
+      "bytes": 6312,
+      "sha256": "d82a1c8e62c3677548f88980bd798f8b487dccfaba75896c496f22eebfc19bdb",
+      "declared_sha256": "d82a1c8e62c3677548f88980bd798f8b487dccfaba75896c496f22eebfc19bdb",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/event/EventArgs.Invoke.Enum2.cs",
+      "bytes": 2870,
+      "sha256": "0582bc228dde2956975d2e9c03350fe351be6a160e5f1f07fda6a4df5b4a6781",
+      "declared_sha256": "0582bc228dde2956975d2e9c03350fe351be6a160e5f1f07fda6a4df5b4a6781",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/event/EventSystem.EmitWithTarget.Enum2.cs",
+      "bytes": 3382,
+      "sha256": "ba8d9c537ed73ca517433e7dcc4e14bf672516190232464867e78847e72cde73",
+      "declared_sha256": "ba8d9c537ed73ca517433e7dcc4e14bf672516190232464867e78847e72cde73",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/events/GameplayEventTrigger.cs",
+      "bytes": 2082,
+      "sha256": "2811e4ad7ed287ecc5ea77aea7020c1c38ad7424c14610414683be047e26fc90",
+      "declared_sha256": "2811e4ad7ed287ecc5ea77aea7020c1c38ad7424c14610414683be047e26fc90",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/events/TagSwitchedTask.cs",
+      "bytes": 1413,
+      "sha256": "f0bb8ffb4205a89f66a811d9ada7080cfaaf85abce10a5481ce1133029d0b451",
+      "declared_sha256": "f0bb8ffb4205a89f66a811d9ada7080cfaaf85abce10a5481ce1133029d0b451",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/events/Trigger.cs",
+      "bytes": 4183,
+      "sha256": "4cd5240ef97f60430fd641aafc6af562f0bfd9cbceabb07e579349dd2717ef88",
+      "declared_sha256": "4cd5240ef97f60430fd641aafc6af562f0bfd9cbceabb07e579349dd2717ef88",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/gameplay/Calculation.DamageFormula.cs",
+      "bytes": 15892,
+      "sha256": "6790caeb69bd9764e6e20df2fc0ed2724fa5a7eed842fb3dc8e396fff5891759",
+      "declared_sha256": "6790caeb69bd9764e6e20df2fc0ed2724fa5a7eed842fb3dc8e396fff5891759",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/gameplay/Calculation.FormulaOneInvocation.cs",
+      "bytes": 4611,
+      "sha256": "8d7273d4c4f33b041b8a99c11d271464bd584b49951e67bec8882e3a38206d40",
+      "declared_sha256": "8d7273d4c4f33b041b8a99c11d271464bd584b49951e67bec8882e3a38206d40",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/gameplay/Calculation.cs",
+      "bytes": 1531,
+      "sha256": "61d4c7e5434fde34b963c00012f2460b4bda7a1281a5791dbd85bcaba0b5ae39",
+      "declared_sha256": "61d4c7e5434fde34b963c00012f2460b4bda7a1281a5791dbd85bcaba0b5ae39",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/input/CharacterInputCommands.cs",
+      "bytes": 4550,
+      "sha256": "71ba17c7c824775c2f06d351b59501f21467baa2a9d946edb01375bccf55d20c",
+      "declared_sha256": "71ba17c7c824775c2f06d351b59501f21467baa2a9d946edb01375bccf55d20c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/input/InputBlueprintFunctionLibrary.cs",
+      "bytes": 2403,
+      "sha256": "fbebe1c810ec1dbb04ae704cff6ef22b75da2ab9eeaf12a35dcfc7430b8d5564",
+      "declared_sha256": "fbebe1c810ec1dbb04ae704cff6ef22b75da2ab9eeaf12a35dcfc7430b8d5564",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/input/InputFunctionCommon.cs",
+      "bytes": 6190,
+      "sha256": "95a1fde2ad6d59eba29cd7b0c39bd84e34102d6b1c7fded2e335bc66a6d761b3",
+      "declared_sha256": "95a1fde2ad6d59eba29cd7b0c39bd84e34102d6b1c7fded2e335bc66a6d761b3",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/input/InputFunctionVisionSkill2.cs",
+      "bytes": 5645,
+      "sha256": "d1e2f53e6e5c7c9bd48b7641d425271255d3d5af5ab8625c1c4d7ed388e97ad9",
+      "declared_sha256": "d1e2f53e6e5c7c9bd48b7641d425271255d3d5af5ab8625c1c4d7ed388e97ad9",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/loading/GameModePromise.cs",
+      "bytes": 2400,
+      "sha256": "4ffdada5cbe4ebf98c6e7899adf172c457617bd1f49a17092bdccf838cf6a984",
+      "declared_sha256": "4ffdada5cbe4ebf98c6e7899adf172c457617bd1f49a17092bdccf838cf6a984",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/loading/LoadMapController.cs",
+      "bytes": 2072,
+      "sha256": "29ad240644442c6646e50efd3d3493974b0f8bd21cef9421477c47ef93b69955",
+      "declared_sha256": "29ad240644442c6646e50efd3d3493974b0f8bd21cef9421477c47ef93b69955",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/loading/SubLevel.Visibility.cs",
+      "bytes": 5980,
+      "sha256": "70c1e04d26b9ab4f0480bdfa9601bafbd173e09b13ac1b4853fba1b17ecc49ed",
+      "declared_sha256": "70c1e04d26b9ab4f0480bdfa9601bafbd173e09b13ac1b4853fba1b17ecc49ed",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/loading/SubLevel.cs",
+      "bytes": 4605,
+      "sha256": "9ece8c68cb2c92288e1ce32d30f2d778b00d53dea2b9d3ca98b5d9fffd73f36f",
+      "declared_sha256": "9ece8c68cb2c92288e1ce32d30f2d778b00d53dea2b9d3ca98b5d9fffd73f36f",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/loading/SubLevelController.Execution.cs",
+      "bytes": 8718,
+      "sha256": "110b964b4231565d3cf3c4f28baa3b86bcdf22983de7188d05818c263536744d",
+      "declared_sha256": "110b964b4231565d3cf3c4f28baa3b86bcdf22983de7188d05818c263536744d",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/loading/SubLevelController.Streaming.cs",
+      "bytes": 8991,
+      "sha256": "b985a7f492e76f0d091627a41b84f517a35fdeb199c78dfda326dd41fd7f83ca",
+      "declared_sha256": "b985a7f492e76f0d091627a41b84f517a35fdeb199c78dfda326dd41fd7f83ca",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/loading/WorldGlobal.cs",
+      "bytes": 4330,
+      "sha256": "734fa3534d64c9c930da556241b3f498528ac9170892214201cd2fbf29a0510d",
+      "declared_sha256": "734fa3534d64c9c930da556241b3f498528ac9170892214201cd2fbf29a0510d",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/movement/CharacterFightStateComponent.cs",
+      "bytes": 7854,
+      "sha256": "e34f0c9666e736670d48b03b1b4e26231fa7777f32fed71fe9b4fd35024e9bfb",
+      "declared_sha256": "e34f0c9666e736670d48b03b1b4e26231fa7777f32fed71fe9b4fd35024e9bfb",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/movement/CharacterGlideComponent.cs",
+      "bytes": 2210,
+      "sha256": "4fe54838c1512d7e7c3e3eee9a2ac1fe0b32284db75140153116e5d2992fcc6c",
+      "declared_sha256": "4fe54838c1512d7e7c3e3eee9a2ac1fe0b32284db75140153116e5d2992fcc6c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/movement/CharacterMoveComponent.JumpHandoff.cs",
+      "bytes": 7950,
+      "sha256": "98a8064b273dabe127f1ae0da971ca0e4bd5e8c9da0e68be9b0e8612de2a846b",
+      "declared_sha256": "98a8064b273dabe127f1ae0da971ca0e4bd5e8c9da0e68be9b0e8612de2a846b",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/movement/CharacterMoveComponent.Landing.cs",
+      "bytes": 3977,
+      "sha256": "85bb68ac7b10ccccc1da21e69c5ee304f2737a4814cf06270536e7fd2ae5e932",
+      "declared_sha256": "85bb68ac7b10ccccc1da21e69c5ee304f2737a4814cf06270536e7fd2ae5e932",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/movement/CharacterMoveComponent.cs",
+      "bytes": 4770,
+      "sha256": "1c7b24d0ccabec57c02a58d81bbbed07dc36c540e257c998b623db6f07860eb8",
+      "declared_sha256": "1c7b24d0ccabec57c02a58d81bbbed07dc36c540e257c998b623db6f07860eb8",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/movement/CharacterUnifiedStateComponent.Landing.cs",
+      "bytes": 8964,
+      "sha256": "fc8fe4a5185e56e63dc9b9a829b3ea55bfd6853ffbf147710122630ba001da53",
+      "declared_sha256": "fc8fe4a5185e56e63dc9b9a829b3ea55bfd6853ffbf147710122630ba001da53",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/projectiles/BulletCollisionSystem.cs",
+      "bytes": 24279,
+      "sha256": "4eeba8214f85b8ad5d2b7f42114adb80dee4b1d2a70f663d72ed647009bb0ed7",
+      "declared_sha256": "4eeba8214f85b8ad5d2b7f42114adb80dee4b1d2a70f663d72ed647009bb0ed7",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/projectiles/BulletController.cs",
+      "bytes": 9323,
+      "sha256": "13be6ccf9d1931fa74e62a722610272524803564e5afbeef3716a03de7258b64",
+      "declared_sha256": "13be6ccf9d1931fa74e62a722610272524803564e5afbeef3716a03de7258b64",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/projectiles/BulletDataLogic.cs",
+      "bytes": 3013,
+      "sha256": "19551695393230a35236404cfa09d9836d70e38f89f91d73d161fea49f19676c",
+      "declared_sha256": "19551695393230a35236404cfa09d9836d70e38f89f91d73d161fea49f19676c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/projectiles/BulletHitCountUtil.cs",
+      "bytes": 2306,
+      "sha256": "9916f1b73e3038cf6e6e3e424638e7a88cfa201b6e7562996dbf4f9de1ce52a4",
+      "declared_sha256": "9916f1b73e3038cf6e6e3e424638e7a88cfa201b6e7562996dbf4f9de1ce52a4",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/projectiles/BulletModel.cs",
+      "bytes": 1917,
+      "sha256": "bec9b1d56c205c88d4507f6e5f0bfe435b05fdacb9ba6867619fa312624d6fa0",
+      "declared_sha256": "bec9b1d56c205c88d4507f6e5f0bfe435b05fdacb9ba6867619fa312624d6fa0",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/projectiles/BulletUtil.cs",
+      "bytes": 1717,
+      "sha256": "2c956487821870d1df88f0f9cf1fffca0e89dae5becf88510c0678cd3d87e12f",
+      "declared_sha256": "2c956487821870d1df88f0f9cf1fffca0e89dae5becf88510c0678cd3d87e12f",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/AsyncTask.cs",
+      "bytes": 1287,
+      "sha256": "301e5b9debcb6ea14334d94b16699131d604019b494bb2f46df79d8a837ebfef",
+      "declared_sha256": "301e5b9debcb6ea14334d94b16699131d604019b494bb2f46df79d8a837ebfef",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/Completion.cs",
+      "bytes": 3160,
+      "sha256": "cf2f3ff97787679975b54e02add948817b88ec9ffdf70c17bd63222453888f8c",
+      "declared_sha256": "cf2f3ff97787679975b54e02add948817b88ec9ffdf70c17bd63222453888f8c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/PriorityQueue.cs",
+      "bytes": 7853,
+      "sha256": "48d2102543b23a10077b86b6621b0f805f60c1dc8b3773b85a0baf2b46b1bb4d",
+      "declared_sha256": "48d2102543b23a10077b86b6621b0f805f60c1dc8b3773b85a0baf2b46b1bb4d",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/Queue.cs",
+      "bytes": 10163,
+      "sha256": "439ce33738812997ad56772218f108eb82873f34f105f6ed677f4b9cb6b4ad3a",
+      "declared_sha256": "439ce33738812997ad56772218f108eb82873f34f105f6ed677f4b9cb6b4ad3a",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/TaskBase.cs",
+      "bytes": 5418,
+      "sha256": "50dd7ff2779ce004601ee862ffbf5b578c0dc46823df61f68f8d00fbf76771c3",
+      "declared_sha256": "50dd7ff2779ce004601ee862ffbf5b578c0dc46823df61f68f8d00fbf76771c3",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/TaskGraph.cs",
+      "bytes": 10715,
+      "sha256": "2a6b17d8e10c287437b450d8fa87f717c008fa6571fcd3bd26c61eb603b5373a",
+      "declared_sha256": "2a6b17d8e10c287437b450d8fa87f717c008fa6571fcd3bd26c61eb603b5373a",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/TaskSystem.cs",
+      "bytes": 15075,
+      "sha256": "0567e1ec4cff3885fc5add61ff4288fd1f19e69894445630f7dc0f1afce792d9",
+      "declared_sha256": "0567e1ec4cff3885fc5add61ff4288fd1f19e69894445630f7dc0f1afce792d9",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/TaskUtils.cs",
+      "bytes": 9108,
+      "sha256": "f156234df333c606e4d3ea92445f39954f7beb9ed1797f44f55f70751edfc4fd",
+      "declared_sha256": "f156234df333c606e4d3ea92445f39954f7beb9ed1797f44f55f70751edfc4fd",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/BaseAbilityComponent.cs",
+      "bytes": 4230,
+      "sha256": "046679b539e304531efbbfd69f71f84dd83b91cc5fb2eaadf9e928c4d5f997cb",
+      "declared_sha256": "046679b539e304531efbbfd69f71f84dd83b91cc5fb2eaadf9e928c4d5f997cb",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/BaseSkillCdComponent.cs",
+      "bytes": 1130,
+      "sha256": "ff70686e12999641820551429b118f2b6ef90d5fba65964d9e17ad88f6ad9ba2",
+      "declared_sha256": "ff70686e12999641820551429b118f2b6ef90d5fba65964d9e17ad88f6ad9ba2",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/BaseSkillComponent.cs",
+      "bytes": 39029,
+      "sha256": "e858e22119394e491d0d368ffb10af02b565e334d496adc8d50ce7c53fddbe40",
+      "declared_sha256": "e858e22119394e491d0d368ffb10af02b565e334d496adc8d50ce7c53fddbe40",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/CharacterPassiveSkillComponent.cs",
+      "bytes": 22998,
+      "sha256": "2f8e036f86f51d8fd121c50e150dcd831dff4f41801f08129aecebb87f834dcf",
+      "declared_sha256": "2f8e036f86f51d8fd121c50e150dcd831dff4f41801f08129aecebb87f834dcf",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/CharacterSkillCdComponent.cs",
+      "bytes": 1701,
+      "sha256": "294f0e37a895aac36b072bf560475b2fbb31649e86e22f2f88c91473f9ad06d2",
+      "declared_sha256": "294f0e37a895aac36b072bf560475b2fbb31649e86e22f2f88c91473f9ad06d2",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/CharacterSkillComponent.JumpHandoff.cs",
+      "bytes": 2067,
+      "sha256": "1ab76bda46b645be7c9d3edfc43b7817de3e9bdc9504549c00418ed16fe6f7a0",
+      "declared_sha256": "1ab76bda46b645be7c9d3edfc43b7817de3e9bdc9504549c00418ed16fe6f7a0",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/GroupSkillCdInfo.cs",
+      "bytes": 5120,
+      "sha256": "22016e452d5c2dc8f8b6ab950735e9825465705a019c4a4fcb93eeac2af75b9e",
+      "declared_sha256": "22016e452d5c2dc8f8b6ab950735e9825465705a019c4a4fcb93eeac2af75b9e",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/PassiveSkillCdInfo.cs",
+      "bytes": 4383,
+      "sha256": "1d95fc4b3814d1638d28163f06d8b84ffcb9b1d43b08e2bf1272452c78ef8f11",
+      "declared_sha256": "1d95fc4b3814d1638d28163f06d8b84ffcb9b1d43b08e2bf1272452c78ef8f11",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/Skill.cs",
+      "bytes": 6755,
+      "sha256": "4a2578bbb3cecad485ae49788efbf532e31cad7cb0bb2a0335dc9cfaef78dfec",
+      "declared_sha256": "4a2578bbb3cecad485ae49788efbf532e31cad7cb0bb2a0335dc9cfaef78dfec",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/SkillBehaviorAction.cs",
+      "bytes": 11466,
+      "sha256": "bdf472a006369732c531f0348c4e26638e5a67f6195d063b2d331f75da8f6699",
+      "declared_sha256": "bdf472a006369732c531f0348c4e26638e5a67f6195d063b2d331f75da8f6699",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/SkillBehaviorMisc.cs",
+      "bytes": 1342,
+      "sha256": "d3b4c3312874037ac6318d1b064f2db9a4417a22a85a6c3de816804217e3b0ca",
+      "declared_sha256": "d3b4c3312874037ac6318d1b064f2db9a4417a22a85a6c3de816804217e3b0ca",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/SkillEffects.cs",
+      "bytes": 5930,
+      "sha256": "500589e2ba2a07d8c3fc2a5f331ad1661a38f132a6b8e8a69060829dfe552409",
+      "declared_sha256": "500589e2ba2a07d8c3fc2a5f331ad1661a38f132a6b8e8a69060829dfe552409",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/TsAnimNotifyStateCounterAttack.cs",
+      "bytes": 8634,
+      "sha256": "41a51a58e3f0fb050ab00297c89928d310c3d70ba92bb40abbb153e6c423458d",
+      "declared_sha256": "41a51a58e3f0fb050ab00297c89928d310c3d70ba92bb40abbb153e6c423458d",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/TsTaskSelectSkill.cs",
+      "bytes": 4055,
+      "sha256": "b339dbb56a551c97d2d4a3a455e9de10b56ecce7f5a9c9bc87c221442913c789",
+      "declared_sha256": "b339dbb56a551c97d2d4a3a455e9de10b56ecce7f5a9c9bc87c221442913c789",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/skills/TsTaskUseSkill.cs",
+      "bytes": 3999,
+      "sha256": "b7622c31019a9c98599a28cda29cbfd6680f140f725b685a53dc1cfa41ffb8f1",
+      "declared_sha256": "b7622c31019a9c98599a28cda29cbfd6680f140f725b685a53dc1cfa41ffb8f1",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/state/StateMachineCommon.Switch.cs",
+      "bytes": 2836,
+      "sha256": "f076fdd0a4af6ea5b2bc6293868bed70c2addef1f24efe52fcb0896cab4356ff",
+      "declared_sha256": "f076fdd0a4af6ea5b2bc6293868bed70c2addef1f24efe52fcb0896cab4356ff",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/targeting/BaseLockOnComponent.cs",
+      "bytes": 5645,
+      "sha256": "8579aadd75b01d8cb05fce5cad0757287aa83ef4535f8f69d65dc863d7646c58",
+      "declared_sha256": "8579aadd75b01d8cb05fce5cad0757287aa83ef4535f8f69d65dc863d7646c58",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/targeting/CharacterLockOnComponent.cs",
+      "bytes": 5807,
+      "sha256": "2349dbc8eb9cda6219524016ba0b0ed47eeaec93046fa79d6a7b3d84fe60f1ed",
+      "declared_sha256": "2349dbc8eb9cda6219524016ba0b0ed47eeaec93046fa79d6a7b3d84fe60f1ed",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/targeting/LockOnInfo.cs",
+      "bytes": 1909,
+      "sha256": "6199130e226920bfb958e3b08b24c9a4f38a4d9c3bf1dac281b32b54b0df4790",
+      "declared_sha256": "6199130e226920bfb958e3b08b24c9a4f38a4d9c3bf1dac281b32b54b0df4790",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/targeting/LockOnUtils.cs",
+      "bytes": 3752,
+      "sha256": "4a84ce2357da08f1a0702300cc2ca9268d0a1f0a8de342299951cf41a7a1d101",
+      "declared_sha256": "4a84ce2357da08f1a0702300cc2ca9268d0a1f0a8de342299951cf41a7a1d101",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/CooperationController.cs",
+      "bytes": 6860,
+      "sha256": "b0debd0f4446e147373d497e62a472568934d68af64092d1286b3c7c844d5c4d",
+      "declared_sha256": "b0debd0f4446e147373d497e62a472568934d68af64092d1286b3c7c844d5c4d",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/CooperationModel.cs",
+      "bytes": 1514,
+      "sha256": "62236c90acb551f8e1f0cc365d1874763a45e3ac7f947ee838510da1748423bb",
+      "declared_sha256": "62236c90acb551f8e1f0cc365d1874763a45e3ac7f947ee838510da1748423bb",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/QteCooperationHandler.cs",
+      "bytes": 3069,
+      "sha256": "ec3d7bd30a5bf4142e4f0ea49a9933862f934f821dc9b261be5df243ee78a232",
+      "declared_sha256": "ec3d7bd30a5bf4142e4f0ea49a9933862f934f821dc9b261be5df243ee78a232",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/RoleQteComponent.cs",
+      "bytes": 14890,
+      "sha256": "e42ea97eb84e72f2f799967acbfee82d3cd54adab106d49bbc56723fcdb8b61c",
+      "declared_sha256": "e42ea97eb84e72f2f799967acbfee82d3cd54adab106d49bbc56723fcdb8b61c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/RoleTeamComponent.cs",
+      "bytes": 21096,
+      "sha256": "995e2c571c735993bb568d2a0fc5d01e2daded0e5718d356d01aaa9ab66f08a8",
+      "declared_sha256": "995e2c571c735993bb568d2a0fc5d01e2daded0e5718d356d01aaa9ab66f08a8",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/SceneTeamController.cs",
+      "bytes": 10695,
+      "sha256": "13a5ffcf6e87a4735192aa5c129e51f817abf77f636219deb7b2babd1bcc5301",
+      "declared_sha256": "13a5ffcf6e87a4735192aa5c129e51f817abf77f636219deb7b2babd1bcc5301",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/SceneTeamCooperationHandler.cs",
+      "bytes": 2598,
+      "sha256": "42923b5785f640f38325368f3e8e97d2357d66a41e3dc60ed900b84151e5e825",
+      "declared_sha256": "42923b5785f640f38325368f3e8e97d2357d66a41e3dc60ed900b84151e5e825",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/SceneTeamItem.cs",
+      "bytes": 1245,
+      "sha256": "dea5cf14ae6091003016c7859e7ff517a5aa7002773685946bddf23d985b01eb",
+      "declared_sha256": "dea5cf14ae6091003016c7859e7ff517a5aa7002773685946bddf23d985b01eb",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/teams/SceneTeamModel.cs",
+      "bytes": 5265,
+      "sha256": "d4613f246b6f9ef2b6f91960d2049dfa347e499434b4b15ed3d71b535cb9d4bc",
+      "declared_sha256": "d4613f246b6f9ef2b6f91960d2049dfa347e499434b4b15ed3d71b535cb9d4bc",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/tick/Core.cs",
+      "bytes": 9471,
+      "sha256": "366f8b4eb9cc5f28cfd1f88dc4207aa622cbed72522112d5f9bec118536dfade",
+      "declared_sha256": "366f8b4eb9cc5f28cfd1f88dc4207aa622cbed72522112d5f9bec118536dfade",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/tick/TickSystem.cs",
+      "bytes": 12551,
+      "sha256": "73af7a5fe3a828557996966561e8540b7f904a855ad1397ca0e0b7b5772149a4",
+      "declared_sha256": "73af7a5fe3a828557996966561e8540b7f904a855ad1397ca0e0b7b5772149a4",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/tick/Ticker.cs",
+      "bytes": 2145,
+      "sha256": "525cd668109387925a63c2f83817c7692924512ea56b7daeb713ca30b19c378d",
+      "declared_sha256": "525cd668109387925a63c2f83817c7692924512ea56b7daeb713ca30b19c378d",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/tick/Time.cs",
+      "bytes": 9522,
+      "sha256": "7a6de7b577fb0d15a5f62f6249698d22f1ad073edbe0154657d3451bf93fcd92",
+      "declared_sha256": "7a6de7b577fb0d15a5f62f6249698d22f1ad073edbe0154657d3451bf93fcd92",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/timer/Timer.cs",
+      "bytes": 2779,
+      "sha256": "c5d437c8f4c80de3a163fbb80fc6c4968b3467cb280d8bf4c1f9d310e09ecbfa",
+      "declared_sha256": "c5d437c8f4c80de3a163fbb80fc6c4968b3467cb280d8bf4c1f9d310e09ecbfa",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.PendingEventBoundaries.cs",
+      "bytes": 3771,
+      "sha256": "e6fdd651b49d68b4a4c24a318e3ead95915da6f2704a439c65f701ff8425c90c",
+      "declared_sha256": "e6fdd651b49d68b4a4c24a318e3ead95915da6f2704a439c65f701ff8425c90c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_BULK_RECORD"
+        }
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.cs",
+      "bytes": 4931,
+      "sha256": "2607a87cd72841399c0f6159ea08a9bd2587317c57e7b92327dee1f819b12201",
+      "declared_sha256": "2607a87cd72841399c0f6159ea08a9bd2587317c57e7b92327dee1f819b12201",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "active",
+          "label": "ACTIVE_V5_IMPORT"
+        }
+      ]
+    },
+    {
+      "path": "src/models/native/CoreclrNativeThread.cpp",
+      "bytes": 1641,
+      "sha256": "16048310ef7e6539e2b20b20f14f7aad7267e3de7c46c077b2bad6cd651450bb",
+      "declared_sha256": "16048310ef7e6539e2b20b20f14f7aad7267e3de7c46c077b2bad6cd651450bb",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "parent",
+          "label": "IMP-04-CORECLR-NATIVE-THREAD"
+        },
+        {
+          "kind": "successor",
+          "label": "SRC-CPP-CORECLR-NATIVE-THREAD"
+        }
+      ]
+    },
+    {
+      "path": "src/models/native/CoreclrThreadOrigin.cpp",
+      "bytes": 17301,
+      "sha256": "51ade140ac0d2910e5185c9c209b5f01e107bd1daf55e24c8c1c070f1bfa4ce7",
+      "declared_sha256": "51ade140ac0d2910e5185c9c209b5f01e107bd1daf55e24c8c1c070f1bfa4ce7",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "parent",
+          "label": "IMP-05-CORECLR-THREAD-ORIGIN"
+        },
+        {
+          "kind": "successor",
+          "label": "SRC-CPP-CORECLR-THREAD-ORIGIN"
+        }
+      ]
+    },
+    {
+      "path": "src/models/native/LibxellHelperTarget.cpp",
+      "bytes": 3335,
+      "sha256": "67962955c2a27846264bd7042fccb0ef5aabc80fd9fe9f3082864ce63a3e772c",
+      "declared_sha256": "67962955c2a27846264bd7042fccb0ef5aabc80fd9fe9f3082864ce63a3e772c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "parent",
+          "label": "IMP-06-LIBXELL-HELPER-TARGET"
+        },
+        {
+          "kind": "successor",
+          "label": "SRC-CPP-LIBXELL-HELPER-TARGET"
+        }
+      ]
+    },
+    {
+      "path": "src/models/native/LibxellSleepImplementation.cpp",
+      "bytes": 4262,
+      "sha256": "9000bd4fb062dfc10d149089987db032df8153cb31274189e133da899ae51114",
+      "declared_sha256": "9000bd4fb062dfc10d149089987db032df8153cb31274189e133da899ae51114",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "parent",
+          "label": "IMP-07-LIBXELL-SLEEP-IMPLEMENTATION"
+        },
+        {
+          "kind": "successor",
+          "label": "SRC-CPP-LIBXELL-SLEEP-IMPLEMENTATION"
+        }
+      ]
+    },
+    {
+      "path": "src/native/include/research/evidence_labels.hpp",
+      "bytes": 437,
+      "sha256": "d15408e960b6cab2b8dac567354de2f70180b6dbb416f6f2e5a1d984478b370c",
+      "declared_sha256": "d15408e960b6cab2b8dac567354de2f70180b6dbb416f6f2e5a1d984478b370c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-HPP-EVIDENCE-LABELS"
+        }
+      ]
+    },
+    {
+      "path": "src/projections/native/include/StreamingCompletionBridge.hpp",
+      "bytes": 8541,
+      "sha256": "9ef853036faf9ff0b44eeb5c6dad51e5b13a8fc9187b3ee063a0309a88dc4252",
+      "declared_sha256": "9ef853036faf9ff0b44eeb5c6dad51e5b13a8fc9187b3ee063a0309a88dc4252",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-HPP-STREAMING-COMPLETION-BRIDGE"
+        }
+      ]
+    },
+    {
+      "path": "src/projections/native/include/WorldPartitionBridge.hpp",
+      "bytes": 8756,
+      "sha256": "6b10a10f1c0af210b72d45128416620e63b5e67eed5568c432ab66d68b33fe48",
+      "declared_sha256": "6b10a10f1c0af210b72d45128416620e63b5e67eed5568c432ab66d68b33fe48",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-HPP-WORLD-PARTITION-BRIDGE"
+        }
+      ]
+    },
+    {
+      "path": "src/projections/typescript/StreamingCompletionTransition.ts",
+      "bytes": 17036,
+      "sha256": "fb9fafd01635374692bd0d5debcd3e70225e243ba6f2a79b25fff3cdde810cda",
+      "declared_sha256": "fb9fafd01635374692bd0d5debcd3e70225e243ba6f2a79b25fff3cdde810cda",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-STREAMING-COMPLETION-TRANSITION"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/javascript/historical/bridge-r15/EventCSharpBridge.js",
+      "bytes": 3129,
+      "sha256": "67443871c698669029877b7aa81c984739a3c30f768bac82bfb745e5cc9f1409",
+      "declared_sha256": "67443871c698669029877b7aa81c984739a3c30f768bac82bfb745e5cc9f1409",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-JS-EVENT-CSHARP-BRIDGE-R15"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/javascript/historical/gameplay-r27/CharacterHitComponent.historical.reconstructed.js",
+      "bytes": 8184,
+      "sha256": "743ea45f367383f380ea4290912f1485a47a4f6fd6e7d29e9e1c9cb9c4aa830a",
+      "declared_sha256": "743ea45f367383f380ea4290912f1485a47a4f6fd6e7d29e9e1c9cb9c4aa830a",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-JS-CHARACTER-HIT-R27"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/javascript/historical/gameplay-r28/RoleElementComponent.historical.reconstructed.js",
+      "bytes": 3939,
+      "sha256": "9ac8c91588af2d7d9b84e4550763a1e637caa719b00b75bd17821e1decf9bdd5",
+      "declared_sha256": "9ac8c91588af2d7d9b84e4550763a1e637caa719b00b75bd17821e1decf9bdd5",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-JS-ROLE-ELEMENT-R28"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/reconstructed/event/Event.js",
+      "bytes": 10409,
+      "sha256": "a5873f3fb774d92c2e98f8dfa5f4a3fb9666719ab6b4723c685594bf3062e921",
+      "declared_sha256": "a5873f3fb774d92c2e98f8dfa5f4a3fb9666719ab6b4723c685594bf3062e921",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "parent",
+          "label": "IMP-02-EVENT-JS"
+        },
+        {
+          "kind": "successor",
+          "label": "SRC-JS-EVENT-CORE"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/reconstructed/event/EventCSharpBridge.js",
+      "bytes": 3173,
+      "sha256": "4887cc3d17c94281742282275ddb89587df85b2ea1a124da7e4095193821be54",
+      "declared_sha256": "4887cc3d17c94281742282275ddb89587df85b2ea1a124da7e4095193821be54",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "parent",
+          "label": "IMP-03-EVENT-BRIDGE-JS"
+        },
+        {
+          "kind": "successor",
+          "label": "SRC-JS-EVENT-CSHARP-BRIDGE"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/reconstructed/transition/DataLayerTransition.ts",
+      "bytes": 28648,
+      "sha256": "fd3474339f07d49dac4a1cc3f3aa3f78d53e1528a460190464126e24aa39342c",
+      "declared_sha256": "fd3474339f07d49dac4a1cc3f3aa3f78d53e1528a460190464126e24aa39342c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "parent",
+          "label": "IMP-01-DATALAYER-TS"
+        },
+        {
+          "kind": "successor",
+          "label": "SRC-TS-DATALAYER-TRANSITION"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/BossPilingBuff.ts",
+      "bytes": 1342,
+      "sha256": "c3ae3a7d2e2801d5db9ef020845072beb104162e7c75aa00bb58dcb5d93b4d61",
+      "declared_sha256": "c3ae3a7d2e2801d5db9ef020845072beb104162e7c75aa00bb58dcb5d93b4d61",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-BOSSPILINGBUFF"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/BossRushBuff.ts",
+      "bytes": 1695,
+      "sha256": "fb7bed56fca918d045acf6a377b9f5a2f86d2647892b6864d92439d084a74558",
+      "declared_sha256": "fb7bed56fca918d045acf6a377b9f5a2f86d2647892b6864d92439d084a74558",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-BOSSRUSHBUFF"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/ComboTeaching.ts",
+      "bytes": 1724,
+      "sha256": "68005cb9f6b5a951acd638678456d66e51725a5f1a10f6444be93feb4841657c",
+      "declared_sha256": "68005cb9f6b5a951acd638678456d66e51725a5f1a10f6444be93feb4841657c",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-COMBOTEACHING"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/FlagChallengeRoleBuff.ts",
+      "bytes": 1535,
+      "sha256": "71644f37fee6a3a2efd95bffce9fcbceacaf02a5c30d29f2bec562a35e145373",
+      "declared_sha256": "71644f37fee6a3a2efd95bffce9fcbceacaf02a5c30d29f2bec562a35e145373",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-FLAGCHALLENGEROLEBUFF"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/FlowText.ts",
+      "bytes": 1318,
+      "sha256": "291b1f2b5bc1dc1e0ae7f621746d2d45eddf8be9ca4c5570db40fb23c3430319",
+      "declared_sha256": "291b1f2b5bc1dc1e0ae7f621746d2d45eddf8be9ca4c5570db40fb23c3430319",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-FLOWTEXT"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/InteractData.ts",
+      "bytes": 1577,
+      "sha256": "783a9fe13705fed573117aa60b1e1919ec9ed1d8098a8343b03519792719d412",
+      "declared_sha256": "783a9fe13705fed573117aa60b1e1919ec9ed1d8098a8343b03519792719d412",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-INTERACTDATA"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/KurotatoGeneralGrowth.ts",
+      "bytes": 1194,
+      "sha256": "249ee20398c6320bdd26fe0c76df3f0151c5015be4da155f0fc8870b9592641b",
+      "declared_sha256": "249ee20398c6320bdd26fe0c76df3f0151c5015be4da155f0fc8870b9592641b",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-KUROTATOGENERALGROWTH"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/PayShopTab.ts",
+      "bytes": 1247,
+      "sha256": "414c7980b34b538fb24d0d2d9cfc1d2aa9fa35da61a5eaba41b41963dc4145c7",
+      "declared_sha256": "414c7980b34b538fb24d0d2d9cfc1d2aa9fa35da61a5eaba41b41963dc4145c7",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-PAYSHOPTAB"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/RoverRogueRoom.ts",
+      "bytes": 1467,
+      "sha256": "9c4383dd89024f55d2c1b730b8d001e87775aa59888f7cd0c0dbb1d4366137c5",
+      "declared_sha256": "9c4383dd89024f55d2c1b730b8d001e87775aa59888f7cd0c0dbb1d4366137c5",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-ROVERROGUEROOM"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/SkillTree.ts",
+      "bytes": 2207,
+      "sha256": "1bd9a0e77db6cd9260ba73a1d7972f85e4a11ca6cec4440ab82b16bad997a103",
+      "declared_sha256": "1bd9a0e77db6cd9260ba73a1d7972f85e4a11ca6cec4440ab82b16bad997a103",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-SKILLTREE"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/SortRule.ts",
+      "bytes": 1246,
+      "sha256": "75d04322bea1f711d1ab01a09c6739ec61b6b3c4d1751bab68e953f9902374ad",
+      "declared_sha256": "75d04322bea1f711d1ab01a09c6739ec61b6b3c4d1751bab68e953f9902374ad",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-SORTRULE"
+        }
+      ]
+    },
+    {
+      "path": "src/scripts/typescript/declarations/config/TetrisMap.ts",
+      "bytes": 1613,
+      "sha256": "dc80e80843e58e5cbb0f84ac20d98f910a93f87651ff5ef5a38b387948412c9d",
+      "declared_sha256": "dc80e80843e58e5cbb0f84ac20d98f910a93f87651ff5ef5a38b387948412c9d",
+      "matches": true,
+      "sources": [
+        {
+          "kind": "successor",
+          "label": "SRC-TS-CONFIG-TETRISMAP"
+        }
+      ]
+    }
+  ]
+}

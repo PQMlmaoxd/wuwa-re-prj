@@ -1,0 +1,635 @@
+{
+  "schema": "RE-TARGETED-CEILING01.public-evidence.v1",
+  "status": "QUALIFIED_RESEARCH_CANDIDATE_NOT_CANONICAL_ACCEPTANCE",
+  "scope": "Five exact source-only damage method spans and a bounded timer lifecycle model; no new reverse engineering or canonical source update.",
+  "authority": {
+    "assembly_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+    "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+    "type_def": "0x02002e65",
+    "assembly_version": "UNKNOWN",
+    "original_input": {
+      "identity": "CSharpScript.dll",
+      "size_bytes": 57745408,
+      "sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "distribution": "NOT_DISTRIBUTED"
+    },
+    "publication_authorized": false,
+    "rights_status": "RIGHTS_REVIEW_REQUIRED"
+  },
+  "source_capture": {
+    "capture_id": "A_capture",
+    "logical_filename": "BaseDamageComponent.cs",
+    "size_bytes": 48462,
+    "sha256": "5ad986f925b7baa3247fa8c7766e2fe938d47ee27087092e181089619004556d",
+    "distribution": "NOT_DISTRIBUTED"
+  },
+  "included_excerpt": {
+    "path": "qualified-research/damage-snapshots/BaseDamageComponent.SourceOnly.cs",
+    "size_bytes": 4252,
+    "sha256": "12e76a78de325fa5b072ee4ac7f1b3dc779f4f95acc99d7a81fe77e50aa46aa3",
+    "representation": "RECONSTRUCTED_SOURCE_ONLY_NOT_ORIGINAL_SOURCE",
+    "compilable": false,
+    "source_cil_equivalence": "NOT_ESTABLISHED"
+  },
+  "selected_source_declaration_check": {
+    "path": "src/managed/cs-e3fc67839851/damage/BaseDamageComponent.cs",
+    "size_bytes": 23591,
+    "sha256": "6e3f3543638d808945f16e1e1ee5055caf951795bf4d69c6416dd5c1fa6adda2",
+    "method_names": [
+      "AllocateSnapshot",
+      "ReplaceAttacker",
+      "ProcessWhenCounter",
+      "ExecDamageEffect",
+      "ProcessDamageOptimize"
+    ],
+    "result": "NO_DECLARATION_MATCHES",
+    "scope": "Declaration-pattern check only; it does not claim that method-name occurrences or calls are absent."
+  },
+  "recoveries": [
+    {
+      "assembly_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "type_def": "0x02002e65",
+      "name": "AllocateSnapshot",
+      "method_def": "0x0601864f",
+      "source_lines": [
+        506,
+        543
+      ],
+      "source_byte_offset": 24348,
+      "source_size_bytes": 1557,
+      "source_span_sha256": "c547495cc64ca70419440f5f9e8f80fece7eef3819aeb84c8571c0df4c5f8905",
+      "source_body_sha256": "758989b104e93da253d2b44a7a372dda7278ad78836a2da3bc15647b052b4410",
+      "source_representation": "RECONSTRUCTED_SOURCE_ONLY_NOT_ORIGINAL_SOURCE",
+      "binary_verification_scope": "Selected call sites and raw IL identity only; no whole-body source equivalence",
+      "version": "UNKNOWN",
+      "capture_id": "A_capture",
+      "original_input_distribution": "NOT_DISTRIBUTED"
+    },
+    {
+      "assembly_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "type_def": "0x02002e65",
+      "name": "ReplaceAttacker",
+      "method_def": "0x06018650",
+      "source_lines": [
+        545,
+        552
+      ],
+      "source_byte_offset": 25906,
+      "source_size_bytes": 403,
+      "source_span_sha256": "eadc0c147aac070c3d339c9390c14b9dcdf32290d7cfd1c7988c8d2f59a655e9",
+      "source_body_sha256": "84da037323ff416532ed95a608a93fc48bcb6da001ef40a1aaf01e3454567518",
+      "source_representation": "RECONSTRUCTED_SOURCE_ONLY_NOT_ORIGINAL_SOURCE",
+      "binary_verification_scope": "Selected call sites and raw IL identity only; no whole-body source equivalence",
+      "version": "UNKNOWN",
+      "capture_id": "A_capture",
+      "original_input_distribution": "NOT_DISTRIBUTED"
+    },
+    {
+      "assembly_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "type_def": "0x02002e65",
+      "name": "ProcessWhenCounter",
+      "method_def": "0x06018651",
+      "source_lines": [
+        554,
+        561
+      ],
+      "source_byte_offset": 26310,
+      "source_size_bytes": 426,
+      "source_span_sha256": "62b20ed597d4ff945ee45566c9f00914913ff74b88352b95225e86a3eac1f37e",
+      "source_body_sha256": "ac4882e15d0472473598c9f6aeb50bd3d3ca8875b09a2b2aa655ff344470b365",
+      "source_representation": "RECONSTRUCTED_SOURCE_ONLY_NOT_ORIGINAL_SOURCE",
+      "binary_verification_scope": "Selected call sites and raw IL identity only; no whole-body source equivalence",
+      "version": "UNKNOWN",
+      "capture_id": "A_capture",
+      "original_input_distribution": "NOT_DISTRIBUTED"
+    },
+    {
+      "assembly_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "type_def": "0x02002e65",
+      "name": "ExecDamageEffect",
+      "method_def": "0x06018654",
+      "source_lines": [
+        677,
+        681
+      ],
+      "source_byte_offset": 34518,
+      "source_size_bytes": 234,
+      "source_span_sha256": "3751a32b91b464a8b37c87079fb4a5208f424d47df3f8c1f8d89979cea3aeee6",
+      "source_body_sha256": "12e2bdc59245dcb09319ca58c03ec2b930a11e7f11cdcf906dc464b5fe6f5015",
+      "source_representation": "RECONSTRUCTED_SOURCE_ONLY_NOT_ORIGINAL_SOURCE",
+      "binary_verification_scope": "Selected call sites and raw IL identity only; no whole-body source equivalence",
+      "version": "UNKNOWN",
+      "capture_id": "A_capture",
+      "original_input_distribution": "NOT_DISTRIBUTED"
+    },
+    {
+      "assembly_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "type_def": "0x02002e65",
+      "name": "ProcessDamageOptimize",
+      "method_def": "0x06018662",
+      "source_lines": [
+        972,
+        977
+      ],
+      "source_byte_offset": 44797,
+      "source_size_bytes": 333,
+      "source_span_sha256": "cd60e338a8e8696bbaef79a61ebab6ccb7a455aeeccaf6d4e4a76cab31908d9c",
+      "source_body_sha256": "c274616099b318e0392fff5a295b6b5c7b790c160171f4a5e736fed303b117d6",
+      "source_representation": "RECONSTRUCTED_SOURCE_ONLY_NOT_ORIGINAL_SOURCE",
+      "binary_verification_scope": "Selected call sites and raw IL identity only; no whole-body source equivalence",
+      "version": "UNKNOWN",
+      "capture_id": "A_capture",
+      "original_input_distribution": "NOT_DISTRIBUTED"
+    }
+  ],
+  "cil_verification": {
+    "classification": "CIL_VERIFIED",
+    "methods": 10,
+    "selected_call_sites": 24,
+    "scope": "Original assembly hash and MVID, selected method identities, raw method IL hashes, and selected call opcode, operand token, declaring type, and full-name metadata.",
+    "raw_cil_distributed": false,
+    "full_source_cil_equivalence": "NOT_ESTABLISHED",
+    "binary_checks": [
+      {
+        "method_def": "0x0601864f",
+        "type_def": "0x02002e65",
+        "name": "AllocateSnapshot",
+        "rva": 7158300,
+        "il_bytes": 331,
+        "il_sha256": "75e3805a09403d9c54e6a95b036bd487eba99865cfd70e6b9d74f596e2e02bad",
+        "calls": [
+          {
+            "il_offset": 13,
+            "name": "GetAttributeHolder",
+            "operand_token": "0x0601943e",
+            "opcode": "call",
+            "declaring_type": "CharacterFollowComponent",
+            "full_name": "Entity CharacterFollowComponent::GetAttributeHolder()"
+          },
+          {
+            "il_offset": 33,
+            "name": "TakeSnapshot",
+            "operand_token": "0x060184c5",
+            "opcode": "callvirt",
+            "declaring_type": "BaseAttributeComponent",
+            "full_name": "AttributeSnapshot BaseAttributeComponent::TakeSnapshot()"
+          },
+          {
+            "il_offset": 52,
+            "name": "GetAttributeHolderExceptVisionSummon",
+            "operand_token": "0x0601943f",
+            "opcode": "call",
+            "declaring_type": "CharacterFollowComponent",
+            "full_name": "Entity CharacterFollowComponent::GetAttributeHolderExceptVisionSummon()"
+          },
+          {
+            "il_offset": 72,
+            "name": "TakeSnapshot",
+            "operand_token": "0x060184c5",
+            "opcode": "callvirt",
+            "declaring_type": "BaseAttributeComponent",
+            "full_name": "AttributeSnapshot BaseAttributeComponent::TakeSnapshot()"
+          },
+          {
+            "il_offset": 87,
+            "name": "TakeSnapshot",
+            "operand_token": "0x060184c5",
+            "opcode": "callvirt",
+            "declaring_type": "BaseAttributeComponent",
+            "full_name": "AttributeSnapshot BaseAttributeComponent::TakeSnapshot()"
+          },
+          {
+            "il_offset": 277,
+            "name": "ReplaceAttacker",
+            "operand_token": "0x06018650",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "BaseDamageComponent BaseDamageComponent::ReplaceAttacker(BaseDamageComponent)"
+          }
+        ]
+      },
+      {
+        "method_def": "0x06018650",
+        "type_def": "0x02002e65",
+        "name": "ReplaceAttacker",
+        "rva": 7158660,
+        "il_bytes": 61,
+        "il_sha256": "05922849832ec83e3fd634ae18b3e7a730a24972a79e05f21ece7ae07d0726c1",
+        "calls": []
+      },
+      {
+        "method_def": "0x06018651",
+        "type_def": "0x02002e65",
+        "name": "ProcessWhenCounter",
+        "rva": 7158724,
+        "il_bytes": 64,
+        "il_sha256": "b4d5aff641f613a0012c0146865bce13d875c8bd14dcd49f63e0016bb39a9d64",
+        "calls": [
+          {
+            "il_offset": 33,
+            "name": "TriggerEvents",
+            "operand_token": "0x06018557",
+            "opcode": "callvirt",
+            "declaring_type": "BaseBuffComponent",
+            "full_name": "System.Void BaseBuffComponent::TriggerEvents(EBuffTriggerType,BaseBuffComponent,Partial_RequirementPayload)"
+          },
+          {
+            "il_offset": 58,
+            "name": "TriggerEvents",
+            "operand_token": "0x06018557",
+            "opcode": "callvirt",
+            "declaring_type": "BaseBuffComponent",
+            "full_name": "System.Void BaseBuffComponent::TriggerEvents(EBuffTriggerType,BaseBuffComponent,Partial_RequirementPayload)"
+          }
+        ]
+      },
+      {
+        "method_def": "0x06018654",
+        "type_def": "0x02002e65",
+        "name": "ExecDamageEffect",
+        "rva": 7159931,
+        "il_bytes": 23,
+        "il_sha256": "ff9a6b5f7300b6dbf89c325ddda40ac06d415ec629451636491bac962034c786",
+        "calls": [
+          {
+            "il_offset": 3,
+            "name": "ExecEnergyCharge",
+            "operand_token": "0x06018657",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "System.Void BaseDamageComponent::ExecEnergyCharge(TDamageParam,RequirementPayload)"
+          },
+          {
+            "il_offset": 17,
+            "name": "ExecPostDamageExtraEffect",
+            "operand_token": "0x06018656",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "System.Void BaseDamageComponent::ExecPostDamageExtraEffect(DamageResult,BaseDamageComponent,RequirementPayload)"
+          }
+        ]
+      },
+      {
+        "method_def": "0x06018662",
+        "type_def": "0x02002e65",
+        "name": "ProcessDamageOptimize",
+        "rva": 7162104,
+        "il_bytes": 24,
+        "il_sha256": "84075f1625c140249f6e308724b014d86961a1f991630ccfbde69fc8b9c3eb64",
+        "calls": [
+          {
+            "il_offset": 4,
+            "name": "ProcessWhenCounter",
+            "operand_token": "0x06018651",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "System.Void BaseDamageComponent::ProcessWhenCounter(RequirementPayload,TDamageParam,SnapshotPayload)"
+          },
+          {
+            "il_offset": 11,
+            "name": "PreCriticalModify",
+            "operand_token": "0x06018cab",
+            "opcode": "call",
+            "declaring_type": "SnapModifier",
+            "full_name": "System.Void SnapModifier::PreCriticalModify(RequirementPayload,SnapshotPayload)"
+          },
+          {
+            "il_offset": 18,
+            "name": "PostCriticalModify",
+            "operand_token": "0x06018cac",
+            "opcode": "call",
+            "declaring_type": "SnapModifier",
+            "full_name": "System.Void SnapModifier::PostCriticalModify(RequirementPayload,SnapshotPayload)"
+          }
+        ]
+      },
+      {
+        "method_def": "0x0601864c",
+        "type_def": "0x02002e65",
+        "name": "ProcessDamage",
+        "rva": 7156612,
+        "il_bytes": 598,
+        "il_sha256": "604cb3add4a2b4e0b7000e5af7541af915a5a1da93f5a117fc9de0b0fa1e0857",
+        "calls": [
+          {
+            "il_offset": 362,
+            "name": "AllocateSnapshot",
+            "operand_token": "0x0601864f",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "SnapshotPayload BaseDamageComponent::AllocateSnapshot(BaseDamageComponent,TDamageParam)"
+          },
+          {
+            "il_offset": 423,
+            "name": "ProcessDamageOptimize",
+            "operand_token": "0x06018662",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "System.Void BaseDamageComponent::ProcessDamageOptimize(RequirementPayload,TDamageParam,SnapshotPayload)"
+          },
+          {
+            "il_offset": 557,
+            "name": "GetServerDamage",
+            "operand_token": "0x06018652",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "System.Void BaseDamageComponent::GetServerDamage(TDamageParam,RequirementPayload,System.Int64,CharacterPart)"
+          }
+        ]
+      },
+      {
+        "method_def": "0x06018653",
+        "type_def": "0x02002e65",
+        "name": "GetServerDamageCallBack",
+        "rva": 7159784,
+        "il_bytes": 135,
+        "il_sha256": "9ed447baba8c5c8420de17c5cc5cdf96b3d3d584206113186d4d6c1dd660245e",
+        "calls": [
+          {
+            "il_offset": 84,
+            "name": "ExecDamageEvent",
+            "operand_token": "0x06018655",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "System.Void BaseDamageComponent::ExecDamageEvent(DamageResult,DamageEventInfo,RequirementPayload)"
+          },
+          {
+            "il_offset": 93,
+            "name": "ExecDamageEffect",
+            "operand_token": "0x06018654",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "System.Void BaseDamageComponent::ExecDamageEffect(DamageResult,TDamageParam,RequirementPayload)"
+          },
+          {
+            "il_offset": 128,
+            "name": "OnDamage",
+            "operand_token": "0x06019710",
+            "opcode": "call",
+            "declaring_type": "CharacterPart",
+            "full_name": "System.Boolean CharacterPart::OnDamage(System.Single,System.Boolean,Entity,System.Boolean)"
+          }
+        ]
+      },
+      {
+        "method_def": "0x06049eb8",
+        "type_def": "0x020092fb",
+        "name": "<GetServerDamage>b__0",
+        "rva": 21007784,
+        "il_bytes": 726,
+        "il_sha256": "ad4339ada182bc74c789199a91dfee6dbb7a1fb05c5e5f17e78b884bc68f7d77",
+        "calls": [
+          {
+            "il_offset": 720,
+            "name": "GetServerDamageCallBack",
+            "operand_token": "0x06018653",
+            "opcode": "call",
+            "declaring_type": "BaseDamageComponent",
+            "full_name": "System.Void BaseDamageComponent::GetServerDamageCallBack(RequirementPayload,TDamageParam,DamageResult,CharacterPart)"
+          }
+        ]
+      },
+      {
+        "method_def": "0x06018652",
+        "type_def": "0x02002e65",
+        "name": "GetServerDamage",
+        "rva": 7158800,
+        "il_bytes": 969,
+        "il_sha256": "49ba6206c1f493b8320f82aec542d2c7d99e85660b2c393425ab810128276048",
+        "calls": [
+          {
+            "il_offset": 962,
+            "name": "Call",
+            "operand_token": "0x2b001857",
+            "opcode": "callvirt",
+            "declaring_type": "CombatNet",
+            "full_name": "System.Int64 CombatNet::Call<Aki.Protocol.DamageExecuteResponse>(Aki.Protocol.ERequestMessageId,Entity,Google.Protobuf.IMessage,System.Action`1<T>,System.Nullable`1<System.Int64>,System.Nullable`1<System.Int64>,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>)"
+          }
+        ]
+      },
+      {
+        "method_def": "0x060184c5",
+        "type_def": "0x02002e53",
+        "name": "TakeSnapshot",
+        "rva": 7113276,
+        "il_bytes": 52,
+        "il_sha256": "d55a4530121323847aa48c314df1a2182ff9df49f36d0a0a8495dde02bd2cc30",
+        "calls": [
+          {
+            "il_offset": 0,
+            "name": ".ctor",
+            "operand_token": "0x060184b3",
+            "opcode": "newobj",
+            "declaring_type": "AttributeSnapshot",
+            "full_name": "System.Void AttributeSnapshot::.ctor()"
+          },
+          {
+            "il_offset": 23,
+            "name": "Copy",
+            "operand_token": "0x0a00abb9",
+            "opcode": "call",
+            "declaring_type": "System.Array",
+            "full_name": "System.Void System.Array::Copy(System.Array,System.Array,System.Int32)"
+          },
+          {
+            "il_offset": 45,
+            "name": "Copy",
+            "operand_token": "0x0a00abb9",
+            "opcode": "call",
+            "declaring_type": "System.Array",
+            "full_name": "System.Void System.Array::Copy(System.Array,System.Array,System.Int32)"
+          }
+        ]
+      }
+    ]
+  },
+  "included_source_anchors": [
+    {
+      "path": "src/managed/cs-e3fc67839851/damage/BaseDamageComponent.cs",
+      "size_bytes": 23591,
+      "sha256": "6e3f3543638d808945f16e1e1ee5055caf951795bf4d69c6416dd5c1fa6adda2",
+      "line_ranges": [
+        [
+          120,
+          157
+        ],
+        [
+          162,
+          265
+        ],
+        [
+          267,
+          281
+        ]
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/timer/Timer.cs",
+      "size_bytes": 2779,
+      "sha256": "c5d437c8f4c80de3a163fbb80fc6c4968b3467cb280d8bf4c1f9d310e09ecbfa",
+      "line_ranges": [
+        [
+          34,
+          72
+        ],
+        [
+          75,
+          83
+        ]
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.cs",
+      "size_bytes": 4931,
+      "sha256": "2607a87cd72841399c0f6159ea08a9bd2587317c57e7b92327dee1f819b12201",
+      "line_ranges": [
+        [
+          85,
+          129
+        ],
+        [
+          136,
+          143
+        ]
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.PendingEventBoundaries.cs",
+      "size_bytes": 3771,
+      "sha256": "e6fdd651b49d68b4a4c24a318e3ead95915da6f2704a439c65f701ff8425c90c",
+      "line_ranges": [
+        [
+          22,
+          36
+        ]
+      ]
+    },
+    {
+      "path": "src/managed/cs-e3fc67839851/scheduling/PriorityQueue.cs",
+      "size_bytes": 7853,
+      "sha256": "48d2102543b23a10077b86b6621b0f805f60c1dc8b3773b85a0baf2b46b1bb4d",
+      "line_ranges": [
+        [
+          84,
+          90
+        ]
+      ]
+    }
+  ],
+  "authored_model": {
+    "path": "examples/mechanics/timer-lifecycle/model.py",
+    "size_bytes": 8066,
+    "sha256": "a63d237ff58f9b854cbdec55c3812c4c70461baaa8fd0a35a5e4cd7459821913",
+    "classification": "AUTHORED_CONDITIONAL_MODEL_NOT_GAME_ORACLE"
+  },
+  "timer_experiment": {
+    "classification": "AUTHORED_CONDITIONAL_MODEL_NOT_GAME_ORACLE",
+    "scenario_count": 6,
+    "source_binding_files": 3,
+    "source_bindings": [
+      {
+        "source_path": "src/managed/cs-e3fc67839851/timer/Timer.cs",
+        "lines": [
+          34,
+          72
+        ],
+        "in_order": [
+          "double next = Next;",
+          "Now = next;",
+          "Next = next +",
+          "Count++;",
+          "Handle = null;",
+          "Action!.Invoke(delta);",
+          "if (Loop != 0)"
+        ]
+      },
+      {
+        "source_path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.cs",
+        "lines": [
+          85,
+          129
+        ],
+        "in_order": [
+          "queue.Pop();",
+          "if (top.State != EState.Normal)",
+          "if (top.Do())",
+          "queue.Push(top);",
+          "while (!PendingRemoveQueue.IsEmpty)"
+        ]
+      },
+      {
+        "source_path": "src/managed/cs-e3fc67839851/timer/TimerSystemInstance.cs",
+        "lines": [
+          136,
+          142
+        ],
+        "in_order": [
+          "Registry.Unregister(timer);",
+          "timer.State = EState.Trash;",
+          "timer.Clear();",
+          "Timers.Remove(timer.Id);"
+        ]
+      },
+      {
+        "source_path": "src/managed/cs-e3fc67839851/scheduling/PriorityQueue.cs",
+        "lines": [
+          84,
+          90
+        ],
+        "in_order": [
+          "public void Push(T item)",
+          "_Heap.Add(item);",
+          "_Hash[item] = index;",
+          "Up(index);"
+        ]
+      }
+    ],
+    "assumptions": [
+      "One owner/thread and one timer.",
+      "Positive unit interval and unit dilation; no timing precision claim.",
+      "Initial Normal state and synthetic loop values.",
+      "Scenario callbacks, registry, and logging stand-ins do not throw.",
+      "The callback is assumed to reach DoRemove on the same timer; omitted public Remove/Get lookup is not implemented.",
+      "Authored heap/dictionary stand-ins; no native or game timer runtime execution."
+    ],
+    "negative_control": "A hypothetical post-callback Normal-state guard prevents the modeled requeue.",
+    "scenarios": [
+      "one-shot completion",
+      "repeat catch-up",
+      "self-removal and trash requeue until next due-time pop",
+      "counterfactual post-callback guard",
+      "pending removal after the due loop",
+      "pre-removed timer skipped at due pop"
+    ]
+  },
+  "evidence_labels": {
+    "SOURCE_VERIFIED": "Included source directly shows the expression or ordering.",
+    "CIL_VERIFIED": "Bounded original-CIL identity/call-site checks only; not full source equivalence.",
+    "MODEL_TESTED": "The six authored model scenarios ran; no game oracle.",
+    "INFERRED": "Conditional composition under explicit assumptions, not observed runtime behavior.",
+    "UNKNOWN": "The included evidence does not establish the relationship."
+  },
+  "unresolved": [
+    "Attribute-update scheduling relative to snapshot capture.",
+    "Integration of local CalculateFormula with server damage computation.",
+    "Actual HP mutation or replication consumer for Damage/ChangeLife.",
+    "Server-authoritative acceptance and calculation.",
+    "Damage-event subscriber registration and transitive extra effects.",
+    "Original-game reachability of the timer removal scenario.",
+    "Native event dispatch, marshalling, direct C# destination, and migration chronology."
+  ],
+  "verification": {
+    "primary_direct_crosscheck": "PERFORMED",
+    "primary_crosscheck_scope": "Ten selected methods, 24 selected call sites, and five exact source spans.",
+    "formal_independent_review": "UNAVAILABLE",
+    "game_execution": "NOT_RUN",
+    "body_equivalence": "NOT_ESTABLISHED",
+    "publication_and_rights_clearance": "NOT_ESTABLISHED"
+  }
+}

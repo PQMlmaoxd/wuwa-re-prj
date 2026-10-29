@@ -1,0 +1,13 @@
+# Local tooling noise only. This does not define licensing, secrecy, authority, or governance.
+__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+tools/re/target/
+# Top-level bulk build/fixture outputs, not distributable artifacts.
+/target/
+/tools/re/local-recovery/
+# Private derived access index; not part of the public source set.
+/tools/re/local-index/
+/.local-release-staging/
+/.local-release-audit/

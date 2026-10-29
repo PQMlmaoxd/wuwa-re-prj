@@ -1,0 +1,1579 @@
+{
+  "schema": "wuwa-reconstruction-migration-v1",
+  "manifest_version": 1,
+  "description": "Bounded source-record curation metadata for a future reconstruction tree. Original source bytes are not bundled.",
+  "foundation_status": {
+    "stage": "STAGE_A_BENCHMARK_COMPLETE",
+    "writer_checkpoint": true,
+    "primary_final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING",
+    "publication": "DISABLED",
+    "runtime": "PARKED",
+    "game_version": "UNKNOWN",
+    "curated_ready_count": 0
+  },
+  "authority_policy": {
+    "managed": {
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "assembly_version_label": "CSharpScript, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "game_version": "UNKNOWN"
+    },
+    "build": {
+      "authority_id": "BLD-WUWA-0001",
+      "authority_sha256_kind": "historical_client_build_reference",
+      "local_version": "3.6.0-50004",
+      "historical_client_sha256": "a6cdb83f6f2909b5a13ca19b1d5ff4f0455f743e8fabf40bb07546500968cdfa",
+      "managed_build_claim": false,
+      "association_status": "BUILD_METADATA_ONLY_NOT_DIRECT_BINARY_AUTHORITY"
+    },
+    "join_rule": "Managed records and TS or native build records are distinct authorities. No cross-build join is allowed."
+  },
+  "symbol_policy": {
+    "managed_key": [
+      "full_authority_sha256",
+      "mvid",
+      "typeDef",
+      "methodDef"
+    ],
+    "filename_or_display_name_is_key": false,
+    "method_is_migration_unit": true,
+    "whole_class_coverage_by_method_overlap": false
+  },
+  "non_managed_identity_policy": {
+    "identity": "build_id, unit_id, and source_sha256",
+    "method_tokens": null,
+    "binary_authority": "Do not promote a historical client hash to direct JS or native source authority without an accepted byte lineage.",
+    "cross_join": false
+  },
+  "architecture_identity": {
+    "managed_build_alias": "cs-e3fc67839851",
+    "namespace_policy": "Retain observed namespace or global placement as context; do not infer it from a filename.",
+    "type_method_identity": "Use TypeDef and MethodDef under the full managed authority identity.",
+    "compile_proof": "NOT_RUN",
+    "model_proof": "NOT_ESTABLISHED",
+    "binary_equivalence": "NOT_ESTABLISHED"
+  },
+  "schema_contract": {
+    "version": "1",
+    "required_record_fields": [
+      "id",
+      "original_path",
+      "original_size",
+      "original_sha256",
+      "proposed_path",
+      "proposed_path_reason",
+      "authority_id",
+      "typeDef",
+      "methods",
+      "scope",
+      "completeness",
+      "representation",
+      "curation_status",
+      "export_status",
+      "duplicate_group",
+      "relationship",
+      "supersession",
+      "explanation",
+      "dependencies",
+      "editorial_changes",
+      "validation",
+      "evidence_status",
+      "source_status",
+      "verification_basis",
+      "evidence_references"
+    ],
+    "field_types": {
+      "id": "string",
+      "original_path": "relative_string",
+      "original_size": "integer",
+      "original_sha256": "lowercase_hex_string",
+      "proposed_path": "nullable_relative_string",
+      "authority_id": "string",
+      "namespace_context": "nullable_string",
+      "typeDef": "nullable_token_string",
+      "methods": "object_with_historical_and_current_arrays",
+      "evidence_status": "enum",
+      "source_status": "enum",
+      "verification_basis": "string",
+      "evidence_references": "array_of_path_and_locator_objects",
+      "validation": "object"
+    },
+    "nullable_fields": [
+      "proposed_path",
+      "authority_mvid",
+      "authority_binary_sha256",
+      "typeDef",
+      "method.name",
+      "method.rva",
+      "method.il_range",
+      "evidence_reference.artifact_sha256"
+    ],
+    "allowed_evidence_statuses": [
+      "SOURCE_ONLY",
+      "DIRECT_CIL_PARTIAL",
+      "DIRECT_CIL_FULL",
+      "METADATA_ONLY",
+      "BLOCKED",
+      "UNKNOWN"
+    ],
+    "allowed_source_statuses": [
+      "RECONSTRUCTED_FROM_DIRECT_CIL",
+      "SOURCE_ONLY",
+      "GENERATED_DIAGNOSTIC",
+      "METADATA_ONLY",
+      "INFERRED_CONDITIONAL",
+      "UNKNOWN"
+    ],
+    "orthogonality": "evidence_status, source_status, verification_basis, curation_status, export_status, completeness, and representation are separate fields; readability or decompile output cannot upgrade evidence status",
+    "path_rule": "All paths are local relative research or prospective paths; no parent Markdown link is a manifest reference",
+    "current_method_required_fields": [
+      "methodDef",
+      "coverage",
+      "evidence_status",
+      "source_status",
+      "verification_basis",
+      "symbol_key",
+      "rva",
+      "il_range",
+      "evidence_references"
+    ]
+  },
+  "allowed_curation_statuses": [
+    "CURATED_READY",
+    "NEEDS_EDITORIAL_REVIEW",
+    "NEEDS_PROVENANCE_REVIEW",
+    "PARTIAL_OR_SOURCE_ONLY",
+    "HISTORICAL_ONLY",
+    "INTERNAL_ONLY",
+    "UNKNOWN"
+  ],
+  "allowed_export_statuses": [
+    "INTERNAL_ONLY",
+    "HANDOFF_READY",
+    "PUBLICATION_REVIEW_REQUIRED",
+    "UNKNOWN"
+  ],
+  "benchmark": {
+    "document": "docs/STRUCTURE.md",
+    "status": "STAGE_A_COMPLETE_PRIMARY_REVIEW_PENDING",
+    "retrieval_date": "2026-10-19",
+    "pinned_branch_count": 7,
+    "root_html_count": 7,
+    "commit_feed_count": 7,
+    "targeted_fetch_count": 23,
+    "cited_url_count": 37,
+    "github_rest_result": "HTTP_403_ROOT_HTML_USED",
+    "dolphin_filename_correction": "README.md_404_corrected_to_Readme.md",
+    "faulting_upstream_commands_run": false,
+    "status_legend": {
+      "V": "verified in the bounded cited text",
+      "C": "corroborated in the bounded cited text",
+      "NV": "NOT_VERIFIED in the bounded cited read; not an absence claim"
+    }
+  },
+  "preservation": {
+    "scope": "27 exact parent inputs",
+    "prior_21_file_snapshot_sha256": "3f249236be57d955036b054330b3c507fa54e87e21c728bd7e6b2e6bf3a759d3",
+    "added_after_snapshot": "canonical GameModePromise input plus four exact tool-source inputs plus accepted Event dispatch closure",
+    "accepted_closure": {
+      "path": "docs/performance/PERF_EVENT_DISPATCH_STATIC_CLOSURE_V1.md",
+      "size": 54135,
+      "sha256": "7cff9fc9915bc07e5576321cb033a898bdd9d51ae4a0d1393b47a52672367a50"
+    },
+    "final_verification": "PRIMARY_FINAL_RECEIPT_PENDING",
+    "whole_repository_claim": false
+  },
+  "records": [
+    {
+      "id": "E18",
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/performance/managed/entity/Event.Emit.Enum2.DirectCIL.cs",
+      "original_size": 1625,
+      "original_sha256": "fe86060f87034a64bc98db6355681ee35b9cbc5f00809ee797834f0c4e27cd11",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "DIRECT_CIL_FULL",
+      "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+      "verification_basis": "accepted static CIL18 report and supplied source projection; no fresh binary extraction in this audit",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/performance/managed/entity/Event.Emit.Enum2.DirectCIL.cs",
+          "locator": "lines 1-36; MethodDef 0x0600042E"
+        },
+        {
+          "path": "docs/performance/PERF_CIL18_FINAL_EMIT_HOP.md",
+          "locator": "accepted selected-body receipt and source section",
+          "artifact_sha256": "9b04f7ee4bcb22bdd93ed26e6fe2e98e6d4fe89b3026f59997c51bd5eb17be94"
+        },
+        {
+          "path": "evidence/performance/PERF_CIL18_DIRECT_CIL.txt",
+          "locator": "selected body"
+        }
+      ],
+      "proposed_path": "src/managed/cs-e3fc67839851/event/Event.Emit.Enum2.DirectCIL.cs",
+      "proposed_path_reason": "First-batch selected method fragment; exact-byte import only after approval.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": "0x020000A3",
+      "methods": {
+        "historical": [
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x0600042E"
+            },
+            "name": "Emit<T1,T2>",
+            "coverage": "SOURCE_LIKE_PROJECTION"
+          }
+        ],
+        "current": [
+          {
+            "methodDef": "0x0600042E",
+            "coverage": "DIRECT_CIL_VERIFIED_FULL_SELECTED_BODY_CIL18",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted CIL18 report; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x0600042E"
+            },
+            "rva": "0x18710",
+            "il_range": "[0x0000,0x0015)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF_CIL18_FINAL_EMIT_HOP.md",
+                "locator": "accepted selected-body receipt",
+                "artifact_sha256": "9b04f7ee4bcb22bdd93ed26e6fe2e98e6d4fe89b3026f59997c51bd5eb17be94"
+              },
+              {
+                "path": "evidence/performance/PERF_CIL18_DIRECT_CIL.txt",
+                "locator": "selected body"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "One selected public generic Event Emit method body.",
+      "completeness": "Complete selected direct-CIL body; constructor, callee, containing class, and external dependencies unresolved.",
+      "representation": "Source-like direct-CIL projection; non-standalone.",
+      "curation_status": "NEEDS_EDITORIAL_REVIEW",
+      "export_status": "PUBLICATION_REVIEW_REQUIRED",
+      "duplicate_group": "event-dispatch-emit",
+      "relationship": "Same-authority method overlap with H; selected direct-CIL coverage supersedes H only for MethodDef 0x0600042E, not for the historical file or whole class.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": true,
+        "scope": [
+          "0x0600042E"
+        ],
+        "supersedes": [
+          "H"
+        ],
+        "superseded_by": []
+      },
+      "explanation": "The selected body explicitly preserves value-type EventArgs construction, BOX, and the forwarding order. It is a reconstructed projection, not original source or a compilation unit.",
+      "dependencies": [
+        "Event<TName,TType> context and generic constraints",
+        "EventArgs<T1,T2> constructor MethodDef 0x06000457",
+        "IEventArgs",
+        "EmitInternal<T1> MethodDef 0x06000434"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "If imported, copy exact bytes first; any editorial change requires a separate approved diff.",
+        "Preserve original string literals exactly."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "REVIEW_REQUIRED",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "E17",
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/performance/managed/entity/Event.EmitInternal.DirectCIL.cs",
+      "original_size": 9820,
+      "original_sha256": "7492158dbaf34884a100d7c9e387003719ab88372de2f903c90be45af8626d8c",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "DIRECT_CIL_FULL",
+      "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+      "verification_basis": "accepted static CIL17 report and supplied source projection; no fresh binary extraction in this audit",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/performance/managed/entity/Event.EmitInternal.DirectCIL.cs",
+          "locator": "lines 1-65; MethodDef 0x06000434"
+        },
+        {
+          "path": "docs/performance/PERF_CIL17_EMIT_INTERNAL.md",
+          "locator": "accepted selected-body receipt and source section",
+          "artifact_sha256": "85e46e0eb62f35a0e56b30b6d3302357d2c63d69ada8d8ae820fd3bd316134e0"
+        },
+        {
+          "path": "evidence/performance/PERF_CIL17_DIRECT_CIL.txt",
+          "locator": "selected body"
+        }
+      ],
+      "proposed_path": "src/managed/cs-e3fc67839851/event/Event.EmitInternal.DirectCIL.cs",
+      "proposed_path_reason": "First-batch selected method fragment; exact-byte import only after approval.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": "0x020000A3",
+      "methods": {
+        "historical": [
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x06000434"
+            },
+            "name": "EmitInternal<T1>",
+            "coverage": "SOURCE_METHOD_FRAGMENT"
+          }
+        ],
+        "current": [
+          {
+            "methodDef": "0x06000434",
+            "coverage": "DIRECT_CIL_VERIFIED_FULL_SELECTED_BODY_CIL17",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted CIL17 report; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x06000434"
+            },
+            "rva": "0x187C0",
+            "il_range": "[0x0000,0x0308)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF_CIL17_EMIT_INTERNAL.md",
+                "locator": "accepted selected-body receipt",
+                "artifact_sha256": "85e46e0eb62f35a0e56b30b6d3302357d2c63d69ada8d8ae820fd3bd316134e0"
+              },
+              {
+                "path": "evidence/performance/PERF_CIL17_DIRECT_CIL.txt",
+                "locator": "selected body"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "One selected private generic Event EmitInternal method body.",
+      "completeness": "Complete selected direct-CIL body; containing class, generic constraints, helpers, and external dependencies unresolved.",
+      "representation": "Meaningful source-like method fragment; non-standalone.",
+      "curation_status": "NEEDS_EDITORIAL_REVIEW",
+      "export_status": "PUBLICATION_REVIEW_REQUIRED",
+      "duplicate_group": "event-dispatch-emitinternal",
+      "relationship": "Same-authority method overlap with H; selected direct-CIL coverage supersedes H only for MethodDef 0x06000434, not for the historical file or whole class.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": true,
+        "scope": [
+          "0x06000434"
+        ],
+        "supersedes": [
+          "H"
+        ],
+        "superseded_by": []
+      },
+      "explanation": "The selected body preserves conditional dispatch, ordinary dispatch, pending mutation phases, nested enumerator cleanup, and observed exception-region limits. It intentionally supplies no helper stubs.",
+      "dependencies": [
+        "Event<TName,TType> context",
+        "IEventArgs",
+        "ConditionListener<T1>",
+        "Stat, Log, inline-array helpers, and mutation helpers"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Preserve generic context, original control order, exception regions, and original string literals."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "REVIEW_REQUIRED",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "E13",
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/performance/managed/entity/Event.ExecuteHandlesInternal.cs",
+      "original_size": 6312,
+      "original_sha256": "d82a1c8e62c3677548f88980bd798f8b487dccfaba75896c496f22eebfc19bdb",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "DIRECT_CIL_FULL",
+      "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+      "verification_basis": "accepted static CIL13 report and supplied source projection; no fresh binary extraction in this audit",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/performance/managed/entity/Event.ExecuteHandlesInternal.cs",
+          "locator": "lines 1-45; MethodDef 0x06000435"
+        },
+        {
+          "path": "docs/performance/PERF_CIL13_HANDLER_EXECUTION.md",
+          "locator": "accepted selected-body receipt and source section",
+          "artifact_sha256": "841f6d98a9a706ceb6bf50b060320d8a35b834300893b44719224ece745f85b9"
+        },
+        {
+          "path": "evidence/performance/PERF_CIL13_DIRECT_CIL.txt",
+          "locator": "selected body"
+        }
+      ],
+      "proposed_path": "src/managed/cs-e3fc67839851/event/Event.ExecuteHandlesInternal.cs",
+      "proposed_path_reason": "First-batch selected method fragment; exact-byte import only after approval.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": "0x020000A3",
+      "methods": {
+        "historical": [
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x06000435"
+            },
+            "name": "ExecuteHandlesInternal<T1>",
+            "coverage": "DIRECT_CIL_PROJECTION"
+          }
+        ],
+        "current": [
+          {
+            "methodDef": "0x06000435",
+            "coverage": "DIRECT_CIL_VERIFIED_FULL_SELECTED_BODY_CIL13",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted CIL13 report; no fresh binary extraction in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x06000435"
+            },
+            "rva": "0x18B20",
+            "il_range": "[0x0000,0x0151)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF_CIL13_HANDLER_EXECUTION.md",
+                "locator": "accepted selected-body receipt",
+                "artifact_sha256": "841f6d98a9a706ceb6bf50b060320d8a35b834300893b44719224ece745f85b9"
+              },
+              {
+                "path": "evidence/performance/PERF_CIL13_DIRECT_CIL.txt",
+                "locator": "selected body"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "One selected private generic handler-execution method body.",
+      "completeness": "Complete selected direct-CIL body; listener, callback, helper, native, and runtime behavior unresolved.",
+      "representation": "Source-like direct-CIL projection; non-standalone.",
+      "curation_status": "NEEDS_EDITORIAL_REVIEW",
+      "export_status": "PUBLICATION_REVIEW_REQUIRED",
+      "duplicate_group": null,
+      "relationship": "No qualified same-authority duplicate group recorded.",
+      "supersession": {
+        "same_authority": false,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "The selected body preserves pending filtering, literal removal handling, IEventArgs invocation, local exception filtering, logging order, and enumerator disposal. It is not a complete Event implementation.",
+      "dependencies": [
+        "Event<TName,TType> context and retained Enum or Delegate constraints",
+        "IEventArgs.Invoke",
+        "ConditionListener<T1>",
+        "Stat, Log, and compiler-generated inline-array helpers"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Do not add helper declarations or no-op stubs."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "REVIEW_REQUIRED",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "H",
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/performance/managed/entity/Event.RangeReceiver.cs",
+      "original_size": 7071,
+      "original_sha256": "3bd7c90effd4f50195c76e88ca8b0f9cfaab4b4228653a36fc3afa7e30d2913e",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "SOURCE_ONLY",
+      "source_status": "SOURCE_ONLY",
+      "verification_basis": "historical source view; selected direct-CIL evidence is recorded separately in E18 and E17",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/performance/managed/entity/Event.RangeReceiver.cs",
+          "locator": "lines 1-75; historical MethodDefs 0x0600042E and 0x06000434"
+        },
+        {
+          "path": "docs/performance/PERF_CIL18_FINAL_EMIT_HOP.md",
+          "locator": "historical relation to Event.RangeReceiver; selected MethodDef 0x0600042E",
+          "artifact_sha256": "9b04f7ee4bcb22bdd93ed26e6fe2e98e6d4fe89b3026f59997c51bd5eb17be94"
+        },
+        {
+          "path": "docs/performance/PERF_CIL17_EMIT_INTERNAL.md",
+          "locator": "historical relation to Event.RangeReceiver; selected MethodDef 0x06000434",
+          "artifact_sha256": "85e46e0eb62f35a0e56b30b6d3302357d2c63d69ada8d8ae820fd3bd316134e0"
+        }
+      ],
+      "proposed_path": null,
+      "proposed_path_reason": "HISTORICAL_ONLY and INTERNAL_ONLY; retain the source-only context in place.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": "0x020000A3",
+      "methods": {
+        "historical": [
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x0600042E"
+            },
+            "name": "Emit<T1,T2>",
+            "coverage": "SOURCE_ONLY"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x06000434"
+            },
+            "name": "EmitInternal<T1>",
+            "coverage": "SOURCE_ONLY"
+          }
+        ],
+        "current": [
+          {
+            "methodDef": "0x0600042E",
+            "coverage": "HISTORICAL_SOURCE_ONLY_OVERLAP_SUPERSEDED_BY_E18_FOR_SELECTED_METHOD",
+            "evidence_status": "SOURCE_ONLY",
+            "source_status": "SOURCE_ONLY",
+            "verification_basis": "historical source view only; no retroactive upgrade",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x0600042E"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/performance/managed/entity/Event.RangeReceiver.cs",
+                "locator": "historical source MethodDef 0x0600042E"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x06000434",
+            "coverage": "HISTORICAL_SOURCE_ONLY_OVERLAP_SUPERSEDED_BY_E17_FOR_SELECTED_METHOD",
+            "evidence_status": "SOURCE_ONLY",
+            "source_status": "SOURCE_ONLY",
+            "verification_basis": "historical source view only; no retroactive upgrade",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x020000A3",
+              "methodDef": "0x06000434"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/performance/managed/entity/Event.RangeReceiver.cs",
+                "locator": "historical source MethodDef 0x06000434"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "Historical source-only receiver context for two Event methods.",
+      "completeness": "Two source-like bodies only; not a whole-class recovery and not direct-CIL evidence.",
+      "representation": "Historical source-only partial packaging.",
+      "curation_status": "HISTORICAL_ONLY",
+      "export_status": "INTERNAL_ONLY",
+      "duplicate_group": "event-dispatch-historical-context",
+      "relationship": "Historical source-only context overlaps E18 and E17 by selected method token; retain it and do not treat method overlap as whole-class supersession.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": true,
+        "scope": [
+          "0x0600042E",
+          "0x06000434"
+        ],
+        "supersedes": [],
+        "superseded_by": [
+          "E18",
+          "E17"
+        ]
+      },
+      "explanation": "This file is retained as source context and historical evidence. It is not deleted or promoted to whole-class coverage by the newer selected method projections.",
+      "dependencies": [
+        "Event<TName,TType> context",
+        "IEventArgs and EventArgs<T1,T2>",
+        "listener collections and pending mutation helpers",
+        "logging and external event types"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Do not translate original identifiers or string literals."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "INTERNAL_ONLY",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "P",
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/performance/managed/loading/GameModePromise.cs",
+      "original_size": 2400,
+      "original_sha256": "4ffdada5cbe4ebf98c6e7899adf172c457617bd1f49a17092bdccf838cf6a984",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "DIRECT_CIL_FULL",
+      "source_status": "SOURCE_ONLY",
+      "verification_basis": "mixed file: current method entries carry direct evidence, while the historical source projection remains SOURCE_ONLY",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/performance/managed/loading/GameModePromise.cs",
+          "locator": "lines 1-65; getter and setter source-like projection"
+        },
+        {
+          "path": "docs/performance/PERF_LOAD01_GAMEMODE_PROMISE_GETTER.md",
+          "locator": "accepted getter receipt and source comparison",
+          "artifact_sha256": "7330e140b2e3dbbfbf7758f6d00c10d788f1bba4ed2c3e2ba3995aaab816aaa4"
+        },
+        {
+          "path": "evidence/performance/PERF_LOAD01_DIRECT_CIL.txt",
+          "locator": "accepted getter body"
+        },
+        {
+          "path": "evidence/performance/PERF04_DIRECT_CIL.txt",
+          "locator": "accepted setter body lines 1875-1925"
+        }
+      ],
+      "proposed_path": "src/managed/cs-e3fc67839851/loading/GameModePromise.cs",
+      "proposed_path_reason": "Mixed source view needs editorial review; do not create a duplicate getter file.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": "0x0200349C",
+      "methods": {
+        "historical": [
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x0200349C",
+              "methodDef": "0x0601C6AF"
+            },
+            "name": "get_Promise",
+            "coverage": "SOURCE_ONLY_UNKNOWN_DIRECT_CIL_HISTORICAL"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x0200349C",
+              "methodDef": "0x0601C6B0"
+            },
+            "name": "SetResult",
+            "coverage": "FULL_ACCEPTED_PRIOR_CIL"
+          }
+        ],
+        "current": [
+          {
+            "methodDef": "0x0601C6AF",
+            "coverage": "DIRECT_CIL_FULL_CONFIRMED_LOAD01",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "SOURCE_ONLY",
+            "verification_basis": "accepted LOAD01 direct-body report; historical source projection remains SOURCE_ONLY",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x0200349C",
+              "methodDef": "0x0601C6AF"
+            },
+            "rva": "0x88334B",
+            "il_range": "[0x0000,0x0020)",
+            "evidence_references": [
+              {
+                "path": "docs/performance/PERF_LOAD01_GAMEMODE_PROMISE_GETTER.md",
+                "locator": "accepted getter receipt",
+                "artifact_sha256": "7330e140b2e3dbbfbf7758f6d00c10d788f1bba4ed2c3e2ba3995aaab816aaa4"
+              },
+              {
+                "path": "evidence/performance/PERF_LOAD01_DIRECT_CIL.txt",
+                "locator": "accepted getter body"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x0601C6B0",
+            "coverage": "FULL_ACCEPTED_PRIOR_CIL",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted prior PERF04 direct-CIL body; setter RVA retained from the accepted source header",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x0200349C",
+              "methodDef": "0x0601C6B0"
+            },
+            "rva": "0x88336C",
+            "il_range": "[0x0000,0x0055)",
+            "evidence_references": [
+              {
+                "path": "evidence/performance/PERF04_DIRECT_CIL.txt",
+                "locator": "accepted setter body lines 1875-1925"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "Mixed performance source-like view for GameModePromise getter and setter.",
+      "completeness": "Getter direct-CIL body is confirmed; setter is accepted prior evidence; external task and network effects remain unresolved.",
+      "representation": "Source-like performance projection; mixed evidence layer.",
+      "curation_status": "NEEDS_EDITORIAL_REVIEW",
+      "export_status": "PUBLICATION_REVIEW_REQUIRED",
+      "duplicate_group": "gamemodepromise-layer-overlap",
+      "relationship": "Overlaps G by TypeDef and method tokens but uses a different performance representation layer; retain both and do not delete either record.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "The getter now has direct-CIL confirmation while the historical source file remains unchanged. The setter remains accepted prior evidence. No duplicate getter artifact is created.",
+      "dependencies": [
+        "AkiUniTask<bool>",
+        "Cysharp.Threading.Tasks.UniTask",
+        "GlobalData, Net, and Log",
+        "external task completion, cancellation, and scheduling effects"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Mixed-file editorial review is required before any proposed export."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "REVIEW_REQUIRED",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "G",
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/managed/full/CSharpScript/shards/06feb1084d70c2d77f32096205570263da84de210fce65e857a10b295a685777/source/_global/GameModePromise.cs",
+      "original_size": 915,
+      "original_sha256": "ea1892a9cf6d0a3a3f210714b649420da700aeeec1fd2f59f69b32a2274dec38",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "SOURCE_ONLY",
+      "source_status": "GENERATED_DIAGNOSTIC",
+      "verification_basis": "canonical generated source and bounded catalog sample; no direct-CIL proof and no full metadata query in this audit",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/managed/full/CSharpScript/shards/06feb1084d70c2d77f32096205570263da84de210fce65e857a10b295a685777/source/_global/GameModePromise.cs",
+          "locator": "lines 1-40; generated diagnostic source"
+        },
+        {
+          "path": "src/reconstructed/managed/full/CSharpScript/catalog/r5b2b_full_merge_index.jsonl",
+          "locator": "first three rows only; bounded sample, not an exact full-index row match"
+        }
+      ],
+      "proposed_path": null,
+      "proposed_path_reason": "Generated bulk source with diagnostics remains INTERNAL_ONLY; retain as a different-layer counterpart to P.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": "0x0200349C",
+      "methods": {
+        "historical": [
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x0200349C",
+              "methodDef": "0x0601C6AF"
+            },
+            "name": "get_Promise",
+            "coverage": "GENERATED_DECOMPILE_WITH_DIAGNOSTICS"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x0200349C",
+              "methodDef": "0x0601C6B0"
+            },
+            "name": "SetResult",
+            "coverage": "GENERATED_DECOMPILE_WITH_DIAGNOSTICS"
+          }
+        ],
+        "current": [
+          {
+            "methodDef": "0x0601C6AF",
+            "coverage": "INTERNAL_GENERATED_LAYER",
+            "evidence_status": "SOURCE_ONLY",
+            "source_status": "GENERATED_DIAGNOSTIC",
+            "verification_basis": "generated source representation; direct-CIL coverage UNKNOWN",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x0200349C",
+              "methodDef": "0x0601C6AF"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/full/CSharpScript/shards/06feb1084d70c2d77f32096205570263da84de210fce65e857a10b295a685777/source/_global/GameModePromise.cs",
+                "locator": "lines 1-40; generated getter representation"
+              },
+              {
+                "path": "src/reconstructed/managed/full/CSharpScript/catalog/r5b2b_full_merge_index.jsonl",
+                "locator": "first three rows only; no exact row match claimed"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x0601C6B0",
+            "coverage": "INTERNAL_GENERATED_LAYER",
+            "evidence_status": "SOURCE_ONLY",
+            "source_status": "GENERATED_DIAGNOSTIC",
+            "verification_basis": "generated source representation; direct-CIL coverage UNKNOWN",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x0200349C",
+              "methodDef": "0x0601C6B0"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/full/CSharpScript/shards/06feb1084d70c2d77f32096205570263da84de210fce65e857a10b295a685777/source/_global/GameModePromise.cs",
+                "locator": "lines 1-40; generated setter representation"
+              },
+              {
+                "path": "src/reconstructed/managed/full/CSharpScript/catalog/r5b2b_full_merge_index.jsonl",
+                "locator": "first three rows only; no exact row match claimed"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "One canonical generated GameModePromise source file from the full decompile shard.",
+      "completeness": "Generated source with diagnostics; not a curated source-like export and not a whole-program completion claim.",
+      "representation": "Canonical bulk generated C# with diagnostics.",
+      "curation_status": "INTERNAL_ONLY",
+      "export_status": "INTERNAL_ONLY",
+      "duplicate_group": "gamemodepromise-layer-overlap",
+      "relationship": "Same TypeDef and method overlap with P but a different generated bulk layer; retain both and do not treat either as the other.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "This is a generated canonical counterpart, not a proposed duplicate getter file. Its diagnostics and layer identity remain visible.",
+      "dependencies": [
+        "Generated decompiler context",
+        "AkiUniTask<bool> and Cysharp.Threading.Tasks.UniTask",
+        "Unknown result types noted by the generated source"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Do not canonicalize generated diagnostics into a curated claim."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "INTERNAL_ONLY",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "D",
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+      "original_size": 15892,
+      "original_sha256": "6790caeb69bd9764e6e20df2fc0ed2724fa5a7eed842fb3dc8e396fff5891759",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "UNKNOWN",
+      "source_status": "SOURCE_ONLY",
+      "verification_basis": "heterogeneous selected-method proof; consult per-method entries. Accepted source header and bounded method-map read only; no fresh CIL validation in this audit",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+          "locator": "lines 1-70; eight selected whole ordinary method bodies claimed by the source header"
+        },
+        {
+          "path": "src/reconstructed/managed/semantic/gameplay/METHOD_EVIDENCE_MAP.md",
+          "locator": "lines 1-85; historical overlay and selected-body scope"
+        }
+      ],
+      "proposed_path": "src/managed/cs-e3fc67839851/gameplay/Calculation.DamageFormula.cs",
+      "proposed_path_reason": "Future selected gameplay view; mixed coverage needs provenance review and is not first-batch work.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": "0x02002EB2",
+      "methods": {
+        "historical": [
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018865"
+            },
+            "name": "GetAttrFromSnapshots",
+            "coverage": "SOURCE_RAW_ONLY"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018867"
+            },
+            "name": "CalculateHurt",
+            "coverage": "PRIMARY_FULL_CIL"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018868"
+            },
+            "name": null,
+            "coverage": "WHOLE_SELECTED_SOURCE_BODY_CLAIM; METHOD_EVIDENCE_NOT_ASSESSED_IN_THIS_AUDIT"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018869"
+            },
+            "name": null,
+            "coverage": "WHOLE_SELECTED_SOURCE_BODY_CLAIM; METHOD_EVIDENCE_NOT_ASSESSED_IN_THIS_AUDIT"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x0601886A"
+            },
+            "name": null,
+            "coverage": "WHOLE_SELECTED_SOURCE_BODY_CLAIM; METHOD_EVIDENCE_NOT_ASSESSED_IN_THIS_AUDIT"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x0601886B"
+            },
+            "name": null,
+            "coverage": "WHOLE_SELECTED_SOURCE_BODY_CLAIM; METHOD_EVIDENCE_NOT_ASSESSED_IN_THIS_AUDIT"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x0601886C"
+            },
+            "name": null,
+            "coverage": "WHOLE_SELECTED_SOURCE_BODY_CLAIM; METHOD_EVIDENCE_NOT_ASSESSED_IN_THIS_AUDIT"
+          },
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018873"
+            },
+            "name": null,
+            "coverage": "WHOLE_SELECTED_SOURCE_BODY_CLAIM; METHOD_EVIDENCE_NOT_ASSESSED_IN_THIS_AUDIT"
+          }
+        ],
+        "current": [
+          {
+            "methodDef": "0x06018865",
+            "coverage": "MIXED_SELECTED_VIEW_SOURCE_RAW_ONLY",
+            "evidence_status": "SOURCE_ONLY",
+            "source_status": "SOURCE_ONLY",
+            "verification_basis": "accepted source comment; not fresh CIL validation in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018865"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+                "locator": "lines 1-70; MethodDef 0x06018865 source comment"
+              },
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/METHOD_EVIDENCE_MAP.md",
+                "locator": "lines 1-85; historical selected-method map"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x06018867",
+            "coverage": "MIXED_SELECTED_VIEW_PRIMARY_FULL_CIL",
+            "evidence_status": "DIRECT_CIL_FULL",
+            "source_status": "RECONSTRUCTED_FROM_DIRECT_CIL",
+            "verification_basis": "accepted source comment claiming PRIMARY_FULL_CIL; not freshly revalidated in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018867"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+                "locator": "lines 1-70; MethodDef 0x06018867 source comment"
+              },
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/METHOD_EVIDENCE_MAP.md",
+                "locator": "lines 1-85; historical selected-method map"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x06018868",
+            "coverage": "MIXED_SELECTED_VIEW_NOT_ASSESSED_IN_THIS_AUDIT",
+            "evidence_status": "UNKNOWN",
+            "source_status": "UNKNOWN",
+            "verification_basis": "source header states eight whole selected bodies; this method was not assessed in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018868"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+                "locator": "lines 1-70; source header whole-body claim; per-method proof not assessed"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x06018869",
+            "coverage": "MIXED_SELECTED_VIEW_NOT_ASSESSED_IN_THIS_AUDIT",
+            "evidence_status": "UNKNOWN",
+            "source_status": "UNKNOWN",
+            "verification_basis": "source header states eight whole selected bodies; this method was not assessed in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018869"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+                "locator": "lines 1-70; source header whole-body claim; per-method proof not assessed"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x0601886A",
+            "coverage": "MIXED_SELECTED_VIEW_NOT_ASSESSED_IN_THIS_AUDIT",
+            "evidence_status": "UNKNOWN",
+            "source_status": "UNKNOWN",
+            "verification_basis": "source header states eight whole selected bodies; this method was not assessed in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x0601886A"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+                "locator": "lines 1-70; source header whole-body claim; per-method proof not assessed"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x0601886B",
+            "coverage": "MIXED_SELECTED_VIEW_NOT_ASSESSED_IN_THIS_AUDIT",
+            "evidence_status": "UNKNOWN",
+            "source_status": "UNKNOWN",
+            "verification_basis": "source header states eight whole selected bodies; this method was not assessed in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x0601886B"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+                "locator": "lines 1-70; source header whole-body claim; per-method proof not assessed"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x0601886C",
+            "coverage": "MIXED_SELECTED_VIEW_NOT_ASSESSED_IN_THIS_AUDIT",
+            "evidence_status": "UNKNOWN",
+            "source_status": "UNKNOWN",
+            "verification_basis": "source header states eight whole selected bodies; this method was not assessed in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x0601886C"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+                "locator": "lines 1-70; source header whole-body claim; per-method proof not assessed"
+              }
+            ]
+          },
+          {
+            "methodDef": "0x06018873",
+            "coverage": "MIXED_SELECTED_VIEW_NOT_ASSESSED_IN_THIS_AUDIT",
+            "evidence_status": "UNKNOWN",
+            "source_status": "UNKNOWN",
+            "verification_basis": "source header states eight whole selected bodies; this method was not assessed in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x06018873"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.DamageFormula.cs",
+                "locator": "lines 1-70; source header whole-body claim; per-method proof not assessed"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "Eight selected ordinary method bodies from Calculation; one raw-only, one accepted full-CIL claim, and six per-method evidence statuses not assessed in this audit.",
+      "completeness": "The source header states that all eight selected source bodies are present. Per-method proof is mixed and six statuses are UNKNOWN here; this is not whole-class coverage or a standalone compilation unit.",
+      "representation": "Reconstructed semantic gameplay overlay.",
+      "curation_status": "NEEDS_PROVENANCE_REVIEW",
+      "export_status": "PUBLICATION_REVIEW_REQUIRED",
+      "duplicate_group": "calculation-method-views",
+      "relationship": "Non-overlapping method view with T under the same TypeDef; do not merge by class name alone.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "GetAttrFromSnapshots remains SOURCE_RAW_ONLY and CalculateHurt remains the accepted PRIMARY_FULL_CIL source claim. The other six methods are not assessed in this audit; UNKNOWN means coverage is not established, not that their source bodies are absent.",
+      "dependencies": [
+        "Calculation context and IStaticVariableResetter",
+        "Aki.Config and Aki.Protocol",
+        "SnapshotPayload, AttributeSnapshot, and external calculation helpers"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Do not call the six unassessed methods header-only, and do not invent their names, signatures, or bodies."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "REVIEW_REQUIRED",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "T",
+      "namespace_context": "global (observed)",
+      "original_path": "src/reconstructed/managed/semantic/gameplay/Calculation.cs",
+      "original_size": 1531,
+      "original_sha256": "61d4c7e5434fde34b963c00012f2460b4bda7a1281a5791dbd85bcaba0b5ae39",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "SOURCE_ONLY",
+      "source_status": "SOURCE_ONLY",
+      "verification_basis": "accepted source-only gameplay view; no fresh CIL validation in this audit",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/managed/semantic/gameplay/Calculation.cs",
+          "locator": "lines 1-29; MethodDef 0x0601886E"
+        }
+      ],
+      "proposed_path": "src/managed/cs-e3fc67839851/gameplay/Calculation.cs",
+      "proposed_path_reason": "Future non-overlapping gameplay method view; partial source-only packaging convenience.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": "0x02002EB2",
+      "methods": {
+        "historical": [
+          {
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x0601886E"
+            },
+            "name": "ToughCalculation",
+            "coverage": "SOURCE_ONLY"
+          }
+        ],
+        "current": [
+          {
+            "methodDef": "0x0601886E",
+            "coverage": "PARTIAL_OR_SOURCE_ONLY",
+            "evidence_status": "SOURCE_ONLY",
+            "source_status": "SOURCE_ONLY",
+            "verification_basis": "accepted source-only view; no fresh CIL validation in this audit",
+            "symbol_key": {
+              "full_authority_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+              "mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+              "typeDef": "0x02002EB2",
+              "methodDef": "0x0601886E"
+            },
+            "rva": null,
+            "il_range": null,
+            "evidence_references": [
+              {
+                "path": "src/reconstructed/managed/semantic/gameplay/Calculation.cs",
+                "locator": "lines 1-29; MethodDef 0x0601886E"
+              }
+            ]
+          }
+        ]
+      },
+      "scope": "One selected ToughCalculation method view from Calculation.",
+      "completeness": "Partial source-only view; packaging convenience only and not whole-class recovery.",
+      "representation": "Reconstructed semantic gameplay overlay.",
+      "curation_status": "PARTIAL_OR_SOURCE_ONLY",
+      "export_status": "PUBLICATION_REVIEW_REQUIRED",
+      "duplicate_group": "calculation-method-views",
+      "relationship": "Legitimate non-overlap with D under the same TypeDef; do not merge or treat either file as whole-class coverage.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "The source view retains ToughCalculation and its token. It is a partial packaging convenience, not a duplicate of the eight selected D methods.",
+      "dependencies": [
+        "Calculation context and IStaticVariableResetter",
+        "AttributeSnapshot",
+        "EAttributeType operands with independently unproved numeric identities"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Keep this non-overlapping method view separate from D."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "MANAGED_SHA_MVID_TOKEN_SCOPE_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "REVIEW_REQUIRED",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "L",
+      "unit_id": "RCN-R1E-LOADING-INTEGRATION-0001",
+      "original_path": "src/reconstructed/loading/LoadingPipeline.ts",
+      "original_size": 14152,
+      "original_sha256": "a37e54056fe0bffd293c6df420fbbf3a461361c76abdb95453057f9d13962e0a",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "SOURCE_ONLY",
+      "source_status": "SOURCE_ONLY",
+      "verification_basis": "source composition projection with build association only; JS lineage and direct binary authority are UNVERIFIED_IN_THIS_AUDIT",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/loading/LoadingPipeline.ts",
+          "locator": "lines 1-65; R1E integration projection"
+        },
+        {
+          "path": "BUILD_MATRIX.md",
+          "locator": "lines 1-7; BLD-WUWA-0001 association"
+        }
+      ],
+      "proposed_path": null,
+      "proposed_path_reason": "INTERNAL_ONLY integration projection; provenance review is required before any future export.",
+      "authority_id": "BLD-WUWA-0001",
+      "authority_binary_sha256": null,
+      "authority_sha256_kind": "BUILD_ASSOCIATION_ONLY",
+      "build_reference": {
+        "build_id": "BLD-WUWA-0001",
+        "local_version": "3.6.0-50004",
+        "historical_client_sha256": "a6cdb83f6f2909b5a13ca19b1d5ff4f0455f743e8fabf40bb07546500968cdfa",
+        "association_status": "UNVERIFIED_IN_THIS_AUDIT"
+      },
+      "authority_mvid": null,
+      "typeDef": null,
+      "methods": {
+        "historical": [],
+        "current": []
+      },
+      "scope": "R1E loading integration composition projection.",
+      "completeness": "Composition projection only; not original TypeScript and not a compiling ABI claim.",
+      "representation": "Reconstructed TS integration artifact.",
+      "curation_status": "NEEDS_PROVENANCE_REVIEW",
+      "export_status": "INTERNAL_ONLY",
+      "duplicate_group": null,
+      "relationship": "Distinct TS build authority; no managed symbol join.",
+      "supersession": {
+        "same_authority": false,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "The file composes accepted loading slices and marks unknown boundaries. It is not original TS and does not establish a compiling ABI.",
+      "dependencies": [
+        "Accepted R1a through R1d reconstruction slices",
+        "Native binding identities with ABI and bodies UNKNOWN",
+        "BLD-WUWA-0001 build metadata"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Use NON_PLAIN_AT_REST at an appropriate native boundary; do not propagate mechanism speculation."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "BUILD_ASSOCIATION_ONLY_NOT_DIRECT_BINARY_AUTHORITY",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "INTERNAL_ONLY",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "N",
+      "unit_id": "RCN-R1DA-BINDINGMAP-0001",
+      "original_path": "src/reconstructed/native/WorldPartitionBridge.hpp",
+      "original_size": 8756,
+      "original_sha256": "6b10a10f1c0af210b72d45128416620e63b5e67eed5568c432ab66d68b33fe48",
+      "hash_basis": "raw_source_file_bytes",
+      "evidence_status": "METADATA_ONLY",
+      "source_status": "METADATA_ONLY",
+      "verification_basis": "native identity surface and build association only; native implementation and direct binary authority are UNVERIFIED_IN_THIS_AUDIT",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/native/WorldPartitionBridge.hpp",
+          "locator": "lines 1-50; identity and forward-declaration surface"
+        },
+        {
+          "path": "BUILD_MATRIX.md",
+          "locator": "lines 1-7; BLD-WUWA-0001 association"
+        }
+      ],
+      "proposed_path": null,
+      "proposed_path_reason": "INTERNAL_ONLY native identity surface; no ABI or implementation export is proposed.",
+      "authority_id": "BLD-WUWA-0001",
+      "authority_binary_sha256": null,
+      "authority_sha256_kind": "BUILD_ASSOCIATION_ONLY",
+      "build_reference": {
+        "build_id": "BLD-WUWA-0001",
+        "local_version": "3.6.0-50004",
+        "historical_client_sha256": "a6cdb83f6f2909b5a13ca19b1d5ff4f0455f743e8fabf40bb07546500968cdfa",
+        "association_status": "UNVERIFIED_IN_THIS_AUDIT"
+      },
+      "authority_mvid": null,
+      "typeDef": null,
+      "methods": {
+        "historical": [],
+        "current": []
+      },
+      "scope": "WorldPartition binding identity and forward-declaration surface.",
+      "completeness": "Identity and forward declarations only; native ABI and implementation bodies UNKNOWN.",
+      "representation": "Native semantic surface; non-compilable SDK claim.",
+      "curation_status": "INTERNAL_ONLY",
+      "export_status": "INTERNAL_ONLY",
+      "duplicate_group": null,
+      "relationship": "Distinct native build authority; no managed symbol join.",
+      "supersession": {
+        "same_authority": false,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "The file records accepted native identity boundaries only. Historic mechanism speculation is not propagated into the future tree.",
+      "dependencies": [
+        "BLD-WUWA-0001 build metadata",
+        "Puerts or reflection binding identity",
+        "Native ABI and implementation bodies UNKNOWN"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Do not invent C++ signatures, ABI, or native behavior."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_SOURCE_BYTES",
+        "authority_identity": "BUILD_ASSOCIATION_ONLY_NOT_DIRECT_BINARY_AUTHORITY",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "INTERNAL_ONLY",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    },
+    {
+      "id": "I",
+      "original_path": "src/reconstructed/managed/full/CSharpScript/catalog/r5b2b_full_merge_index.jsonl",
+      "original_size": 18921295,
+      "original_sha256": "a8007cd667df7fbd4ad4a5413354759dbe9593c46e46ab847e5e8037a0d3f31b",
+      "hash_basis": "raw_catalog_file_bytes",
+      "evidence_status": "METADATA_ONLY",
+      "source_status": "METADATA_ONLY",
+      "verification_basis": "bounded catalog sample only; no all-row provenance or full metadata query",
+      "evidence_references": [
+        {
+          "path": "src/reconstructed/managed/full/CSharpScript/catalog/r5b2b_full_merge_index.jsonl",
+          "locator": "first three rows only; DECOMPILE_OK_WITH_DIAGNOSTICS sample, not all-row provenance"
+        }
+      ],
+      "proposed_path": null,
+      "proposed_path_reason": "INTERNAL_ONLY generated index; it is not source and no full-catalog completion claim is made.",
+      "authority_id": "MANAGED-CS-E3FC67839851",
+      "authority_binary_sha256": "e3fc67839851d97f2f7cf749f49329bfbe44d059189383ef93ff24f7d22c02db",
+      "authority_sha256_kind": "managed_assembly",
+      "authority_mvid": "2d6d37cb-76e5-4075-8220-3eeca41471e3",
+      "typeDef": null,
+      "methods": {
+        "historical": [],
+        "current": []
+      },
+      "scope": "Generated full-decompile merge index; only bounded sample rows were read for this curation record.",
+      "completeness": "Index metadata only; sample rows do not prove total source coverage or global completion.",
+      "representation": "Generated catalog index, not source.",
+      "curation_status": "INTERNAL_ONLY",
+      "export_status": "INTERNAL_ONLY",
+      "duplicate_group": null,
+      "relationship": "Catalog metadata for the managed authority; not a source counterpart and not a method body.",
+      "supersession": {
+        "same_authority": true,
+        "qualified": false,
+        "scope": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "explanation": "The catalog is retained as generated index evidence. Its first three rows were bounded sample input and are not a total-catalog proof.",
+      "dependencies": [
+        "Managed assembly authority SHA-256",
+        "Generated full-decompile shard metadata",
+        "No source-body promotion from catalog rows"
+      ],
+      "editorial_changes": [
+        "None approved.",
+        "Do not parse or rewrite the historical catalog as part of this foundation."
+      ],
+      "validation": {
+        "source_hash": "RECORDED_SUPPLIED_CATALOG_BYTES",
+        "authority_identity": "MANAGED_AUTHORITY_RECORDED",
+        "path_collision": "PRIMARY_FINAL_CHECK_PENDING",
+        "equivalence": "NOT_ESTABLISHED",
+        "compilation": "NOT_RUN",
+        "runtime": "PARKED_NOT_RUN",
+        "publication": "INTERNAL_ONLY",
+        "final_receipt": "PRIMARY_FINAL_RECEIPT_PENDING"
+      }
+    }
+  ]
+}
