@@ -27,7 +27,7 @@ publication, export, new extraction, or a stronger evidence claim.
 
 | Operation | Status | Inputs and limits |
 | --- | --- | --- |
-| Rust build, `cargo build --locked --offline --manifest-path tools/re/Cargo.toml --bins` | `SELF_CONTAINED` with toolchain | Requires a preinstalled compatible Rust toolchain (1.88 or newer; edition 2024; checked locally with 1.94.1) plus cached crates selected by `Cargo.lock`. Dependencies are pinned but not vendored, so a fresh machine without that toolchain and cargo cache cannot be assumed buildable offline. |
+| Rust build, `cargo build --locked --offline --manifest-path tools/re/Cargo.toml --bins` | `SELF_CONTAINED` with toolchain and fetched crates | Requires Rust 1.88 or newer (edition 2024; public workflow installs 1.94.1 with rustup) plus the locked crates. Dependencies are pinned but not vendored. A clean machine must fetch them online first with `cargo fetch --locked --manifest-path tools/re/Cargo.toml`; subsequent commands can run offline. |
 | Core fixture and integration tests (the 71 pre-existing tests in `validation`, `registry`, `registry_hardening`, plus 3 portable-root tests) | `SELF_CONTAINED` with compiler and cargo cache | Uses repository-owned metadata, generated fixtures under `tools/re/target`, and the 131 curated bytes. Does not require the research corpus or the private index. |
 | Full `cargo test` suite | `REQUIRES_MANDATORY_PRIVATE_INPUT` | Some actual access tests require the private derived index, the 764 MB graph, the research corpus, and Windows junction support. The actual access tests that need the private index now fail with an explicit dependency assertion instead of returning early. |
 | `re status`, `re lookup` | `SELF_CONTAINED` | Validated metadata plus the accepted 131 curated files. Structural and identity output only. |
@@ -40,6 +40,7 @@ publication, export, new extraction, or a stronger evidence claim.
 | `source-access-index` build | `REQUIRES_MANDATORY_PRIVATE_INPUT` | Reads the pinned 764 MB `methods.jsonl`; writes a derived 23 MB index with CreateNew semantics. It is not a new authority. |
 | `source-locate` | `REQUIRES_MANDATORY_PRIVATE_INPUT` | Needs the compiled index pin, selected graph row, and research-backed original/import views. A missing index is `INDEX_MISSING`, not a fallback to another workspace. |
 | Curated documentation navigation | `SELF_CONTAINED` | Public relative Markdown links resolve to included files or directories. Unbundled private evidence is identified as unavailable, not presented as a working local link. |
+| Public `research-checks` workflow | `SELF_CONTAINED` | On pushes to `main`, pull requests targeting `main`, and manual dispatch, it checks the six-case timer model and runs `re status` after fetching locked crates. The Rust status invocation is offline and uses runner-temporary Cargo home and target paths. It does not run full `cargo test`, private harnesses, or semantic/runtime verification. |
 | Public export, packaging, or redistribution | `UNSUPPORTED` | The selected publication copy is present in this repository, but no supported exporter or rights-cleared package is established. Export and redistribution still require separate rights, license, provenance, and packaging review. |
 
 ## Historical harness documents
@@ -95,8 +96,10 @@ not public quickstarts and have not been changed by this documentation pass.
 
 Some build and test surfaces create or remove fixture data; `--target-dir` alone
 does not redirect every fixture path. Do not run a test, harness, or cleanup
-command as a casual health check. No test, build, or cleanup command was run for
-this documentation change.
+command as a casual health check. The public workflow is deliberately narrower:
+it runs only the timer model and the read-only `re status` command. It does not
+replace the private-input/full-suite procedures below, and this documentation
+does not claim a full test or harness run.
 
 ## Language and semantic limits
 
@@ -160,10 +163,10 @@ privately preserved historical record, not a required current public page.
 
 ## Rights and distribution
 
-The selected publication copy is present in this repository. Its presence is not
-external publication, a supported exporter, or rights clearance. Rights and
-redistribution remain unresolved; no public maintainer contact channel is
-configured. See the [README legal notice](../README.md).
+The selected publication copy is present in this publicly available repository.
+That availability does not establish a supported exporter or rights clearance.
+Rights and redistribution remain unresolved; no public maintainer contact
+channel is configured. See the [README legal notice](../README.md).
 
 Full research-corpus backup coverage remains **NOT ESTABLISHED**. This guide
 makes no complete-backup assertion. Ignoring files in `.gitignore` is not a

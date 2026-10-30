@@ -1,0 +1,92 @@
+name: Research checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  timer-model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Check timer model and source bindings
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          import sys
+
+          command = [sys.executable, "-B", "examples/mechanics/timer-lifecycle/model.py"]
+          result = subprocess.run(command, capture_output=True, text=True, check=False)
+          if result.returncode != 0:
+              raise SystemExit(f"timer model failed ({result.returncode}): {result.stderr}")
+          data = json.loads(result.stdout)
+          expected = [
+              "one-shot",
+              "repeat-catch-up",
+              "self-remove-trash-until-due",
+              "counterfactual-post-callback-guard",
+              "pending-remove-after-due-loop",
+              "pre-removed-skip",
+          ]
+          names = [item["name"] for item in data["scenarios"]]
+          assert data["source_bindings"] == "PASS", data
+          assert data["source_binding_files"] == 3, data
+          assert names == expected, names
+          assert data["game_runtime_equivalence"] == "NOT_CLAIMED", data
+          print(json.dumps({
+              "source_bindings": data["source_bindings"],
+              "source_binding_files": data["source_binding_files"],
+              "scenarios": names,
+              "game_runtime_equivalence": data["game_runtime_equivalence"],
+          }, separators=(",", ":")))
+          PY
+
+  curated-status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CARGO_HOME: ${{ runner.temp }}/cargo-home
+      CARGO_TARGET_DIR: ${{ runner.temp }}/cargo-target
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Rust 1.94.1
+        run: rustup toolchain install 1.94.1 --profile minimal
+      - name: Fetch locked crates
+        run: cargo +1.94.1 fetch --locked --manifest-path tools/re/Cargo.toml
+      - name: Check curated structural status offline
+        run: |
+          cargo +1.94.1 run --locked --offline --manifest-path tools/re/Cargo.toml --bin re -- status --curated-root . --json > "$RUNNER_TEMP/re-status.json"
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          result = json.loads(Path(os.environ["RUNNER_TEMP"], "re-status.json").read_text(encoding="utf-8"))
+          assert result.get("ok") is True, result.get("findings")
+          assert result.get("command") == "status", result.get("command")
+          assert result.get("exit") == 0, result.get("exit")
+          assert result.get("findings") == [], result.get("findings")
+          assert result.get("verify_scope") == "BYTE_INTEGRITY_ONLY", result.get("verify_scope")
+          print(json.dumps({
+              "ok": result["ok"],
+              "command": result["command"],
+              "exit": result["exit"],
+              "findings": result["findings"],
+              "verify_scope": result["verify_scope"],
+          }, separators=(",", ":")))
+          PY

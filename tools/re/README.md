@@ -39,6 +39,9 @@ the assembly SHA-256, MVID, original TypeDef, selected MethodDefs, source
 anchors, and historical evidence labels. Use the full managed key; a filename,
 class name, or display name is not an identity.
 
+The compact [research findings register](../../docs/RESEARCH_FINDINGS.md) links
+selected source-supported observations to their authorities and limits.
+
 `re status`, `re lookup`, and `corpus-registry source-status` work from the
 curated metadata. `corpus-registry source-lookup` for exact accepted imports,
 `source-verify`, `source-inventory`, and `source-locate` need private research
@@ -138,16 +141,39 @@ and exit 2. It never edits a pin or reseals a mismatch.
 
 ## Build and test
 
-With Rust 1.88 or newer and a prepared Cargo cache containing the locked crates,
-build the configured binaries from the repository root with:
+Use Rust 1.88 or newer with edition 2024 support; the public workflow pins
+1.94.1. With rustup, install that version using
+`rustup toolchain install 1.94.1 --profile minimal`. Prefix the Cargo commands
+below with `+1.94.1` if that toolchain is not selected by default. The crates
+are pinned but not vendored. On a clean checkout, fetch them once while online:
+
+```sh
+cargo fetch --locked --manifest-path tools/re/Cargo.toml
+```
+
+The public clean-checkout check compiles and runs only the read-only `re status`
+command, from the repository root, after that fetch:
+
+```sh
+cargo run --locked --offline --manifest-path tools/re/Cargo.toml --bin re -- status --curated-root . --json
+```
+
+Its expected clean envelope has `ok=true`, `command=status`, `exit=0`, no
+findings, and `verify_scope=BYTE_INTEGRITY_ONLY`. The command checks metadata,
+identities, and path presence. That legacy scope label does not mean `status`
+rehashes every source file or verifies semantics, CIL bodies, or the original binary.
+In CI, `CARGO_HOME` and `CARGO_TARGET_DIR` are redirected to runner-temporary
+directories.
+
+To build all configured binaries from the repository root with a prepared cache:
 
 ```sh
 cargo build --locked --offline --manifest-path tools/re/Cargo.toml --bins
 ```
 
-Dependencies are pinned but not vendored, so offline build requires that cache.
-This command writes Cargo build output; it is documented here, not run for this
-documentation change.
+This all-binaries build writes Cargo output and is not part of the public
+clean-checkout status check. An offline build still requires the fetched crate
+cache.
 
 Cargo tests and recovered-harness scripts are not casual health checks. Some
 test/build surfaces create or remove fixtures under the manifest directory, and
@@ -156,6 +182,7 @@ test/build surfaces create or remove fixtures under the manifest directory, and
 [reproducibility boundaries](../../docs/REPRODUCIBILITY.md) for the required inputs
 and filesystem effects.
 
-The historical test record reports 215 tests: 214 active and one explicitly
+The public workflow does not run Cargo tests or recovered harness scripts. The
+historical test record reports 215 tests: 214 active and one explicitly
 ignored administrative test. That is a received historical count, not a run
 performed for this page. Do not treat it as a current result.

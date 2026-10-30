@@ -7,17 +7,19 @@ The repository focuses on skills, attributes, damage, timers, events, and bounda
 > [!NOTE]
 > Recovered expressions and authored models are different kinds of evidence. The material here is not original developer source, a complete decompilation, or proof of live-game behavior.
 
-**Start here:** [Research findings](#research-highlights) | [Source index](docs/SOURCE_INDEX.md) | [Quick start](#quick-start) | [Evidence limits](#evidence-and-verification)
+**Start here:** [Research highlights](#research-highlights) | [Finding register](docs/RESEARCH_FINDINGS.md) | [Source index](docs/SOURCE_INDEX.md) | [Quick start](#quick-start) | [Evidence limits](#evidence-and-verification)
 
 ## Research highlights
 
-**Damage snapshots.** In the included `BaseDamageComponent` views, attacker and target attribute snapshots are captured before conditional attacker replacement. Counter processing occurs before critical modifiers. The examined response path also shows gated event and effect callbacks. The actual HP-writing consumer, server validation, and replication remain unknown. Read the [damage flow investigation](docs/DAMAGE_SNAPSHOT_FLOW.md) alongside its [source excerpts](qualified-research/damage-snapshots/BaseDamageComponent.SourceOnly.cs).
+**Damage snapshots.** In the included `BaseDamageComponent` views, attacker and target attribute snapshots are captured before conditional attacker replacement ([finding](docs/RESEARCH_FINDINGS.md#damage-snapshot-before-replacement)). Counter processing occurs before critical modifiers ([finding](docs/RESEARCH_FINDINGS.md#damage-counter-before-critical)). The examined response path also shows gated event and effect callbacks. The actual HP-writing consumer, server validation, and replication remain unknown. Read the [damage flow investigation](docs/DAMAGE_SNAPSHOT_FLOW.md) alongside its [source excerpts](qualified-research/damage-snapshots/BaseDamageComponent.SourceOnly.cs).
 
-**Skills and attributes.** The [skill component](src/managed/cs-e3fc67839851/skills/BaseSkillComponent.cs) exposes the order of cooldown, strength, control, and interruption checks. The [attribute storage view](src/managed/cs-e3fc67839851/attributes/BaseAttributeStorage.cs) shows how a base-value write leads to current-value updates and conditional event dispatch. These are separate observations, not a reconstructed end-to-end combat pipeline.
+**Skills and attributes.** The [skill component](src/managed/cs-e3fc67839851/skills/BaseSkillComponent.cs) exposes the order of cooldown, strength, control, and interruption checks ([finding](docs/RESEARCH_FINDINGS.md#skill-begin-gate-order)). The [attribute storage view](src/managed/cs-e3fc67839851/attributes/BaseAttributeStorage.cs) shows how a base-value write leads to current-value updates and conditional event dispatch ([finding](docs/RESEARCH_FINDINGS.md#attribute-write-dispatch-order)). These are separate observations, not a reconstructed end-to-end combat pipeline.
 
-**Timers.** A [Python lifecycle model](examples/mechanics/timer-lifecycle/model.py) exercises six scenarios derived from timer source operations. One scenario explores callback-driven self-removal of a repeating timer. This is a source-bound experiment, not a reproduced game bug.
+**Timers.** A [Python lifecycle model](examples/mechanics/timer-lifecycle/model.py) exercises six scenarios derived from timer source operations ([finding](docs/RESEARCH_FINDINGS.md#timer-trash-requeue-model)). One scenario explores callback-driven self-removal of a repeating timer. This is a source-bound experiment, not a reproduced game bug.
 
-**Script interfaces.** [EventCSharpBridge.js](src/scripts/reconstructed/event/EventCSharpBridge.js) calls `cpp.FEventSystem` and routes callbacks to global or entity-targeted listeners. The native implementation, direct C# interoperation, and migration history have not been recovered.
+**Script interfaces.** [EventCSharpBridge.js](src/scripts/reconstructed/event/EventCSharpBridge.js) calls `cpp.FEventSystem` and routes callbacks to global or entity-targeted listeners ([finding](docs/RESEARCH_FINDINGS.md#script-event-bridge-dispatch)). The native implementation, direct C# interoperation, and migration history have not been recovered.
+
+**Authority scope.** All six findings have game version `UNKNOWN`; the managed assembly and historical client-build reference are distinct authorities. The [finding register](docs/RESEARCH_FINDINGS.md) records their identities and limits.
 
 ## Repository guide
 
@@ -43,13 +45,19 @@ python -B examples/mechanics/timer-lifecycle/model.py
 
 It checks six authored scenarios and their source bindings. No game installation or private capture is needed.
 
-For a structural view of the curated metadata, the Rust CLI offers a read-only status command:
+For a structural view of the curated metadata, fetch the locked crates once while online:
+
+```sh
+cargo fetch --locked --manifest-path tools/re/Cargo.toml
+```
+
+Then, from the checkout root, run the read-only status command offline:
 
 ```sh
 cargo run --locked --offline --manifest-path tools/re/Cargo.toml --bin re -- status --curated-root . --json
 ```
 
-This requires **Rust 1.88+** and a prepared local Cargo cache containing the locked dependencies. Crates are not vendored, and a clean checkout without that cache cannot run the offline command. The result is structural, not a semantic or original-binary verification.
+This requires **Rust 1.88+** with edition 2024 support; the public workflow pins 1.94.1. Crates are not vendored, so the first fetch needs network access. A successful status result has `ok=true`, `command=status`, `exit=0`, and `findings=[]`. It checks metadata, identities, and path presence. The legacy output label `verify_scope=BYTE_INTEGRITY_ONLY` does not mean that `status` rehashes every source file or verifies CIL bodies, semantics, or the original binary.
 
 See the [tooling guide](tools/re/README.md) for other commands and the [reproducibility matrix](docs/REPRODUCIBILITY.md) for private-input requirements.
 

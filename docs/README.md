@@ -22,6 +22,8 @@ build project and is not buildable as a whole.
 - [SOURCE_INDEX.md](SOURCE_INDEX.md) gives each file's record, subsystem,
   ordinary and associated method counts, full/source/unknown evidence counts,
   dependency boundary, related views, and proof catalog.
+- [RESEARCH_FINDINGS.md](RESEARCH_FINDINGS.md) is the compact register of six
+  bounded findings, stable IDs, authority scope, and evidence limits.
 - Each curated C# view carries a header and token comments with the assembly
   SHA-256, MVID, original TypeDef, selected MethodDefs, and source anchors. Use
   the full managed key; a filename or class name alone is not an identity.
@@ -47,6 +49,9 @@ build project and is not buildable as a whole.
 - [tools/re/README.md](../tools/re/README.md) describes the Rust tools, their
   read-only command surface, and the preservation verifier. The verifier checks
   pinned bytes; it is not a semantic or build proof.
+- The [research-checks workflow](../.github/workflows/research-checks.yml) runs
+  the source-bound timer model and a clean-checkout structural status check; it
+  does not run private-input or full Cargo test suites.
 - [tests/README.md](../tests/README.md) separates Rust regressions, the
   recovered C# harnesses, later transformer and skill harnesses, and the
   separate synthetic Event 101 model.
