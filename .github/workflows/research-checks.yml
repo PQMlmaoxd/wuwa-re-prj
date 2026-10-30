@@ -57,15 +57,16 @@ jobs:
   curated-status:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    env:
-      CARGO_HOME: ${{ runner.temp }}/cargo-home
-      CARGO_TARGET_DIR: ${{ runner.temp }}/cargo-target
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
       - name: Install Rust 1.94.1
         run: rustup toolchain install 1.94.1 --profile minimal
+      - name: Configure isolated Cargo directories
+        run: |
+          echo "CARGO_HOME=$RUNNER_TEMP/cargo-home" >> "$GITHUB_ENV"
+          echo "CARGO_TARGET_DIR=$RUNNER_TEMP/cargo-target" >> "$GITHUB_ENV"
       - name: Fetch locked crates
         run: cargo +1.94.1 fetch --locked --manifest-path tools/re/Cargo.toml
       - name: Check curated structural status offline
