@@ -1,23 +1,43 @@
+<div align="center">
+
 # Wuthering Waves Gameplay RE
 
-Research into selected gameplay implementations in **Wuthering Waves**, with reconstructed source views, method-level evidence, and small experiments for examining execution behavior.
+**A source-level reference for Wuthering Waves gameplay research.**
 
-The repository focuses on skills, attributes, damage, timers, events, and boundaries between managed code, scripts, and native systems. It is a source-oriented reference for further investigation, not a game client or an attempt to reconstruct the entire game.
+[![Research checks](https://github.com/PQMlmaoxd/wuwa-re-prj/actions/workflows/research-checks.yml/badge.svg?branch=main)](https://github.com/PQMlmaoxd/wuwa-re-prj/actions/workflows/research-checks.yml)
+[![Scope: Source-level RE](https://img.shields.io/badge/Scope-Source--level%20RE-475569)](docs/SOURCE_INDEX.md)
+[![Verification: Structural only](https://img.shields.io/badge/Verification-Structural%20only-64748b)](docs/REPRODUCIBILITY.md)
+
+<img src="https://skillicons.dev/icons?i=cs,js,ts,cpp,rust" alt="C#, JavaScript, TypeScript, C++, and Rust" height="36">
+
+<sub>Reconstructed source views: C# · JavaScript · TypeScript · C++ | Independently authored tooling: Rust</sub>
+
+**[Research findings](docs/RESEARCH_FINDINGS.md)** · **[Source index](docs/SOURCE_INDEX.md)** · **[Quick start](#quick-start)**
+
+</div>
+
+This repository collects selected reconstructed gameplay implementations, method-level evidence, and focused experiments covering skills, attributes, damage, timers, events, and managed/script/native boundaries. Its purpose is to make specific behaviors inspectable and research claims traceable—not to recreate the entire game.
 
 > [!NOTE]
-> Recovered expressions and authored models are different kinds of evidence. The material here is not original developer source, a complete decompilation, or proof of live-game behavior.
-
-**Start here:** [Research highlights](#research-highlights) | [Finding register](docs/RESEARCH_FINDINGS.md) | [Source index](docs/SOURCE_INDEX.md) | [Quick start](#quick-start) | [Evidence limits](#evidence-and-verification)
+> Recovered expressions and authored models are different kinds of evidence. This is not original developer source, a playable game client, a complete decompilation, or proof of live-game behavior. The CI workflow runs **bounded research checks**, not full semantic or runtime verification.
 
 ## Research highlights
 
-**Damage snapshots.** In the included `BaseDamageComponent` views, attacker and target attribute snapshots are captured before conditional attacker replacement ([finding](docs/RESEARCH_FINDINGS.md#damage-snapshot-before-replacement)). Counter processing occurs before critical modifiers ([finding](docs/RESEARCH_FINDINGS.md#damage-counter-before-critical)). The examined response path also shows gated event and effect callbacks. The actual HP-writing consumer, server validation, and replication remain unknown. Read the [damage flow investigation](docs/DAMAGE_SNAPSHOT_FLOW.md) alongside its [source excerpts](qualified-research/damage-snapshots/BaseDamageComponent.SourceOnly.cs).
+### Damage snapshots
 
-**Skills and attributes.** The [skill component](src/managed/cs-e3fc67839851/skills/BaseSkillComponent.cs) exposes the order of cooldown, strength, control, and interruption checks ([finding](docs/RESEARCH_FINDINGS.md#skill-begin-gate-order)). The [attribute storage view](src/managed/cs-e3fc67839851/attributes/BaseAttributeStorage.cs) shows how a base-value write leads to current-value updates and conditional event dispatch ([finding](docs/RESEARCH_FINDINGS.md#attribute-write-dispatch-order)). These are separate observations, not a reconstructed end-to-end combat pipeline.
+In the included `BaseDamageComponent` views, attacker and target attribute snapshots are captured before conditional attacker replacement ([finding](docs/RESEARCH_FINDINGS.md#damage-snapshot-before-replacement)). Counter processing occurs before critical modifiers ([finding](docs/RESEARCH_FINDINGS.md#damage-counter-before-critical)). The examined response path also shows gated event and effect callbacks. The actual HP-writing consumer, server validation, and replication remain unknown. Read the [damage flow investigation](docs/DAMAGE_SNAPSHOT_FLOW.md) alongside its [source excerpts](qualified-research/damage-snapshots/BaseDamageComponent.SourceOnly.cs).
 
-**Timers.** A [Python lifecycle model](examples/mechanics/timer-lifecycle/model.py) exercises six scenarios derived from timer source operations ([finding](docs/RESEARCH_FINDINGS.md#timer-trash-requeue-model)). One scenario explores callback-driven self-removal of a repeating timer. This is a source-bound experiment, not a reproduced game bug.
+### Skills and attributes
 
-**Script interfaces.** [EventCSharpBridge.js](src/scripts/reconstructed/event/EventCSharpBridge.js) calls `cpp.FEventSystem` and routes callbacks to global or entity-targeted listeners ([finding](docs/RESEARCH_FINDINGS.md#script-event-bridge-dispatch)). The native implementation, direct C# interoperation, and migration history have not been recovered.
+The [skill component](src/managed/cs-e3fc67839851/skills/BaseSkillComponent.cs) exposes the order of cooldown, strength, control, and interruption checks ([finding](docs/RESEARCH_FINDINGS.md#skill-begin-gate-order)). The [attribute storage view](src/managed/cs-e3fc67839851/attributes/BaseAttributeStorage.cs) shows how a base-value write leads to current-value updates and conditional event dispatch ([finding](docs/RESEARCH_FINDINGS.md#attribute-write-dispatch-order)). These are separate observations, not a reconstructed end-to-end combat pipeline.
+
+### Timer lifecycle
+
+A [Python lifecycle model](examples/mechanics/timer-lifecycle/model.py) exercises six scenarios derived from timer source operations ([finding](docs/RESEARCH_FINDINGS.md#timer-trash-requeue-model)). One scenario explores callback-driven self-removal of a repeating timer. This is a source-bound experiment, not a reproduced game bug.
+
+### Script/native boundary
+
+[EventCSharpBridge.js](src/scripts/reconstructed/event/EventCSharpBridge.js) calls `cpp.FEventSystem` and routes callbacks to global or entity-targeted listeners ([finding](docs/RESEARCH_FINDINGS.md#script-event-bridge-dispatch)). The native implementation, direct C# interoperation, and migration history have not been recovered.
 
 **Authority scope.** All six findings have game version `UNKNOWN`; the managed assembly and historical client-build reference are distinct authorities. The [finding register](docs/RESEARCH_FINDINGS.md) records their identities and limits.
 
