@@ -16,7 +16,7 @@
 
 </div>
 
-This repository collects selected reconstructed gameplay implementations, method-level evidence, and focused experiments covering skills, attributes, damage, timers, events, and managed/script/native boundaries. Its purpose is to make specific behaviors inspectable and research claims traceable—not to recreate the entire game.
+This repository collects selected reconstructed gameplay implementations, method-level evidence, and focused experiments covering skills, attributes, damage, timers, events, and managed/script/native boundaries. Its purpose is to make specific behaviors inspectable and research claims traceable but not to recreate the entire game.
 
 > [!NOTE]
 > Recovered expressions and authored models are different kinds of evidence. This is not original developer source, a playable game client, a complete decompilation, or proof of live-game behavior. The CI workflow runs **bounded research checks**, not full semantic or runtime verification.
